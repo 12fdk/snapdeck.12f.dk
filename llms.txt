@@ -1,0 +1,30 @@
+# SnapDeck AI
+
+> Turn photos and PDFs into flashcards instantly with on-device AI.
+
+SnapDeck AI is an iOS app that uses Apple Intelligence to generate flashcards from photos of textbooks, lecture notes, handouts, and PDF documents. All processing happens on-device — no internet required, no cloud uploads, completely private.
+
+## Key Facts
+
+- Platform: iOS (iPhone 15 Pro and later, iOS 26+)
+- AI: Apple Intelligence (on-device Foundation Models)
+- Privacy: 100% on-device, no data collection, no accounts required
+- Price: Free (3 decks/month), Premium available for unlimited use
+- Developer: 12F ApS (https://12f.dk/)
+- Website: https://snapdeck.12f.dk/
+
+## Features
+
+- Snap a photo of any study material to create flashcards
+- Import PDFs for flashcard generation
+- Type or paste text manually
+- Interactive study mode with flip cards
+- Progress tracking (know it / review it)
+- On-device AI — no internet connection needed
+- No accounts, no tracking, no data leaves the device
+
+## Links
+
+- [Home](https://snapdeck.12f.dk/)
+- [Privacy Policy](https://snapdeck.12f.dk/privacy-policy.html)
+- [Full LLM Context](https://snapdeck.12f.dk/llms-full.txt)

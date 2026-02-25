@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SnapDeck AI — Flashcards from Photos & PDFs</title>
-  <meta name="description" content="Snap a photo of your notes, textbook, or handout — SnapDeck AI creates flashcards instantly, 100% on-device. Study smarter, not harder.">
+  <title>SnapDeck AI — Flashcards from Photos & PDFs | AI Study App for iOS</title>
+  <meta name="description" content="Turn photos of textbooks, lecture notes, and PDFs into flashcards instantly with on-device AI. 100% private, no internet required. Free for iPhone 15 Pro and later.">
+  <meta name="keywords" content="flashcard app, AI flashcards, study app, photo to flashcards, PDF flashcards, Apple Intelligence, iOS study tool, on-device AI, spaced repetition, exam prep">
+  <meta name="author" content="12F ApS">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#4F46E5">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -13,10 +16,11 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="SnapDeck AI — Flashcards from Photos & PDFs">
-  <meta property="og:description" content="Snap a photo of your notes, textbook, or handout — SnapDeck AI creates flashcards instantly, 100% on-device. Study smarter, not harder.">
+  <meta property="og:description" content="Turn photos of textbooks, lecture notes, and PDFs into flashcards instantly with on-device AI. 100% private, no internet required.">
   <meta property="og:image" content="https://snapdeck.12f.dk/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SnapDeck AI app — flashcards from photos and PDFs">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://snapdeck.12f.dk/">
   <meta property="og:site_name" content="SnapDeck AI">
@@ -25,8 +29,9 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SnapDeck AI — Flashcards from Photos & PDFs">
-  <meta name="twitter:description" content="Snap a photo of your notes, textbook, or handout — SnapDeck AI creates flashcards instantly, 100% on-device.">
+  <meta name="twitter:description" content="Turn photos of textbooks, lecture notes, and PDFs into flashcards instantly with on-device AI. 100% private.">
   <meta name="twitter:image" content="https://snapdeck.12f.dk/images/og-image.png">
+  <meta name="twitter:image:alt" content="SnapDeck AI app — flashcards from photos and PDFs">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -38,21 +43,25 @@
 
   <script defer src="https://umami.robert-jensen.dk/script.js" data-website-id="c00b28ce-d663-4166-8b80-6260f0f30d6f"></script>
 
-  <!-- Structured Data -->
+  <!-- Structured Data: SoftwareApplication -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "SnapDeck AI",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS 26",
     "applicationCategory": "EducationalApplication",
-    "description": "Snap a photo of your notes, textbook, or handout — SnapDeck AI creates flashcards instantly, 100% on-device.",
+    "description": "Turn photos of textbooks, lecture notes, and PDFs into flashcards instantly with on-device AI. 100% private, no internet required.",
     "url": "https://snapdeck.12f.dk/",
     "image": "https://snapdeck.12f.dk/images/og-image.png",
+    "screenshot": "https://snapdeck.12f.dk/images/screenshots/en-US/screenshot-1.png",
+    "featureList": "Photo to flashcards, PDF import, On-device AI, 100% private, No internet required, Interactive study mode, Progress tracking",
+    "softwareRequirements": "iOS 26, Apple Intelligence, iPhone 15 Pro or later",
     "offers": {
       "@type": "Offer",
       "price": "0",
-      "priceCurrency": "USD"
+      "priceCurrency": "USD",
+      "description": "Free with 3 decks per month. Premium upgrade available for unlimited use."
     },
     "author": {
       "@type": "Organization",
@@ -61,10 +70,128 @@
     }
   }
   </script>
+
+  <!-- Structured Data: WebSite (for search engines / sitelinks) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SnapDeck AI",
+    "url": "https://snapdeck.12f.dk/"
+  }
+  </script>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "12F ApS",
+    "url": "https://12f.dk/",
+    "logo": "https://snapdeck.12f.dk/images/app-icon.png"
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://snapdeck.12f.dk/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does SnapDeck AI create flashcards?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Take a photo of your textbook, lecture notes, or handout — or import a PDF. SnapDeck AI uses Apple Intelligence to read the content and automatically generate question-and-answer flashcards in seconds, all on-device."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does SnapDeck AI require an internet connection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. All AI processing happens entirely on your iPhone using Apple Intelligence. No internet connection, cloud uploads, or external servers are involved."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data private with SnapDeck AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. SnapDeck AI is 100% private. Your photos, PDFs, and study materials never leave your device. No accounts, no data collection, no tracking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What devices support SnapDeck AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SnapDeck AI requires iPhone 15 Pro or later running iOS 26 with Apple Intelligence enabled."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is SnapDeck AI free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, SnapDeck AI is free to use with up to 3 decks per month. A Premium upgrade is available for unlimited deck creation, unlimited document length, and unlimited cards per deck."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to create flashcards with SnapDeck AI",
+    "description": "Create AI-powered flashcards from photos and PDFs in three simple steps.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Snap a photo",
+        "text": "Take a photo of your textbook, notes, or slides. You can also import PDFs or type text manually."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "AI generates cards",
+        "text": "Apple Intelligence reads your material and creates question-and-answer flashcards automatically."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Study and master",
+        "text": "Flip through your cards, mark progress, and review until you've mastered the material."
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <!-- Navigation -->
+  <header>
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
       <a href="#" class="nav-brand">
@@ -84,6 +211,9 @@
       </ul>
     </div>
   </nav>
+  </header>
+
+  <main>
 
   <!-- Hero -->
   <section class="hero">
@@ -245,6 +375,8 @@
       <p class="requirements">Requires iOS 26 and Apple Intelligence</p>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

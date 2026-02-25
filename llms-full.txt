@@ -1,0 +1,75 @@
+# SnapDeck AI — Complete Information
+
+> Turn photos and PDFs into flashcards instantly with on-device AI.
+
+## About SnapDeck AI
+
+SnapDeck AI is an iOS app that transforms study materials into flashcards using Apple Intelligence. Take a photo of your textbook, lecture notes, handout, or import a PDF — SnapDeck AI reads the content and generates a complete set of question-and-answer flashcards in seconds.
+
+All AI processing happens entirely on your iPhone using Apple's on-device Foundation Models. No internet connection is required, no data is uploaded to any server, and no accounts are needed. Your study materials remain 100% private.
+
+## Features
+
+### Snap & Create
+Take a photo of your textbook, lecture notes, or handout. SnapDeck AI reads the content and generates a complete flashcard deck in seconds.
+
+### On-Device AI
+Powered by Apple Intelligence, all processing happens right on your iPhone. No internet required, no cloud uploads, no waiting.
+
+### 100% Private
+Your study materials never leave your device. No accounts, no data collection, no tracking. Your notes stay completely private.
+
+### Interactive Study
+Flip through cards, mark what you know and what needs review. Track your progress and master any subject efficiently.
+
+## How It Works
+
+1. **Snap a photo** — Take a photo of your textbook, notes, or slides. You can also import PDFs or type text manually.
+2. **AI generates cards** — Apple Intelligence reads your material and creates question-and-answer flashcards automatically.
+3. **Study & master** — Flip through your cards, mark progress, and review until you've mastered the material.
+
+## Pricing
+
+- **Free**: Up to 3 decks per month
+- **Premium**: Unlimited deck creation, unlimited document length, unlimited cards per deck, lifetime purchase available
+
+## System Requirements
+
+- iPhone 15 Pro or later
+- iOS 26
+- Apple Intelligence enabled
+
+## Privacy
+
+SnapDeck AI is built with privacy as a core principle:
+- No account or registration required
+- No photos, PDFs, or text content is uploaded to any server
+- No analytics or tracking SDKs are embedded in the app
+- No cookies or identifiers are stored
+- All AI processing uses Apple's on-device Foundation Models
+- Flashcard decks and study progress are stored locally using Apple's SwiftData framework
+- No data is synced to any cloud service
+
+## Developer
+
+- Company: 12F ApS
+- Website: https://12f.dk/
+- Product page: https://snapdeck.12f.dk/
+- Privacy policy: https://snapdeck.12f.dk/privacy-policy.html
+
+## Frequently Asked Questions
+
+### How does SnapDeck AI create flashcards?
+Take a photo of your textbook, lecture notes, or handout — or import a PDF. SnapDeck AI uses Apple Intelligence to read the content and automatically generate question-and-answer flashcards in seconds, all on-device.
+
+### Does SnapDeck AI require an internet connection?
+No. All AI processing happens entirely on your iPhone using Apple Intelligence. No internet connection, cloud uploads, or external servers are involved.
+
+### Is my data private with SnapDeck AI?
+Yes. SnapDeck AI is 100% private. Your photos, PDFs, and study materials never leave your device. No accounts, no data collection, no tracking.
+
+### What devices support SnapDeck AI?
+SnapDeck AI requires iPhone 15 Pro or later running iOS 26 with Apple Intelligence enabled.
+
+### Is SnapDeck AI free?
+Yes, SnapDeck AI is free to use with up to 3 decks per month. A Premium upgrade is available for unlimited deck creation, unlimited document length, and unlimited cards per deck.
