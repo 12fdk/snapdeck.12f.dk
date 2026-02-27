@@ -37,4 +37,4 @@ Push to `main` branch → GitHub Pages auto-deploys.
 - Screenshots from SnapDeck app at `/Users/robert/Git/SnapDeck/fastlane/screenshots/`
 - App icon generated from brand gradient (Pillow script in project history)
 - Analytics: Umami (privacy-focused) at umami.robert-jensen.dk
-- App Store link placeholder — update when app is published
+- App Store: https://apps.apple.com/us/app/snapdeck-ai/id6759596002
