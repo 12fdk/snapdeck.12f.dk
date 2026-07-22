@@ -9,7 +9,7 @@ SnapDeck AI is an iOS app that uses Apple Intelligence to generate flashcards fr
 - Platform: iOS (iPhone 15 Pro and later, iOS 26+)
 - AI: Apple Intelligence (on-device Foundation Models)
 - Privacy: 100% on-device, no data collection, no accounts required
-- Price: Free (3 decks/month), Premium available for unlimited use
+- Price: Free (3 decks/month), Premium one-time purchase for unlimited use (no subscription)
 - Developer: 12F ApS (https://12f.dk/)
 - Website: https://snapdeck.12f.dk/
 
@@ -19,12 +19,23 @@ SnapDeck AI is an iOS app that uses Apple Intelligence to generate flashcards fr
 - Import PDFs for flashcard generation
 - Type or paste text manually
 - Interactive study mode with flip cards
-- Progress tracking (know it / review it)
+- Progress tracking (know it / review it), study streaks, XP and stats
 - On-device AI — no internet connection needed
+- Dark mode; app available in 39 languages
 - No accounts, no tracking, no data leaves the device
+
+## Blog
+
+Study advice for students, published at https://snapdeck.12f.dk/blog/ (RSS: https://snapdeck.12f.dk/feed.xml).
+
+- [The night-before-the-exam survival guide](https://snapdeck.12f.dk/blog/night-before-exam-survival-guide/) — exam-prep, 2026-07-22. Hour-by-hour triage plan for the evening before an exam.
+- [How to take notes you'll actually study from](https://snapdeck.12f.dk/blog/notes-youll-actually-study-from/) — study-tips, 2026-07-08. Turning lecture notes into material you can self-test on.
+- [Why cramming feels great and works terribly](https://snapdeck.12f.dk/blog/why-cramming-feels-great/) — memory-science, 2026-06-24. Spaced repetition and retrieval practice explained.
 
 ## Links
 
 - [Home](https://snapdeck.12f.dk/)
+- [Blog](https://snapdeck.12f.dk/blog/)
+- [RSS feed](https://snapdeck.12f.dk/feed.xml)
 - [Privacy Policy](https://snapdeck.12f.dk/privacy-policy.html)
 - [Full LLM Context](https://snapdeck.12f.dk/llms-full.txt)

@@ -28,10 +28,13 @@ Flip through cards, mark what you know and what needs review. Track your progres
 2. **AI generates cards** — Apple Intelligence reads your material and creates question-and-answer flashcards automatically.
 3. **Study & master** — Flip through your cards, mark progress, and review until you've mastered the material.
 
+### Streaks & Progress
+Study streaks, XP and per-deck mastery stats keep track of what has actually been learned. Dark mode is supported, and the app is available in 39 languages.
+
 ## Pricing
 
-- **Free**: Up to 3 decks per month
-- **Premium**: Unlimited deck creation, unlimited document length, unlimited cards per deck, lifetime purchase available
+- **Free**: Up to 3 decks per month, with full study mode, streaks, stats and offline use
+- **Premium**: Unlimited deck creation, unlimited document length, unlimited cards per deck. One-time purchase — no subscription. Unlocked inside the app; current pricing is shown on the App Store.
 
 ## System Requirements
 
@@ -56,6 +59,23 @@ SnapDeck AI is built with privacy as a core principle:
 - Website: https://12f.dk/
 - Product page: https://snapdeck.12f.dk/
 - Privacy policy: https://snapdeck.12f.dk/privacy-policy.html
+- App Store: https://apps.apple.com/us/app/snapdeck-ai/id6759596002
+
+## Blog
+
+The SnapDeck AI blog publishes practical study advice for students at https://snapdeck.12f.dk/blog/ (RSS feed: https://snapdeck.12f.dk/feed.xml). Posts are tagged `study-tips`, `memory-science` or `exam-prep`.
+
+### The night-before-the-exam survival guide (2026-07-22, exam-prep)
+https://snapdeck.12f.dk/blog/night-before-exam-survival-guide/
+An hour-by-hour triage plan for the evening before an exam: spend the first hour deciding what to study (prioritising half-known, high-mark topics), convert material into questions and answer them rather than re-reading, do a final pass on the topics still missed, then sleep properly because sleep consolidates memory. Covers what to skip guilt-free and what to do on the morning of the exam.
+
+### How to take notes you'll actually study from (2026-07-08, study-tips)
+https://snapdeck.12f.dk/blog/notes-youll-actually-study-from/
+Four changes that make notes usable as study material: write questions in the margin rather than only statements (the engine behind the Cornell method), photograph slides and diagrams instead of transcribing them, do a five-minute same-day pass to add questions and mark gaps, and convert notes into cards while the material is fresh rather than during exam week.
+
+### Why cramming feels great and works terribly (2026-06-24, memory-science)
+https://snapdeck.12f.dk/blog/why-cramming-feels-great/
+Explains the fluency illusion — re-reading builds recognition, not recall — and the three findings that matter: Ebbinghaus's forgetting curve, the spacing effect (Cepeda et al., 2006), and the testing effect (Roediger & Karpicke, 2006). Concludes that cramming works for tomorrow but not for next month, and gives four adjustments that do not require changing habits entirely.
 
 ## Frequently Asked Questions
 
