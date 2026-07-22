@@ -28,9 +28,9 @@ SnapDeck AI is an iOS app that uses Apple Intelligence to generate flashcards fr
 
 Study advice for students, published at https://snapdeck.12f.dk/blog/ (RSS: https://snapdeck.12f.dk/feed.xml).
 
-- [The night-before-the-exam survival guide](https://snapdeck.12f.dk/blog/night-before-exam-survival-guide/) — exam-prep, 2026-07-22. Hour-by-hour triage plan for the evening before an exam.
-- [How to take notes you'll actually study from](https://snapdeck.12f.dk/blog/notes-youll-actually-study-from/) — study-tips, 2026-07-08. Turning lecture notes into material you can self-test on.
-- [Why cramming feels great and works terribly](https://snapdeck.12f.dk/blog/why-cramming-feels-great/) — memory-science, 2026-06-24. Spaced repetition and retrieval practice explained.
+- [The night-before-the-exam survival guide](https://snapdeck.12f.dk/blog/night-before-exam-survival-guide/) — exam-prep, 2026-07-22. An hour-by-hour triage plan for the evening before an exam: spend the first hour deciding what to study (prioritising half-known, high-mark topics), convert material into questions and answer them rather than re-reading, do a final pass on the topics still missed, then sleep properly because sleep consolidates memory.
+- [How to take notes you'll actually study from](https://snapdeck.12f.dk/blog/notes-youll-actually-study-from/) — study-tips, 2026-07-08. Four changes that make notes usable as study material: write questions in the margin rather than only statements (the engine behind the Cornell method), photograph slides and diagrams instead of transcribing them, do a five-minute same-day pass to add questions and mark gaps, and convert notes into cards while the material is fresh rather than during exam week.
+- [Why cramming feels great and works terribly](https://snapdeck.12f.dk/blog/why-cramming-feels-great/) — memory-science, 2026-06-24. Explains the fluency illusion — re-reading builds recognition, not recall — and the three findings that matter: Ebbinghaus's forgetting curve, the spacing effect (Cepeda et al., 2006), and the testing effect (Roediger & Karpicke, 2006).
 
 ## Links
 
