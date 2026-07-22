@@ -1,0 +1,7 @@
+
+# Reddit topic-research cache (tools/reddit-topics.py)
+.cache/
+
+# Python
+__pycache__/
+*.pyc

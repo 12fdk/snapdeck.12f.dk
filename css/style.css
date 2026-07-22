@@ -937,6 +937,70 @@ a.tag:hover { text-decoration: none; filter: brightness(0.97); }
 .prose hr { border: 0; border-top: 1px solid var(--line); margin: 2.6em 0; }
 .prose a { font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 
+/* Article imagery — emitted by tools/build.py from the markdown in posts/ */
+.article-hero {
+  margin: 44px auto 0;
+  max-width: 940px;
+}
+.article-hero img,
+.prose .post-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-md);
+}
+.prose .post-figure {
+  /* Break out of the 65ch measure a little — a photo pinned to text width
+     reads as an afterthought. Never wider than the column on small screens. */
+  margin: 2.6em min(0px, calc((100% - 860px) / 2));
+}
+.prose .post-figure figcaption {
+  margin-top: 0.8em;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink-3);
+  text-align: center;
+}
+
+/* Post FAQ — also emitted as FAQPage schema, so keep the copy self-contained */
+.post-faq {
+  max-width: 65ch;
+  margin: 64px auto 0;
+}
+.post-faq > h2 {
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.faq-item {
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+}
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 620;
+  color: var(--ink);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: baseline;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  color: var(--indigo);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+.faq-item[open] summary::after { content: "−"; }
+.faq-item p {
+  margin-top: 12px;
+  color: var(--ink-2);
+  line-height: 1.7;
+}
+
 .callout {
   background: var(--bg-soft);
   border: 1px solid var(--line);

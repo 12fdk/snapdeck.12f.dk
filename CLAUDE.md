@@ -5,17 +5,21 @@ Landing page + blog for the SnapDeck AI iOS app, deployed via GitHub Pages.
 ## Project Structure
 
 - `index.html` — Main landing page
-- `blog/index.html` — Blog index (card grid)
-- `blog/<slug>/index.html` — One folder per post, hand-written HTML
+- `posts/<slug>.md` — **Blog source of truth**: frontmatter + markdown, one file per post
+- `prompt.md` — The brief the weekly automated blog job follows (see below)
+- `blog/index.html`, `blog/<slug>/index.html` — **Generated** from `posts/` by `tools/build.py`
 - `privacy-policy.html` — Privacy policy
 - `404.html` — Custom 404 error page
 - `css/style.css` — All styles (CSS custom properties design system, light + dark)
 - `js/main.js` — Scroll reveals, sticky-header state, mobile nav
 - `images/` — App icon, favicons, OG image, `screenshots/<locale>/`, `blog/<slug>.png|webp`
-- `tools/make-og-image.py` — Generates a post's OG/featured image (gradient + title). Not a build step.
-- `feed.xml` — RSS feed for the blog (hand-maintained)
+- `tools/build.py` — Renders the blog and every file that lists posts
+- `tools/reddit-topics.py` — What students are actually asking, ranked (topic research)
+- `tools/make-og-image.py` — Post cover (photo + scrim + title, or brand gradient) and inline photos
+- `tools/templates/post.html` — The post page template
+- `feed.xml` — RSS feed for the blog (generated)
 - `CNAME` — GitHub Pages custom domain (snapdeck.12f.dk)
-- `robots.txt` / `sitemap.xml` / `llms.txt` / `llms-full.txt` — SEO + AI crawlers
+- `robots.txt` / `sitemap.xml` / `llms.txt` / `llms-full.txt` — SEO + AI crawlers (blog parts generated)
 
 ## Brand Colors
 
@@ -33,13 +37,60 @@ python3 -m http.server 8000
 
 Use absolute paths (`/css/style.css`, `/images/...`) so blog subfolders resolve.
 
-## Adding a blog post
+## Adding a blog post — `posts/*.md` is the source of truth
 
-1. `python3 tools/make-og-image.py <slug> "<Title>" "<tag>"` — writes `images/blog/<slug>.png` and `.webp`
-2. Copy an existing `blog/<slug>/index.html` as the template; update meta, Article + BreadcrumbList JSON-LD, and the "Keep reading" cards
-3. Add the post to `blog/index.html`, the homepage blog teaser, `feed.xml`, `sitemap.xml`, `llms.txt` and `llms-full.txt`
+The blog is **generated**. Write markdown in `posts/<slug>.md` and run the build;
+never hand-edit `blog/<slug>/index.html`, it will be overwritten.
+
+```bash
+python3 tools/build.py --check   # validate only (schema, links, images, lengths)
+python3 tools/build.py           # write everything
+```
+
+`tools/build.py` renders each post page and rewrites every derived file: the blog
+index grid, the homepage teaser, `feed.xml`, the blog URLs in `sitemap.xml`, and
+the `## Blog` sections of `llms.txt` and `llms-full.txt`. Generated regions inside
+hand-written files are fenced with `BLOG:*:START` / `BLOG:*:END` markers — leave
+them in place. The frontmatter schema is documented in `prompt.md` §5 and enforced
+by the build.
+
+Images (requires Pillow; fonts are vendored in `tools/fonts/`):
+
+```bash
+# cover from a photo (e.g. generated with ComfyUI): 1200x630, scrim, title, tag chip
+python3 tools/make-og-image.py cover <slug> "<Title>" "<tag>" --bg photo.png
+# cover with no photo — the original brand gradient card
+python3 tools/make-og-image.py cover <slug> "<Title>" "<tag>"
+# an in-article photo -> images/blog/<slug>-1.png|webp
+python3 tools/make-og-image.py inline <slug> 1 photo.png
+```
 
 Tags in use: `study-tips`, `memory-science`, `exam-prep`.
+
+## The weekly post writes itself
+
+A Hermes cron job on the spark (`SnapDeck Blog Post`, Tuesdays 09:00
+Europe/Copenhagen) clones this repo and publishes one post a week, generating its
+visuals on the co-resident ComfyUI. **`prompt.md` is the brief it follows** —
+audience, product facts, topic selection, tone and the nudge budget, factual-
+accuracy rules, schema, images, publishing. The cron prompt is a thin wrapper that
+only says "read prompt.md and follow it", so **change the strategy by editing
+`prompt.md` here, in git** — never by editing the job. Sister setups: the same
+pattern runs home-stories.12f.dk, event-stories.12f.dk and meugrana.12f.dk.
+
+Topics come from live reader demand rather than invention:
+
+```bash
+python3 tools/reddit-topics.py          # ranked digest of what students are asking
+python3 tools/reddit-topics.py --json
+```
+
+It reads ~14 student subreddits over Reddit's Atom feeds (the JSON API 403s from
+both a datacenter and a home IP), filters out memes and venting, clusters the real
+questions into themes, and marks the themes an existing post already covers.
+Reddit rate-limits it hard, so it paces requests, backs off on 429, caches to
+`.cache/` for a day and gives up gracefully — a failed scrape is expected, and
+`prompt.md` falls back to a ranked topic bank.
 
 ## Deployment
 
