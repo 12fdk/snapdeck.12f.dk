@@ -10,7 +10,7 @@ summary: >
   Focus isn't a switch you flip — it's a muscle that tires fast under pressure. This post explains why trying to study in long blocks backfires when your attention is short, and shows four concrete methods that work with a short attention span: timed sessions with real breaks, starting with the easiest material, turning passive reading into active recall, and designing a routine that doesn't depend on feeling motivated.
 coverAlt: "A student studying at a desk at night under a warm lamp, an open notebook and textbook, a mug of coffee, and a phone lying on the papers"
 hero: true
-related: [why-cramming-feels-great, night-before-exam-survival-guide]
+related: [how-to-study-when-tired, memorise-material-fast]
 faq:
   - question: "Why can I focus on a video game or YouTube for hours but not my notes?"
     answer: "Video games and YouTube are designed by teams of psychologists to keep you engaged. They give you constant feedback, adjust difficulty so you never quit or get bored, and the next thing you need to do is always right there. Your textbook gives you none of that. It's not a personal failing — it's a design comparison."
@@ -56,7 +56,7 @@ Most of us study by reading our notes over again. It feels productive because th
 
 The alternative is active recall: testing yourself on the material instead of consuming it again. Instead of re-reading a chapter, close the book and ask yourself what it said. Instead of highlighting, write down everything you can remember and then check what you missed.
 
-If you have a photo-to-flashcards app, this is where it shines. Snap a photo of the page, let it generate questions, and start flipping through them. You're not producing content — you're generating tests. The mental effort of answering feels harder than re-reading, and that feeling is actually a sign it's working. Desirable difficulty is what psychologists call the kind of effort that leads to long-term retention. The same principle is why taking active notes in the margins — turning statements into questions as you go — is far more useful than passively highlighting everything. See our notes on [how to take notes you'll actually study from](/blog/notes-youll-actually-study-from/) for a deeper dive into that approach.
+If you have a photo-to-flashcards app, this is where it shines. Snap a photo of the page, let it generate questions, and start flipping through them. You're not producing content — you're generating tests. The mental effort of answering feels harder than re-reading, and that feeling is actually a sign it's working. Desirable difficulty is what psychologists call the kind of effort that leads to long-term retention. The same principle is why taking active notes in the margins — turning statements into questions as you go — is far more useful than passively highlighting everything. See [how to memorise a lot of material fast](/blog/memorise-material-fast/) for more on turning notes into questions you can test yourself on.
 
 This is the single biggest adjustment you can make, and it doesn't require extra focus — in fact, it usually helps, because answering questions is more engaging than passively absorbing text.
 
@@ -79,7 +79,7 @@ None of this is glamorous or impressive. It's basically just removing small obst
 
 The student who studies for ten minutes every day will learn more than the student who studies for three hours once a week. This isn't motivational talk — it's how memory works. Returning to material regularly, even briefly, strengthens retention far more than a single marathon session.
 
-This is one reason the spacing effect matters so much. Returning to something after a short gap forces your brain to retrieve the information, and that retrieval strengthens the memory more than any amount of re-reading — the same principle that makes active recall far more effective than passive review, as [explained in our post on why cramming fails](/blog/why-cramming-feels-great/). A short daily session gives you spacing naturally — you return to the material while some of it is still fresh but not entirely automatic.
+This is one reason the spacing effect matters so much. Returning to something after a short gap forces your brain to retrieve the information, and that retrieval strengthens the memory more than any amount of re-reading — the same principle that makes active recall far more effective than passive review. A short daily session gives you spacing naturally — you return to the material while some of it is still fresh but not entirely automatic.
 
 A ten-minute daily habit is also less scary. When you tell yourself you need two hours, you'll put it off until the weekend when you're too tired for it to be useful. When the commitment is ten minutes, the barrier is low enough that even a bad day has a path forward.
 

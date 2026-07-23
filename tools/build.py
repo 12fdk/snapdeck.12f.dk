@@ -395,7 +395,19 @@ def validate_references(posts: list[Post]) -> list[str]:
             if slug == p.slug:
                 problems.append(f"{p.where}: related lists the post itself")
         internal_links = 0
-        for href in re.findall(r'href="(/[^"]*)"', p.body_html):
+        for href in re.findall(r'href="([^"]*)"', p.body_html):
+            # Anchors, mail, and full external URLs are fine as-is.
+            if href.startswith(("#", "mailto:", "https://", "http://")):
+                continue
+            # Everything else must be an absolute in-site path. A link like
+            # `@blog/…/` or `blog/…/` (a missing or mistyped leading slash) is a
+            # broken internal link the old check skipped because it only looked
+            # at hrefs already starting with `/` — one shipped exactly that.
+            if not href.startswith("/"):
+                problems.append(f"{p.where}: link href {href!r} is neither an absolute in-site "
+                                f"path (/…) nor a full URL — likely a typo (e.g. `@blog/…` or a "
+                                f"missing leading slash); use /blog/<slug>/")
+                continue
             m = re.fullmatch(r"/blog/([a-z0-9-]+)/", href)
             if m and m.group(1) not in slugs:
                 problems.append(f"{p.where}: links to /blog/{m.group(1)}/ which does not exist")
@@ -661,6 +673,39 @@ def build_blog_index_region(posts: list[Post]) -> str:
     return "\n\n".join(indent(card(p, "h2", "fade-in", more=True), 10) for p in posts) + "\n"
 
 
+def build_blog_schema_region(posts: list[Post]) -> str:
+    """The Blog / blogPost JSON-LD on the index. Regenerated so it can never
+    drift from the actual post set (it listed deleted posts, and never picked up
+    ones the weekly job added)."""
+    items = ",\n".join(
+        f"""      {{
+        "@type": "BlogPosting",
+        "headline": {json.dumps(p.title, ensure_ascii=False)},
+        "url": "{p.url}",
+        "datePublished": "{p.date.isoformat()}",
+        "image": "{SITE}{p.cover}"
+      }}""" for p in posts)
+    return f"""  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "SnapDeck AI Blog",
+    "description": "Study tips, memory science and exam prep for students.",
+    "url": "{SITE}/blog/",
+    "publisher": {{
+      "@type": "Organization",
+      "name": "12F ApS",
+      "url": "https://12f.dk/",
+      "logo": "{SITE}/images/app-icon.png"
+    }},
+    "blogPost": [
+{items}
+    ]
+  }}
+  </script>
+"""
+
+
 def build_teaser_region(posts: list[Post]) -> str:
     return "\n\n".join(indent(card(p, "h3", "fade-in", excerpt=p.teaser_excerpt, more=True), 10)
                        for p in posts[:3]) + "\n"
@@ -696,6 +741,9 @@ def main() -> int:
         write(ROOT / "feed.xml", build_feed(posts), args.check, changed)
         write(BLOG_DIR / "index.html",
               replace_region(BLOG_DIR / "index.html", "CARDS", build_blog_index_region(posts)),
+              args.check, changed)
+        write(BLOG_DIR / "index.html",
+              replace_region(BLOG_DIR / "index.html", "SCHEMA", build_blog_schema_region(posts)),
               args.check, changed)
         write(ROOT / "index.html",
               replace_region(ROOT / "index.html", "TEASER", build_teaser_region(posts)),
