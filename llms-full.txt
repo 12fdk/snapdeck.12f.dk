@@ -65,6 +65,10 @@ SnapDeck AI is built with privacy as a core principle:
 
 The SnapDeck AI blog publishes practical study advice for students at https://snapdeck.12f.dk/blog/ (RSS feed: https://snapdeck.12f.dk/feed.xml). Posts are tagged `study-tips`, `memory-science` or `exam-prep`.
 
+### How to memorise a lot of material fast — the method that works (2026-07-23, memory-science)
+https://snapdeck.12f.dk/blog/memorise-material-fast/
+Explains why re-reading material fails at building long-term recall and shows a concrete four-step system: turn dense material into questions, use self-testing instead of review, create flashcards from photos of your notes, and repeat the recall loop. Shows the exact workflow for going from a textbook chapter to a working deck of study cards.
+
 ### How to study when you're too tired to focus properly (2026-07-23, study-tips)
 https://snapdeck.12f.dk/blog/how-to-study-when-tired/
 When you're exhausted, not all studying is useless — but the methods that work at full energy don't work when you're running on fumes. This post explains how to triage your remaining capacity, which study methods actually work at forty percent, and when pushing through is genuinely counterproductive. Covers micro-sessions, low-cognitive-load tasks, and the science of why some studying at 40% beats none at 100%.
