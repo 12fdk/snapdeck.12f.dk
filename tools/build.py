@@ -485,7 +485,7 @@ def faq_html(p: Post) -> str:
     rows = ["", '        <section class="post-faq">',
             '          <h2>Common questions</h2>']
     for entry in p.faq:
-        rows.append('          <details class="faq-item">')
+        rows.append('          <details class="post-faq-item">')
         rows.append(f'            <summary>{attr(entry["question"])}</summary>')
         rows.append(f'            <p>{inline(entry["answer"])}</p>')
         rows.append('          </details>')

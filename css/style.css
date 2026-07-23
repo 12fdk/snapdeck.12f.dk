@@ -963,7 +963,10 @@ a.tag:hover { text-decoration: none; filter: brightness(0.97); }
   text-align: center;
 }
 
-/* Post FAQ — also emitted as FAQPage schema, so keep the copy self-contained */
+/* Post FAQ — also emitted as FAQPage schema, so keep the copy self-contained.
+   Its own class, not the homepage `.faq-item` card: these are flat rows inside
+   the prose column, and sharing the class merged the two looks into a card with
+   no horizontal padding. */
 .post-faq {
   max-width: 65ch;
   margin: 64px auto 0;
@@ -973,11 +976,11 @@ a.tag:hover { text-decoration: none; filter: brightness(0.97); }
   color: var(--ink);
   margin-bottom: 20px;
 }
-.faq-item {
+.post-faq-item {
   border-bottom: 1px solid var(--line);
   padding: 16px 0;
 }
-.faq-item summary {
+.post-faq-item summary {
   cursor: pointer;
   font-weight: 620;
   color: var(--ink);
@@ -987,15 +990,15 @@ a.tag:hover { text-decoration: none; filter: brightness(0.97); }
   gap: 16px;
   align-items: baseline;
 }
-.faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary::after {
+.post-faq-item summary::-webkit-details-marker { display: none; }
+.post-faq-item summary::after {
   content: "+";
   color: var(--indigo);
   font-size: 1.3rem;
   line-height: 1;
 }
-.faq-item[open] summary::after { content: "−"; }
-.faq-item p {
+.post-faq-item[open] summary::after { content: "−"; }
+.post-faq-item p {
   margin-top: 12px;
   color: var(--ink-2);
   line-height: 1.7;
