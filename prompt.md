@@ -201,7 +201,10 @@ cut it — a purely qualitative post is always safer than a confidently wrong on
 - A `faq:` block of **4–6** questions in the frontmatter. These render as an FAQ
   section and as FAQPage schema, which is how the post gets picked up as an answer
   by Google and by AI search. Use real queries a student would type; answer each in
-  2–4 sentences, self-contained, no sales pitch.
+  2–4 sentences, self-contained, no sales pitch. **Do not put the `"` character
+  inside a question or answer** — the whole value is a double-quoted YAML string,
+  and inner double-quotes render with missing spaces (`to"you can…"`). Use single
+  quotes 'like this', or just rephrase. The build rejects a straight `"` in the FAQ.
 - End with a short, honest wrap-up. Do not write a call to action — the template
   adds one.
 
