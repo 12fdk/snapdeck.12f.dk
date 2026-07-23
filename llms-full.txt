@@ -69,6 +69,10 @@ The SnapDeck AI blog publishes practical study advice for students at https://sn
 https://snapdeck.12f.dk/blog/how-to-memorize-quickly/
 Explains why re-reading feels productive but doesn't build recall, introduces three evidence-backed techniques — active recall (testing yourself), spacing (returning to material at increasing intervals), and good question-writing — and shows how to start with whatever material you have right now, manually or with a photo-to-flashcards tool like SnapDeck AI.
 
+### How to study when you can't focus for more than ten minutes (2026-07-23, study-tips)
+https://snapdeck.12f.dk/blog/focus-when-you-cant/
+Focus isn't a switch you flip — it's a muscle that tires fast under pressure. This post explains why trying to study in long blocks backfires when your attention is short, and shows four concrete methods that work with a short attention span: timed sessions with real breaks, starting with the easiest material, turning passive reading into active recall, and designing a routine that doesn't depend on feeling motivated.
+
 ### The night-before-the-exam survival guide (2026-07-22, exam-prep)
 https://snapdeck.12f.dk/blog/night-before-exam-survival-guide/
 An hour-by-hour triage plan for the evening before an exam: spend the first hour deciding what to study (prioritising half-known, high-mark topics), convert material into questions and answer them rather than re-reading, do a final pass on the topics still missed, then sleep properly because sleep consolidates memory. Covers what to skip guilt-free and what to do on the morning of the exam.
