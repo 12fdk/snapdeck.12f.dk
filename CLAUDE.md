@@ -15,7 +15,7 @@ Landing page + blog for the SnapDeck AI iOS app, deployed via GitHub Pages.
 - `images/` — App icon, favicons, OG image, `screenshots/<locale>/`, `blog/<slug>.png|webp`
 - `tools/build.py` — Renders the blog and every file that lists posts
 - `tools/reddit-topics.py` — What students are actually asking, ranked (topic research)
-- `tools/make-og-image.py` — Post cover (photo + scrim + title, or brand gradient) and inline photos
+- `tools/make-og-image.py` — Optional local helper: branded title-card cover (needs Pillow; not used by the job)
 - `tools/templates/post.html` — The post page template
 - `feed.xml` — RSS feed for the blog (generated)
 - `CNAME` — GitHub Pages custom domain (snapdeck.12f.dk)
@@ -54,14 +54,19 @@ hand-written files are fenced with `BLOG:*:START` / `BLOG:*:END` markers — lea
 them in place. The frontmatter schema is documented in `prompt.md` §5 and enforced
 by the build.
 
-Images (requires Pillow; fonts are vendored in `tools/fonts/`):
+Images: the cover for `<slug>` lives at `images/blog/<slug>.png`, inline photos at
+`images/blog/<slug>-N.png`. The weekly job generates them on the spark's ComfyUI
+with `comfy-gen` (a plain photograph — the title is rendered by the page, not
+burned in) and copies them into place. See `prompt.md` §6.
+
+`tools/make-og-image.py` is an **optional local helper** that composites a branded
+title card (photo + scrim + title + tag chip, or a brand-gradient fallback) — it
+needs Pillow and is **not** used by the automated job. Use it by hand if you want a
+title-on-cover OG image:
 
 ```bash
-# cover from a photo (e.g. generated with ComfyUI): 1200x630, scrim, title, tag chip
 python3 tools/make-og-image.py cover <slug> "<Title>" "<tag>" --bg photo.png
-# cover with no photo — the original brand gradient card
-python3 tools/make-og-image.py cover <slug> "<Title>" "<tag>"
-# an in-article photo -> images/blog/<slug>-1.png|webp
+python3 tools/make-og-image.py cover <slug> "<Title>" "<tag>"      # gradient, no photo
 python3 tools/make-og-image.py inline <slug> 1 photo.png
 ```
 
