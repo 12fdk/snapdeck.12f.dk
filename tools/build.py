@@ -219,11 +219,22 @@ def markdown_to_html(md: str, where: str) -> tuple[str, list[str]]:
         elif re.match(r"^\d+[.)] ", first):
             items = _list_items(lines, r"^\d+[.)] ", where)
             parts.append("<ol>\n" + "\n".join(f"  <li>{i}</li>" for i in items) + "\n</ol>")
+        elif first.startswith("!["):
+            # Looks like an image but IMAGE didn't match above — almost always a
+            # missing URL (`![alt]` with no `(/path)`). One run shipped exactly
+            # this: the alt text rendered as a literal paragraph and the generated
+            # photo was orphaned. Never silently degrade it to text.
+            raise BuildError(f"{where}: malformed image {first[:80]!r} — an image must be "
+                             f"`![alt text](/images/blog/<slug>-N.png)` on its own line, "
+                             f"with the path in parentheses")
         else:
             for ln in lines:
                 if ln.strip().startswith(("#", ">", "- ", "* ")):
                     raise BuildError(f"{where}: block starting {first!r} mixes a paragraph "
                                      f"with {ln.strip()[:30]!r} — separate them with a blank line")
+                if ln.strip().startswith("!["):
+                    raise BuildError(f"{where}: image {ln.strip()[:60]!r} must be on its own "
+                                     f"line, separated by blank lines")
             parts.append(f"<p>{inline(' '.join(ln.strip() for ln in lines))}</p>")
 
     return "\n\n".join(parts), images

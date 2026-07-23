@@ -8,7 +8,7 @@ date: 2026-07-23
 keywords: "focus, attention span, studying, study tips, procrastination, short attention span"
 summary: >
   Focus isn't a switch you flip — it's a muscle that tires fast under pressure. This post explains why trying to study in long blocks backfires when your attention is short, and shows four concrete methods that work with a short attention span: timed sessions with real breaks, starting with the easiest material, turning passive reading into active recall, and designing a routine that doesn't depend on feeling motivated.
-coverAlt: "A close-up of a student's hands on a notebook with a pen, a phone face-down nearby on a wooden desk"
+coverAlt: "A student studying at a desk at night under a warm lamp, an open notebook and textbook, a mug of coffee, and a phone lying on the papers"
 hero: true
 related: [why-cramming-feels-great, night-before-exam-survival-guide]
 faq:
@@ -46,7 +46,7 @@ Your brain resists starting more than it resists continuing. That's not laziness
 
 So start with something you already know how to do. A flashcard pass. Re-reading notes you've highlighted. Even just skimming the headings of the next chapter to get a sense of what's coming. The goal is to cross that first hurdle and let momentum carry you forward.
 
-![A student writing questions by hand on small index cards, a yellow highlighter and notebook scattered on a wooden desk]
+![A student writing questions by hand on small index cards, a yellow highlighter and notebook scattered on a wooden desk](/images/blog/focus-when-you-cant-1.png)
 
 This is also where a flashcard app can save you time. If you've already got a deck of cards made from your notes — maybe you took a photo of the page yesterday and SnapDeck AI generated the questions — you can open it and start answering immediately, without needing to read, reorganise, or plan anything first. It's the lowest-friction way to begin.
 
@@ -71,7 +71,7 @@ The environment does most of the work for you when it's set up right:
 - **Materials ready.** Have your notebook, pen, and any flashcards or PDFs open before you start the timer. The fewer steps between you and studying, the more likely you actually do it.
 - **A break plan.** Decide *before* you start what you'll do during the break. Walking to the kitchen and back, stretching, getting water. Not scrolling on your phone — that's a different kind of engagement that makes it harder to return.
 
-![An iPhone lying face-down on a kitchen table next to an open notebook with highlighted notes and a steaming mug of coffee, morning light]
+![An iPhone set aside on a kitchen table next to an open notebook of handwritten notes and a steaming mug of coffee in soft morning light](/images/blog/focus-when-you-cant-2.png)
 
 None of this is glamorous or impressive. It's basically just removing small obstacles. But when your attention is short, those small obstacles are the difference between studying and not studying.
 

@@ -300,8 +300,13 @@ comfy-gen --prompt "ANOTHER SCENE" --width 1200 --height 700 --prefix snapdeck
 cp /comfyui/output/snapdeck_00002_.png images/blog/<slug>-1.png
 ```
 
-Reference each in the body as `![meaningful alt text](/images/blog/<slug>-1.png)`.
-Alt text describes the photograph for someone who cannot see it — not the article.
+Reference each in the body **on its own line, with the path in parentheses**:
+`![meaningful alt text](/images/blog/<slug>-1.png)`. The `(/images/blog/…)` part is
+required — a bare `![alt]` with no path is a build error (it would otherwise render
+as literal text). Generate exactly the images you reference: one `-N.png` file per
+reference, and every reference must point at a file that exists. Alt text describes
+the photograph for someone who cannot see it — not the article — so make it match
+what the image actually shows.
 
 **If ComfyUI is unavailable:** retry once. If it still fails, ship the post with no
 cover photo — reuse the closest existing `/images/blog/*.png` as the cover so the
