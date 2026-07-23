@@ -373,8 +373,8 @@ def validate_references(posts: list[Post]) -> list[str]:
     slugs = {p.slug for p in posts}
     for p in posts:
         if not (ROOT / p.cover.lstrip("/")).exists():
-            problems.append(f"{p.where}: cover image {p.cover} does not exist "
-                            f"(generate it with tools/make-og-image.py)")
+            problems.append(f"{p.where}: cover image {p.cover} does not exist — generate it "
+                            f"with comfy-gen and copy it there (see prompt.md §6)")
         for src in p.images:
             if src.startswith("/") and not (ROOT / src.lstrip("/")).exists():
                 problems.append(f"{p.where}: inline image {src} does not exist")
@@ -383,12 +383,30 @@ def validate_references(posts: list[Post]) -> list[str]:
                 problems.append(f"{p.where}: related slug {slug!r} is not a published post")
             if slug == p.slug:
                 problems.append(f"{p.where}: related lists the post itself")
+        internal_links = 0
         for href in re.findall(r'href="(/[^"]*)"', p.body_html):
             m = re.fullmatch(r"/blog/([a-z0-9-]+)/", href)
             if m and m.group(1) not in slugs:
                 problems.append(f"{p.where}: links to /blog/{m.group(1)}/ which does not exist")
             elif not m and href != "/" and not (ROOT / href.lstrip("/").split("#")[0]).exists():
                 problems.append(f"{p.where}: links to {href} which is not a file in this site")
+            if m and m.group(1) in slugs and m.group(1) != p.slug:
+                internal_links += 1
+        # Every post must earn its place in the cluster: link to a sibling post
+        # in the body, not only via the auto "Keep reading" cards. One run shipped
+        # with zero inline links — cheap to require, real SEO + reader value.
+        if len(posts) > 1 and internal_links < 1:
+            problems.append(f"{p.where}: no inline link to another post in the body — link to at "
+                            f"least one related /blog/<slug>/ where it's genuinely relevant (§4)")
+        # The soft nudge has to actually exist: at least one natural in-body
+        # mention of the app, and no more than two (the template adds the CTA).
+        mentions = len(re.findall(r"SnapDeck", re.sub(r"<[^>]+>", "", p.body_html)))
+        if mentions < 1:
+            problems.append(f"{p.where}: the body never mentions SnapDeck AI — include exactly one "
+                            f"natural mention where the app is the honest tool for the job (§2)")
+        elif mentions > 2:
+            problems.append(f"{p.where}: SnapDeck AI is mentioned {mentions}x in the body — the "
+                            f"nudge budget is one (two at the very most); trim it (§2)")
         if p.word_count < MIN_WORDS:
             problems.append(f"{p.where}: only {p.word_count} words (minimum {MIN_WORDS})")
         if p.hero and not p.cover_alt:
