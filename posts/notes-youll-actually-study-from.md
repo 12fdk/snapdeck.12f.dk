@@ -31,7 +31,7 @@ Every time you write down a fact, add a question next to it that the fact answer
 
 Two things happen. First, forming the question forces you to decide what the point of the sentence actually was, which is most of the understanding right there. Second — and this is the payoff — your notes are now a test. Cover the right-hand side and you have an exam paper that you wrote yourself.
 
-This is the engine inside the Cornell method, which has been taught since the 1950s and survives because that one column does real work.
+This is the engine inside the Cornell method, which has been taught since the 1950s and survives because that one column does real work. It's also the reason self-testing beats re-reading so decisively — the [why cramming feels great and works terribly](/blog/why-cramming-feels-great/) post explains the memory science, but the short version is that answering a question you wrote is retrieval, and retrieval is what sticks.
 
 ## 2. Capture the source, transcribe less
 

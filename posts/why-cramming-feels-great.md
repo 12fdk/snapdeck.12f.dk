@@ -76,7 +76,7 @@ Sleep is when memories get consolidated. A night between two study sessions isn'
 
 If you have a week: split the material into chunks, turn each chunk into questions on the day you first meet it, and do a five-minute self-test on old chunks every day. It sounds like more work than it is — you're testing, not re-reading, so it's fast.
 
-If you have one night: skip the re-reading entirely. Make questions from the material as fast as you can, then spend the rest of the evening answering them. You'll cover less ground, and you'll actually keep what you cover.
+If you have one night: skip the re-reading entirely. Make questions from the material as fast as you can, then spend the rest of the evening answering them. You'll cover less ground, and you'll actually keep what you cover. (There's a fuller version of this in [the night-before-the-exam survival guide](/blog/night-before-exam-survival-guide/), if that's where you are right now.)
 
 The reason most people don't do this is straightforward: writing questions by hand is slow, and at 11 p.m. the last thing you want is a 40-minute detour into stationery. That's the specific problem [SnapDeck AI](/) was built for — photograph the page and you have a deck of questions in seconds, on your phone, with no wifi and no account. The studying is still up to you.
 

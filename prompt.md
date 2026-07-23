@@ -125,10 +125,12 @@ bar: a skeptical student on Reddit should upvote it and never feel sold to.
 
 - The article must be **100% valuable and complete on its own.** If you deleted
   every mention of SnapDeck AI, it would still be a great standalone article.
-- Mention SnapDeck AI **at most twice in the body**, and only where it is the
-  genuinely natural tool for the job — never shoehorned. One soft, honest closing
-  line is allowed; the App Store call-to-action block is added automatically below
-  every post, so you do not need to write one.
+- Mention SnapDeck AI **exactly once in the body — twice at the very most** — and
+  only where it is the genuinely natural tool for the job, never shoehorned. Zero
+  mentions is a miss (the build rejects it); three-plus is salesy (the build
+  rejects that too). One honest sentence, at the point where the reader is doing
+  the exact thing the app helps with, is the target. The App Store call-to-action
+  block is added automatically below every post, so do not write one.
 - Frame the app as *one way* to do the thing, alongside the manual way. Say plainly
   that a pen, index cards or a free flashcard app will also work — then note what a
   photo-to-cards tool saves. Respect their intelligence.
@@ -195,7 +197,10 @@ cut it — a purely qualitative post is always safer than a confidently wrong on
 - Short lists, the occasional bold lead-in, at least one concrete worked example
   (a scenario, a before/after, a specific way to phrase a question).
 - Link to **2–3 existing posts** inline where genuinely relevant, using
-  `/blog/<slug>/`. Check the slug exists in `posts/` — the build fails on a bad one.
+  `/blog/<slug>/`. Check each slug exists in `posts/` — the build fails on a bad
+  one, **and it also fails if the body has no inline link to another post at all**
+  (the auto "Keep reading" cards do not count). At least one inline sibling link
+  is required; two or three is better.
 - **2–3 images** total: the cover (always) plus one or two inline photos at logical
   section breaks (see §6).
 - A `faq:` block of **4–6** questions in the frontmatter. These render as an FAQ
