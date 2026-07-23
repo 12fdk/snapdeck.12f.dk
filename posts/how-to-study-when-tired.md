@@ -10,7 +10,7 @@ summary: >
   When you're exhausted, not all studying is useless — but the methods that work at full energy don't work when you're running on fumes. This post explains how to triage your remaining capacity, which study methods actually work at forty percent, and when pushing through is genuinely counterproductive. Covers micro-sessions, low-cognitive-load tasks, and the science of why some studying at 40% beats none at 100%.
 coverAlt: "A student slumped at a kitchen table with a laptop and scattered notes, late evening, soft lamplight, a mug of tea beside an open textbook"
 hero: true
-related: [focus-when-you-cant, night-before-exam-survival-guide]
+related: [focus-when-you-cant, failed-exam-what-now]
 faq:
   - question: "Is it better to study when tired or skip it and try fresh tomorrow?"
     answer: "Five minutes of real studying at forty percent capacity is better than zero. The key is matching the task to your energy level — do not try to learn new material when you are running on fumes, but low-effort tasks like a flashcard pass can still save some ground. If you are falling asleep while reading, stop and sleep instead."
@@ -101,7 +101,7 @@ If you are reading this on a tired evening, here is a concrete sequence you can 
 
 3. **If you hit a wall:** stop. Nap if you can. If you cannot nap, close everything and sleep. Even an early night helps.
 
-If the exam is tomorrow: you already know from [the night-before guide](/blog/night-before-exam-survival-guide/) that triage is the play. Spend the time you have on the highest-yield material — anything you can review is better than nothing, and sleep before the exam matters more than an extra hour of tired reading.
+If the exam is tomorrow: triage is the play. Spend the time you have on the highest-yield material — anything you can review is better than nothing, and sleep before the exam matters more than an extra hour of tired reading.
 
 ## The bottom line
 

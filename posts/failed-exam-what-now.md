@@ -9,7 +9,7 @@ date: 2026-07-23
 keywords: "failed an exam, exam recovery, diagnose study mistakes, study after failing, exam strategy"
 summary: >
   Walks through what to do in the days after a bad exam result: resist the emotional spiral, diagnose whether the problem was knowledge, technique, or timing, and build a recovery plan that targets the real issue. Includes how to turn a failed exam into a focused study list.
-related: [why-cramming-feels-great, notes-youll-actually-study-from, focus-when-you-cant]
+related: [focus-when-you-cant, memorise-material-fast]
 coverAlt: "A student sitting at a wooden desk with a marked exam paper, looking thoughtful with a pen in hand"
 hero: true
 faq:
@@ -90,7 +90,7 @@ This is what most people mean when they say 'I need a study plan' — but a plan
 
 Here's where the actual studying begins, and it's worth doing it differently this time.
 
-Most people fail an exam, then go back to re-reading their notes or re-watching lectures. This is the fluency illusion in action — the more you re-read something, the more familiar it feels, and the more you confuse familiarity with actual knowledge. The [cramming article explains this in detail](/blog/why-cramming-feels-great/).
+Most people fail an exam, then go back to re-reading their notes or re-watching lectures. This is the fluency illusion in action — the more you re-read something, the more familiar it feels, and the more you confuse familiarity with actual knowledge. The article on [how to memorise a lot of material fast](/blog/memorise-material-fast/) explains why re-reading fools you and what to do instead.
 
 Instead, convert every question you got wrong into a flashcard. Not a note about the topic — a direct question-and-answer pair based on the exam.
 
@@ -99,7 +99,7 @@ If the exam asked 'Describe the cardiac cycle and label the pressure changes in 
 > Q: Describe the cardiac cycle and the pressure changes in each chamber during each phase.
 > A: [Your full answer, in your own words, from memory.]
 
-Then close your book, close your notes, and write or say the answer from scratch. That's active recall — the same principle described in [notes you'll actually study from](@blog/notes-youll-actually-study-from/). It feels harder than re-reading. It's supposed to. The difficulty is the point.
+Then close your book, close your notes, and write or say the answer from scratch. That's active recall, and it feels harder than re-reading. It's supposed to. The difficulty is the point.
 
 Apps like SnapDeck AI do this automatically from photos of study material, so you can turn lecture slides or textbook pages into question-and-answer cards in seconds instead of typing them by hand. But pen and index cards work just as well — the method matters more than the tool.
 

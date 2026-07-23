@@ -11,7 +11,7 @@ summary: >
   Explains why re-reading material fails at building long-term recall and shows a concrete four-step system: turn dense material into questions, use self-testing instead of review, create flashcards from photos of your notes, and repeat the recall loop. Shows the exact workflow for going from a textbook chapter to a working deck of study cards.
 coverAlt: "A student at a desk with a textbook open, a stack of handwritten flashcards fanned out on the table, a pen, and a mug of tea — warm desk lamp light"
 hero: true
-related: [why-cramming-feels-great, notes-youll-actually-study-from]
+related: [focus-when-you-cant, failed-exam-what-now]
 faq:
   - question: "How long does it take to memorise a chapter?"
     answer: "There is no single answer because it depends on the material and your prior knowledge. But the important thing is not how long it takes — it is how you measure progress. You know you are closer when you can answer the questions from memory without looking, not when you have finished reading the page. That shift in measurement usually cuts the time you spend in half."
@@ -64,7 +64,7 @@ The question version looks like this:
 
 Four questions. Ten seconds to write. Every single fact from the paragraph is now something you can be tested on.
 
-This is the engine behind the Cornell note-taking method, which has survived for decades because that margin column does real cognitive work. It's also the same principle that makes active recall the single highest-leverage study technique — [why cramming feels great and works terribly](/blog/why-cramming-feels-great/) goes into the memory science behind why this works.
+This is the engine behind the Cornell note-taking method, which has survived for decades because that margin column does real cognitive work. It's also the same principle that makes active recall the single highest-leverage study technique — [studying when you can't focus for more than ten minutes](/blog/focus-when-you-cant/) shows the same idea applied when your attention is short.
 
 ### Step 2: Test yourself before you feel ready
 
@@ -142,6 +142,6 @@ Memorising a lot of material fast is not about reading faster, highlighting more
 
 Everything else — the flashcards, the apps, the revision timetables — is scaffolding around that core loop. The loop is the work.
 
-The [notes you'll actually study from](/blog/notes-youll-actually-study-from/) article shows how to build this system starting from your lecture notes. The cramming piece explains the memory science behind why it works. And photo-to-flashcard tools are just one way to do the question-creation step — pen and paper work too, but they take longer.
+Building this system from your lecture notes takes only a few minutes a day once it's a habit. And photo-to-flashcard tools are just one way to do the question-creation step — pen and paper work too, but they take longer.
 
 Whatever tools you use, the method is the same: questions, recall, repeat. The students who cover the most material fastest are not the ones who read the most pages. They're the ones who spend the most time trying to answer without looking.

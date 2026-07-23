@@ -37,24 +37,6 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://snapdeck.12f.dk/blog/night-before-exam-survival-guide/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://snapdeck.12f.dk/blog/notes-youll-actually-study-from/</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://snapdeck.12f.dk/blog/why-cramming-feels-great/</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <!-- BLOG:URLS:END -->
   <url>
     <loc>https://snapdeck.12f.dk/privacy-policy.html</loc>
