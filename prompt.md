@@ -254,15 +254,17 @@ Rules the build enforces, so get them right the first time:
 
 ---
 
-## 6. Images (ComfyUI, then the compositor)
+## 6. Images (ComfyUI)
 
-Two steps: generate a photograph with ComfyUI, then turn it into the branded cover.
+The cover and any inline photos are generated on the co-resident ComfyUI with
+`comfy-gen` — the same tool the sister sites use. No compositing step, no extra
+libraries: the photograph *is* the cover, and the title is rendered by the page,
+not burned into the image.
 
-**1. Generate the cover photograph.** `comfy-gen` talks to the ComfyUI running on
-the same machine. It takes about 30–90 seconds and prints the path of the PNG:
+**1. The cover.** `comfy-gen` prints the path of the finished PNG (~30–90s):
 
 ```
-comfy-gen --prompt "DESCRIPTION" --width 1216 --height 640 --prefix snapdeck
+comfy-gen --prompt "DESCRIPTION" --width 1200 --height 630 --prefix snapdeck
 ```
 
 Write a **real photographic scene**, in prose, describing light and lens — not a
@@ -273,27 +275,34 @@ UI screenshots, no cartoon style, no "AI" gloss.** Do not put the words
 and those words make it worse. Vary the scene from previous posts; do not generate
 the same library desk every week.
 
-**2. Composite the cover.** This crops to 1200×630, lays a soft scrim over the
-bottom and puts the title and tag chip on it:
+Then copy it into place — the cover for `<slug>` must live at exactly
+`images/blog/<slug>.png` (build.py checks this):
 
 ```
-python3 tools/make-og-image.py cover <slug> "<Title>" "<tag>" --bg /comfyui/output/snapdeck_00001_.png
+cp /comfyui/output/snapdeck_00001_.png images/blog/<slug>.png
 ```
 
-**3. Inline photos (one or two).** Generate another scene, then:
+(ComfyUI rounds dimensions to a multiple of 16, so you get ~1200×624 — that is
+fine, the 1200×630 declared in the template is only a hint.)
+
+**2. Inline photos (one or two).** Same pattern, into `<slug>-1.png`, `<slug>-2.png`:
 
 ```
-comfy-gen --prompt "ANOTHER SCENE" --width 1216 --height 700 --prefix snapdeck
-python3 tools/make-og-image.py inline <slug> 1 /comfyui/output/snapdeck_00002_.png
+comfy-gen --prompt "ANOTHER SCENE" --width 1200 --height 700 --prefix snapdeck
+cp /comfyui/output/snapdeck_00002_.png images/blog/<slug>-1.png
 ```
 
-Reference it in the body as `![meaningful alt text](/images/blog/<slug>-1.webp)`.
+Reference each in the body as `![meaningful alt text](/images/blog/<slug>-1.png)`.
 Alt text describes the photograph for someone who cannot see it — not the article.
 
-**If ComfyUI is unavailable:** retry once. If it still fails, generate the cover
-with no photo (`python3 tools/make-og-image.py cover <slug> "<Title>" "<tag>"` —
-the brand gradient card), skip the inline images, and note it in your report.
-Never block the post on an image.
+**If ComfyUI is unavailable:** retry once. If it still fails, ship the post with no
+cover photo — reuse the closest existing `/images/blog/*.png` as the cover so the
+build passes (`cp images/blog/why-cramming-feels-great.png images/blog/<slug>.png`),
+skip the inline images, and note it in your report. Never block the post on an image.
+
+(There is also `tools/make-og-image.py`, which composites a branded title card over
+a photo, but it needs Pillow and is **not** part of this job — it is an optional
+local helper for a laptop. Do not call it here.)
 
 ---
 
