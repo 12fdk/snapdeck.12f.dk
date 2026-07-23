@@ -19,7 +19,7 @@ hero: true
 related: [why-cramming-feels-great, notes-youll-actually-study-from]
 faq:
   - question: "Can you really memorise a lot in a short time?"
-    answer: "You can build a solid working memory of a lot of material in a short time — even a week or two before an exam. What you can't do is make it stick forever. If the goal is knowing the material on exam day, three techniques (active recall, spacing, and well-written questions) are what actually move information from"you'll see it again" to"you can produce it without looking."
+    answer: "You can build a solid working memory of a lot of material in a short time — even a week or two before an exam. What you can't do is make it stick forever. If the goal is knowing the material on exam day, three techniques (active recall, spacing, and well-written questions) are what actually move information from something you merely recognise to something you can produce without looking."
   - question: "How many hours a day should I study to memorise fast?"
     answer: "Focus matters more than hours. Two hours of active recall — closing the book and forcing yourself to produce information — is worth more than four hours of passive re-reading. Shorter sessions with deliberate testing beat longer sessions with highlighters every time."
   - question: "Do flashcards really work better than re-reading?"
@@ -27,7 +27,7 @@ faq:
   - question: "How soon after studying should I review?"
     answer: "The best-studied answer is: once, then again after a short delay, then again after a longer delay. You don't need an app to do this — just write down when you plan to revisit each card or topic, and increase the gap each time you get it right. The general shape is the same whether you use index cards, an app, or a note on your phone."
   - question: "What if the material isn't factual — what about understanding concepts?"
-    answer: "Even conceptual material benefits from active recall. The trick is writing questions that force you to explain, compare, or apply — not just name a fact. For example, instead of"what is X?"ask"how would X apply to this scenario?" or"What happens if you change this variable?"Those questions can't be answered by pattern-matching."
+    answer: "Even conceptual material benefits from active recall. The trick is writing questions that force you to explain, compare, or apply — not just name a fact. For example, instead of asking what X is, ask how X would apply to a specific scenario, or what happens if you change one variable. Those questions can't be answered by pattern-matching."
   - question: "Is there a limit to how much you can memorise in one session?"
     answer: "Yes. Most people hit diminishing returns after about twenty to thirty new pieces of information in a single sitting. Push past that and the extra cards barely stick. Better to study for one focused hour today and review tomorrow than to load forty new cards and never look back. Spacing matters as much as volume."
 ---

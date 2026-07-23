@@ -306,6 +306,16 @@ class Post:
         for f in self.faq:
             if set(f) != {"question", "answer"}:
                 raise BuildError(f"{where}: each faq entry needs exactly `question:` and `answer:`")
+            # The whole answer is a YAML double-quoted scalar, so a straight `"`
+            # inside it is asking for trouble — models write `to"you can…"` with
+            # no surrounding space and it renders (and lands in the FAQ schema)
+            # looking broken. Require single/curly quotes instead.
+            for k in ("question", "answer"):
+                if '"' in str(f[k]):
+                    raise BuildError(
+                        f"{where}: faq {k} contains a straight double-quote (\") — "
+                        f"use single quotes 'like this' or curly quotes for any quoted "
+                        f"phrase, so the rendered FAQ and its schema stay clean")
 
         self.body_html, self.images = markdown_to_html(body_md, where)
         self.word_count = len(re.findall(r"\b[\w'’-]+\b", re.sub(r"<[^>]+>", " ", self.body_html)))
