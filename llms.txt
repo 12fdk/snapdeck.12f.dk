@@ -28,6 +28,7 @@ SnapDeck AI is an iOS app that uses Apple Intelligence to generate flashcards fr
 
 Study advice for students, published at https://snapdeck.12f.dk/blog/ (RSS: https://snapdeck.12f.dk/feed.xml).
 
+- [How to study from bullet-point lecture slides when they say nothing](https://snapdeck.12f.dk/blog/studying-from-bullet-point-slides/) — study-tips, 2026-07-28. Most lecture slides are thin on substance — fragments, keywords, bullet points that look like notes but aren't.
 - [How to memorise a lot of material fast — the method that works](https://snapdeck.12f.dk/blog/memorise-material-fast/) — memory-science, 2026-07-23. Explains why re-reading material fails at building long-term recall and shows a concrete four-step system: turn dense material into questions, use self-testing instead of review, create flashcards from photos of your notes, and repeat the recall loop.
 - [How to study when you're too tired to focus properly](https://snapdeck.12f.dk/blog/how-to-study-when-tired/) — study-tips, 2026-07-23. When you're exhausted, not all studying is useless — but the methods that work at full energy don't work when you're running on fumes.
 - [How to study when you can't focus for more than ten minutes](https://snapdeck.12f.dk/blog/focus-when-you-cant/) — study-tips, 2026-07-23. Focus isn't a switch you flip — it's a muscle that tires fast under pressure.

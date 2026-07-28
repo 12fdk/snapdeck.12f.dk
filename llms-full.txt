@@ -65,6 +65,10 @@ SnapDeck AI is built with privacy as a core principle:
 
 The SnapDeck AI blog publishes practical study advice for students at https://snapdeck.12f.dk/blog/ (RSS feed: https://snapdeck.12f.dk/feed.xml). Posts are tagged `study-tips`, `memory-science` or `exam-prep`.
 
+### How to study from bullet-point lecture slides when they say nothing (2026-07-28, study-tips)
+https://snapdeck.12f.dk/blog/studying-from-bullet-point-slides/
+Most lecture slides are thin on substance — fragments, keywords, bullet points that look like notes but aren't. This post explains why bullet-point slides are almost useless for revision and shows a concrete method for turning them into questions, self-tests, and working flashcards using photo-to-flashcard tools like SnapDeck AI.
+
 ### How to memorise a lot of material fast — the method that works (2026-07-23, memory-science)
 https://snapdeck.12f.dk/blog/memorise-material-fast/
 Explains why re-reading material fails at building long-term recall and shows a concrete four-step system: turn dense material into questions, use self-testing instead of review, create flashcards from photos of your notes, and repeat the recall loop. Shows the exact workflow for going from a textbook chapter to a working deck of study cards.

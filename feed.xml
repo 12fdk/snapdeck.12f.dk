@@ -6,8 +6,16 @@
     <description>Study tips, memory science and exam prep for students — from the team behind SnapDeck AI.</description>
     <language>en</language>
     <atom:link href="https://snapdeck.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 23 Jul 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>How to study from bullet-point lecture slides when they say nothing</title>
+      <link>https://snapdeck.12f.dk/blog/studying-from-bullet-point-slides/</link>
+      <guid isPermaLink="true">https://snapdeck.12f.dk/blog/studying-from-bullet-point-slides/</guid>
+      <pubDate>Tue, 28 Jul 2026 08:00:00 +0000</pubDate>
+      <category>study-tips</category>
+      <description>Your slides are thin on content and you're left with bullet points that help you remember nothing. Here's how to turn them into something that actually works.</description>
+    </item>
     <item>
       <title>How to memorise a lot of material fast — the method that works</title>
       <link>https://snapdeck.12f.dk/blog/memorise-material-fast/</link>
