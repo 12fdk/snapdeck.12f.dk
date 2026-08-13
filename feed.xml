@@ -6,8 +6,16 @@
     <description>Study tips, memory science and exam prep for students — from the team behind SnapDeck AI.</description>
     <language>en</language>
     <atom:link href="https://snapdeck.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 04 Aug 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>What is active recall and why it feels harder than re-reading</title>
+      <link>https://snapdeck.12f.dk/blog/active-recall-explained/</link>
+      <guid isPermaLink="true">https://snapdeck.12f.dk/blog/active-recall-explained/</guid>
+      <pubDate>Thu, 13 Aug 2026 08:00:00 +0000</pubDate>
+      <category>memory-science</category>
+      <description>Active recall is the most effective study method — and it feels awful because that is why it works. Here is what it is, why it stings, and how to start.</description>
+    </item>
     <item>
       <title>How to catch up on a semester of notes you never reopened</title>
       <link>https://snapdeck.12f.dk/blog/catch-up-semester-notes/</link>
