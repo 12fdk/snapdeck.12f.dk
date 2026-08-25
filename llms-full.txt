@@ -65,6 +65,10 @@ SnapDeck AI is built with privacy as a core principle:
 
 The SnapDeck AI blog publishes practical study advice for students at https://snapdeck.12f.dk/blog/ (RSS feed: https://snapdeck.12f.dk/feed.xml). Posts are tagged `study-tips`, `memory-science` or `exam-prep`.
 
+### How to make a revision timetable that actually gets used (2026-08-25, study-tips)
+https://snapdeck.12f.dk/blog/revision-timetable-that-works/
+A practical guide to building a revision timetable that survives real life, aimed at students who are behind and have weeks of material to get through before an exam. Covers the honest half-day mapping pass (subjects, topics, confidence, exam dates), building the plan backwards from the exam with buffers, the 80 percent rule for estimating difficulty, spacing out first passes, a worked example of a four-subject fortnight, and a recovery plan for when a week is lost. Ends with a two-question self-audit for when the timetable starts to fail.
+
 ### How to build the habit of studying instead of doomscrolling (2026-08-18, study-tips)
 https://snapdeck.12f.dk/blog/build-the-study-habit/
 Treats the doomscroll-vs-studying problem as a habit loop, not a willpower failure. Covers cue engineering (a fixed trigger time and place), adding friction to the phone while lowering friction to the books, starting with a session sized to your actual energy, and the 'ten minutes or stop' rule. Includes a concrete worked example of rewiring a 7 pm phone habit into a study window, and ends with how to repair the habit after a broken day.
