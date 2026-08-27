@@ -2,9 +2,11 @@
 title: "How to study when you can't focus for more than ten minutes"
 description: "You can't force focus — it's not willpower. Here's how to study with a short attention span instead of against it."
 lede: "You sit down to study and within minutes your phone is in your hand, then you're scrolling, then you realise an hour has gone. It feels like a willpower problem. It isn't."
+answer: "A ten-minute attention span is a constraint to design around, not a flaw to fix. Work in short blocks that end before your focus does, start with the easiest task so getting moving is never the obstacle, and turn passive reading into something active. Change the environment instead of trying to out-will the phone."
 excerpt: "You can't force focus — it's not willpower. Here's how to study with a short attention span instead of against it, using methods that work for the way your brain actually works."
 tag: study-tips
 date: 2026-07-23
+modified: 2026-08-27
 keywords: "focus, attention span, studying, study tips, procrastination, short attention span"
 summary: >
   Focus isn't a switch you flip — it's a muscle that tires fast under pressure. This post explains why trying to study in long blocks backfires when your attention is short, and shows four concrete methods that work with a short attention span: timed sessions with real breaks, starting with the easiest material, turning passive reading into active recall, and designing a routine that doesn't depend on feeling motivated.
@@ -22,6 +24,11 @@ faq:
     answer: "Waiting for the right energy almost never works. Five minutes at forty percent capacity is better than zero at a hundred. Start with something easy — a flashcard pass, reviewing notes you already know — and your brain will often carry you further once you're in motion."
   - question: "Does ADHD make studying impossible?"
     answer: "ADHD makes studying harder in specific ways — starting is the hardest part, and once you're in the flow it can be fine. The methods below still apply, but they need to be gentler. Shorter sessions, more breaks, and making the start as frictionless as possible are not about being lazy; they're about working with a brain that needs different conditions to focus."
+sources:
+  - title: "Mark, Gudith & Klocke (2008), 'The Cost of Interrupted Work: More Speed and Stress', Proceedings of CHI 2008"
+    url: "https://doi.org/10.1145/1357054.1357072"
+  - title: "Steel (2007), 'The Nature of Procrastination: A Meta-Analytic and Theoretical Review', Psychological Bulletin"
+    url: "https://doi.org/10.1037/0033-2909.133.1.65"
 ---
 
 You know the feeling. You open your notes, tell yourself you'll do twenty minutes, and then you realise you've spent that time deciding whether you want tea first, checking your phone for notifications, reorganising your desk, and wondering if you remembered to lock the front door.
@@ -30,7 +37,7 @@ Twenty minutes becomes an hour. The notes are still on the first page.
 
 The first thing to say is that this isn't a moral failing. You're not broken because you can't sit still. Your brain is doing exactly what brains do when they're asked to do something hard, boring, and unrewarding for longer than a few minutes. The question isn't how to fix your attention span — it's how to study in a way that doesn't require one.
 
-## Stop trying to study in long blocks
+## How long should a study block be if you cannot focus?
 
 The standard advice is to find a quiet space, put your phone in the other room, and settle in for a solid study session. That works great if your attention is cooperative. When it isn't, the long block becomes a trap: you spend the whole time half-distracted, feel guilty about not focusing, and end up with less done than if you'd just accepted your actual capacity and worked within it.
 
@@ -60,7 +67,7 @@ If you have a photo-to-flashcards app, this is where it shines. Snap a photo of 
 
 This is the single biggest adjustment you can make, and it doesn't require extra focus — in fact, it usually helps, because answering questions is more engaging than passively absorbing text.
 
-## Design your environment, not your willpower
+## Why does changing your environment beat trying harder?
 
 Willpower is a finite resource. Every time you're fighting the urge to check your phone, ignore a notification, or get up and make tea, you're spending it. Studying is already hard; don't add extra fights.
 
@@ -83,7 +90,7 @@ This is one reason the spacing effect matters so much. Returning to something af
 
 A ten-minute daily habit is also less scary. When you tell yourself you need two hours, you'll put it off until the weekend when you're too tired for it to be useful. When the commitment is ten minutes, the barrier is low enough that even a bad day has a path forward.
 
-## When the material itself is the problem
+## What if the material itself is the problem?
 
 Some subjects genuinely are more interesting than others. Some lectures are clearer than others. Some topics click instantly; others feel like you're trying to learn a new language.
 

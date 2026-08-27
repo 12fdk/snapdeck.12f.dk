@@ -46,6 +46,53 @@ MAX_DESCRIPTION = 160
 MAX_EXCERPT = 220
 MIN_WORDS = 700
 
+# The direct answer that sits under the H1. Featured snippets, People Also Ask
+# and voice results are all extracted from a short self-contained answer placed
+# high on the page; a post that opens with narrative scene-setting has nothing
+# for them to lift. 40–60 words is the band Google actually quotes.
+MIN_ANSWER_WORDS = 35
+MAX_ANSWER_WORDS = 70
+
+# Every post has to phrase at least this many section headings as a real
+# question. "The short version" cannot win a snippet; "How long does this
+# actually take?" can.
+MIN_QUESTION_HEADINGS = 2
+
+# Who writes the blog. A named person with a page you can read beats an
+# anonymous company byline: it is the difference between a source an answer
+# engine paraphrases and one it cites.
+AUTHOR = {
+    "name": "Robert Jensen",
+    "role": "Founder, 12F ApS",
+    "url": f"{SITE}/about/",
+}
+PUBLISHER = {
+    "name": "12F ApS",
+    "url": "https://12f.dk/",
+    "logo": f"{SITE}/images/app-icon.png",
+}
+# sameAs is the edge that ties the "SnapDeck AI" / "12F ApS" entity to the rest
+# of the graph. Only URLs that genuinely resolve and genuinely belong to us.
+SAME_AS = [
+    "https://apps.apple.com/us/app/snapdeck-ai/id6759596002",
+    "https://12f.dk/",
+]
+
+# Hand-written pages, listed here so build.py owns the whole sitemap. It used to
+# rewrite only the fenced post block, which left / and /blog/ permanently
+# claiming a lastmod of 2026-07-22 while both changed every week.
+#
+# lastmod None means "derive it": / and /blog/ both change whenever a post is
+# published, so they take the newest post's date. The genuinely static pages
+# carry an explicit date — bump it by hand when you actually edit the page.
+STATIC_URLS = [
+    ("/",                    None,         "monthly", "1.0"),
+    ("/blog/",               None,         "weekly",  "0.8"),
+    ("/about/",              "2026-08-27", "yearly",  "0.5"),
+    ("/privacy-policy.html", "2026-02-24", "yearly",  "0.3"),
+    ("/llms.txt",            None,         "monthly", "0.2"),
+]
+
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]
 WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
@@ -53,6 +100,68 @@ WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 class BuildError(Exception):
     pass
+
+
+# --- images ----------------------------------------------------------------
+#
+# Covers and inline photos arrive from ComfyUI as 1200px PNGs, which for a
+# photograph is 700–950 KB. /blog/ was shipping 7.2 MB of them and every post
+# page had an ~800 KB PNG as its LCP element. tools/optimize-images.py writes a
+# WebP sibling for each one (~96% smaller) and everything below serves that
+# through a <picture>, keeping the PNG as the fallback and as the og:image.
+#
+# Dimensions are read off the file rather than hardcoded. They used to be
+# written as 1200x630 for covers and 1200x675 for figures while the actual
+# images are 1200x624 and 1200x696 — wrong on every image on the site, which
+# means a layout shift on every image on the site.
+
+_PNG_SIZE_CACHE: dict[str, tuple[int, int]] = {}
+
+
+def png_size(src: str) -> tuple[int, int]:
+    """(width, height) straight out of the PNG IHDR chunk. Stdlib only."""
+    if src in _PNG_SIZE_CACHE:
+        return _PNG_SIZE_CACHE[src]
+    path = ROOT / src.lstrip("/")
+    try:
+        head = path.read_bytes()[:24]
+        if head[:8] != b"\x89PNG\r\n\x1a\n" or head[12:16] != b"IHDR":
+            raise ValueError("not a PNG")
+        size = (int.from_bytes(head[16:20], "big"), int.from_bytes(head[20:24], "big"))
+    except (OSError, ValueError):
+        # A missing or unreadable file is already reported by validate_references
+        # with a useful message; fall back so the build gets that far.
+        size = (1200, 630)
+    _PNG_SIZE_CACHE[src] = size
+    return size
+
+
+def webp_for(src: str) -> str | None:
+    """The WebP sibling of a /images/... path, if it has been generated."""
+    if not src.startswith("/") or not src.endswith(".png"):
+        return None
+    candidate = src[:-4] + ".webp"
+    return candidate if (ROOT / candidate.lstrip("/")).exists() else None
+
+
+def picture(src: str, alt: str, *, indent_by: int = 0, **img_attrs) -> str:
+    """A <picture> serving WebP with the PNG as fallback.
+
+    Falls back to a bare <img> when no WebP exists so a half-built checkout
+    still renders; validate_references is what makes that state an error.
+    """
+    width, height = png_size(src)
+    attrs = " ".join(f'{k.replace("_", "-")}="{v}"' for k, v in img_attrs.items() if v)
+    img = (f'<img src="{src}" alt="{attr(alt)}" width="{width}" height="{height}"'
+           + (f" {attrs}" if attrs else "") + ">")
+    webp = webp_for(src)
+    if not webp:
+        return indent(img, indent_by) if indent_by else img
+    block = (f'<picture>\n'
+             f'  <source srcset="{webp}" type="image/webp">\n'
+             f'  {img}\n'
+             f'</picture>')
+    return indent(block, indent_by) if indent_by else block
 
 
 # --- frontmatter -----------------------------------------------------------
@@ -201,8 +310,7 @@ def markdown_to_html(md: str, where: str) -> tuple[str, list[str]]:
                 raise BuildError(f"{where}: image {src} has no alt text")
             images.append(src)
             fig = [f'<figure class="post-figure">',
-                   f'  <img src="{src}" alt="{html.escape(alt, quote=True)}" '
-                   f'width="1200" height="675" loading="lazy" decoding="async">']
+                   picture(src, alt, indent_by=2, loading="lazy", decoding="async")]
             if caption:
                 fig.append(f"  <figcaption>{inline(caption)}</figcaption>")
             fig.append("</figure>")
@@ -255,7 +363,8 @@ def _list_items(lines: list[str], marker: str, where: str) -> list[str]:
 
 # --- post model ------------------------------------------------------------
 
-REQUIRED = ["title", "description", "lede", "excerpt", "tag", "date", "summary", "keywords"]
+REQUIRED = ["title", "description", "lede", "answer", "excerpt", "tag", "date",
+            "summary", "keywords"]
 
 
 class Post:
@@ -289,6 +398,14 @@ class Post:
         self.hero = bool(meta.get("hero", False))
         self.related = [str(s).strip() for s in (meta.get("related") or [])]
         self.faq = [f for f in (meta.get("faq") or []) if isinstance(f, dict)]
+        # The 40–60 word extractable answer that sits under the H1.
+        self.answer = str(meta["answer"]).strip()
+        # Primary sources behind the memory-science claims. Answer engines
+        # preferentially cite pages that themselves cite something.
+        self.sources = [s for s in (meta.get("sources") or []) if isinstance(s, dict)]
+        # Optional: posts that really are a numbered procedure get HowTo schema.
+        self.howto = [s for s in (meta.get("howto") or []) if isinstance(s, dict)]
+        self.howto_name = str(meta.get("howtoName", "")).strip()
 
         if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", self.slug):
             raise BuildError(f"{where}: filename must be a lowercase-kebab slug")
@@ -314,6 +431,29 @@ class Post:
                              f"max {MAX_DESCRIPTION}")
         if len(self.excerpt) > MAX_EXCERPT:
             raise BuildError(f"{where}: excerpt is {len(self.excerpt)} chars, max {MAX_EXCERPT}")
+        answer_words = len(re.findall(r"\b[\w'’-]+\b", self.answer))
+        if not (MIN_ANSWER_WORDS <= answer_words <= MAX_ANSWER_WORDS):
+            raise BuildError(
+                f"{where}: answer is {answer_words} words, needs {MIN_ANSWER_WORDS}–"
+                f"{MAX_ANSWER_WORDS}. It is the block directly under the H1 and the only "
+                f"thing a featured snippet or a voice assistant can lift — one self-contained "
+                f"paragraph that answers the title, no scene-setting (see prompt.md §5)")
+        if self.answer.rstrip()[-1:] not in ".!?":
+            raise BuildError(f"{where}: answer must be a complete sentence ending in punctuation")
+
+        for s in self.sources:
+            if set(s) != {"title", "url"}:
+                raise BuildError(f"{where}: each sources entry needs exactly `title:` and `url:`")
+            if not str(s["url"]).startswith("https://"):
+                raise BuildError(f"{where}: source url {s['url']!r} must be an https:// link "
+                                 f"to the primary source, not a paraphrase of it")
+        if self.howto and not self.howto_name:
+            raise BuildError(f"{where}: howto: needs a howtoName: — the name of the procedure, "
+                             f"which is what HowTo schema puts in the result")
+        for s in self.howto:
+            if set(s) != {"name", "text"}:
+                raise BuildError(f"{where}: each howto step needs exactly `name:` and `text:`")
+
         for f in self.faq:
             if set(f) != {"question", "answer"}:
                 raise BuildError(f"{where}: each faq entry needs exactly `question:` and `answer:`")
@@ -338,9 +478,9 @@ class Post:
         return f"/images/blog/{self.slug}.png"
 
     @property
-    def card_image(self) -> str:
-        webp = ROOT / "images" / "blog" / f"{self.slug}.webp"
-        return f"/images/blog/{self.slug}.webp" if webp.exists() else self.cover
+    def all_images(self) -> list[str]:
+        """Cover plus every inline image — everything needing a WebP sibling."""
+        return [self.cover] + [s for s in self.images if s.startswith("/")]
 
     @property
     def url(self) -> str:
@@ -389,6 +529,12 @@ def validate_references(posts: list[Post]) -> list[str]:
         for src in p.images:
             if src.startswith("/") and not (ROOT / src.lstrip("/")).exists():
                 problems.append(f"{p.where}: inline image {src} does not exist")
+        # Every image has to have its WebP sibling, or the page silently goes
+        # back to serving an ~800 KB PNG to every visitor.
+        for src in p.all_images:
+            if (ROOT / src.lstrip("/")).exists() and not webp_for(src):
+                problems.append(f"{p.where}: {src} has no .webp sibling — run "
+                                f"`python3 tools/optimize-images.py` (see prompt.md §6)")
         for slug in p.related:
             if slug not in slugs:
                 problems.append(f"{p.where}: related slug {slug!r} is not a published post")
@@ -432,6 +578,21 @@ def validate_references(posts: list[Post]) -> list[str]:
                             f"nudge budget is one (two at the very most); trim it (§2)")
         if p.word_count < MIN_WORDS:
             problems.append(f"{p.where}: only {p.word_count} words (minimum {MIN_WORDS})")
+        # Snippets and People Also Ask boxes are won by a heading that asks the
+        # question the reader typed, answered directly underneath it. A body of
+        # headings like "The short version" cannot compete for either.
+        headings = re.findall(r"<h2>(.*?)</h2>", p.body_html, re.S)
+        questions = [h for h in headings if h.strip().endswith("?")]
+        if len(questions) < MIN_QUESTION_HEADINGS:
+            problems.append(
+                f"{p.where}: only {len(questions)} of {len(headings)} H2s are phrased as a "
+                f"question (need {MIN_QUESTION_HEADINGS}) — rewrite the sections that answer "
+                f"a real question so the heading asks it (§4)")
+        # A post that cites nothing is a post an answer engine paraphrases
+        # instead of citing.
+        if not p.sources:
+            problems.append(f"{p.where}: no sources: block — link the primary research behind "
+                            f"the claims about memory, attention or habit (§4)")
         if p.hero and not p.cover_alt:
             problems.append(f"{p.where}: hero: true needs coverAlt — the image is shown in the "
                             f"article and screen readers read that text aloud")
@@ -463,7 +624,7 @@ def card(p: Post, heading: str, extra_class: str = "", excerpt: str | None = Non
     body = [
         f'<article class="{cls}">',
         '  <div class="post-card-media">',
-        f'    <img src="{p.card_image}" alt="" width="1200" height="630" loading="lazy">',
+        picture(p.cover, "", indent_by=4, loading="lazy"),
         '  </div>',
         '  <div class="post-card-body">',
         f'    <p class="post-meta"><span class="tag">{p.tag}</span>'
@@ -510,12 +671,79 @@ def faq_jsonld(p: Post) -> str:
             + indent(body, 2) + "\n  </script>\n")
 
 
+def answer_html(p: Post) -> str:
+    """The extractable answer, directly under the H1 and above the fold."""
+    return (f'<div class="answer">\n'
+            f'            <p><strong>Short answer:</strong> {inline(p.answer)}</p>\n'
+            f'          </div>')
+
+
+def sources_html(p: Post) -> str:
+    if not p.sources:
+        return ""
+    rows = ["", '        <section class="post-sources">',
+            '          <h2>Sources</h2>', '          <ul>']
+    for s in p.sources:
+        rows.append(f'            <li><a href="{attr(str(s["url"]))}" rel="noopener" '
+                    f'target="_blank">{attr(str(s["title"]))}</a></li>')
+    rows += ['          </ul>', '        </section>']
+    return "\n".join(rows) + "\n"
+
+
+def howto_jsonld(p: Post) -> str:
+    if not p.howto:
+        return ""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": p.howto_name,
+        "description": p.answer,
+        "step": [{"@type": "HowToStep", "position": i, "name": s["name"], "text": s["text"]}
+                 for i, s in enumerate(p.howto, start=1)],
+    }
+    return ('\n  <script type="application/ld+json">\n'
+            + indent(json.dumps(data, indent=2, ensure_ascii=False), 2) + "\n  </script>\n")
+
+
+def author_jsonld() -> str:
+    """The Person block, shared by the Article author and the About page."""
+    return json.dumps({
+        "@type": "Person",
+        "name": AUTHOR["name"],
+        "jobTitle": AUTHOR["role"],
+        "url": AUTHOR["url"],
+        "worksFor": {"@type": "Organization", "name": PUBLISHER["name"],
+                     "url": PUBLISHER["url"], "sameAs": SAME_AS},
+    }, indent=2, ensure_ascii=False)
+
+
+def publisher_jsonld() -> str:
+    return json.dumps({
+        "@type": "Organization",
+        "name": PUBLISHER["name"],
+        "url": PUBLISHER["url"],
+        "sameAs": SAME_AS,
+        "logo": {"@type": "ImageObject", "url": PUBLISHER["logo"]},
+    }, indent=2, ensure_ascii=False)
+
+
+def citation_jsonld(p: Post) -> str:
+    """`citation` on the Article — the machine-readable half of the Sources list."""
+    if not p.sources:
+        return "[]"
+    return json.dumps(
+        [{"@type": "CreativeWork", "name": s["title"], "url": s["url"]} for s in p.sources],
+        indent=2, ensure_ascii=False)
+
+
 def hero_html(p: Post) -> str:
     if not p.hero:
         return ""
+    # fetchpriority="high" is right for the LCP element — but only now that it
+    # points at a ~30 KB WebP instead of an ~800 KB PNG.
     return ("\n        <figure class=\"article-hero\">\n"
-            f'          <img src="{p.card_image}" alt="{attr(p.cover_alt)}" '
-            'width="1200" height="630" fetchpriority="high" decoding="async">\n'
+            + picture(p.cover, p.cover_alt, indent_by=10,
+                      fetchpriority="high", decoding="async") + "\n"
             "        </figure>\n")
 
 
@@ -548,6 +776,16 @@ def render_post(p: Post, posts: list[Post], template: str) -> str:
         "JSON_KEYWORDS": json.dumps(p.keywords, ensure_ascii=False),
         "BODY": indent(p.body_html, 10),
         "HERO": hero_html(p),
+        "ANSWER": answer_html(p),
+        "JSON_ANSWER": json.dumps(p.answer, ensure_ascii=False),
+        "SOURCES_HTML": sources_html(p),
+        "CITATION_JSONLD": indent(citation_jsonld(p), 4).lstrip(),
+        "HOWTO_JSONLD": howto_jsonld(p),
+        "AUTHOR_JSONLD": indent(author_jsonld(), 4).lstrip(),
+        "PUBLISHER_JSONLD": indent(publisher_jsonld(), 4).lstrip(),
+        "AUTHOR_NAME": attr(AUTHOR["name"]),
+        "AUTHOR_ROLE": attr(AUTHOR["role"]),
+        "AUTHOR_URL": AUTHOR["url"],
         "FAQ_HTML": faq_html(p),
         "FAQ_JSONLD": faq_jsonld(p),
         "RELATED": cards,
@@ -632,17 +870,33 @@ def build_feed(posts: list[Post]) -> str:
 """
 
 
-def build_sitemap_region(posts: list[Post]) -> str:
+def build_sitemap(posts: list[Post]) -> str:
+    """The whole sitemap, not just the post block.
+
+    It used to be a fenced region inside a hand-written file, which meant / and
+    /blog/ kept a lastmod of 2026-07-22 for a month while the homepage teaser
+    and the blog index changed with every post. Both are derived from the post
+    set, so both are generated now.
+    """
+    newest = max(p.modified for p in posts).isoformat()
+
+    def row(loc: str, lastmod: str, changefreq: str, priority: str) -> str:
+        return (f"  <url>\n    <loc>{SITE}{loc}</loc>\n"
+                f"    <lastmod>{lastmod}</lastmod>\n"
+                f"    <changefreq>{changefreq}</changefreq>\n"
+                f"    <priority>{priority}</priority>\n  </url>\n")
+
     rows = []
-    for p in posts:
-        rows.append(f"""  <url>
-    <loc>{p.url}</loc>
-    <lastmod>{p.modified.isoformat()}</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-""")
-    return "".join(rows)
+    for loc, lastmod, changefreq, priority in STATIC_URLS:
+        rows.append(row(loc, lastmod or newest, changefreq, priority))
+        if loc == "/blog/":
+            for p in posts:
+                rows.append(row(f"/blog/{p.slug}/", p.modified.isoformat(), "yearly", "0.7"))
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<!-- Generated by tools/build.py — do not hand-edit. '
+            'Add hand-written pages to STATIC_URLS there. -->\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            + "".join(rows) + "</urlset>\n")
 
 
 LLMS_BLOG_INTRO = (
@@ -683,6 +937,9 @@ def build_blog_schema_region(posts: list[Post]) -> str:
         "headline": {json.dumps(p.title, ensure_ascii=False)},
         "url": "{p.url}",
         "datePublished": "{p.date.isoformat()}",
+        "dateModified": "{p.modified.isoformat()}",
+        "author": {{ "@type": "Person", "name": {json.dumps(AUTHOR["name"])},
+                     "url": "{AUTHOR["url"]}" }},
         "image": "{SITE}{p.cover}"
       }}""" for p in posts)
     return f"""  <script type="application/ld+json">
@@ -692,12 +949,8 @@ def build_blog_schema_region(posts: list[Post]) -> str:
     "name": "SnapDeck AI Blog",
     "description": "Study tips, memory science and exam prep for students.",
     "url": "{SITE}/blog/",
-    "publisher": {{
-      "@type": "Organization",
-      "name": "12F ApS",
-      "url": "https://12f.dk/",
-      "logo": "{SITE}/images/app-icon.png"
-    }},
+    "author": {indent(author_jsonld(), 4).lstrip()},
+    "publisher": {indent(publisher_jsonld(), 4).lstrip()},
     "blogPost": [
 {items}
     ]
@@ -748,9 +1001,7 @@ def main() -> int:
         write(ROOT / "index.html",
               replace_region(ROOT / "index.html", "TEASER", build_teaser_region(posts)),
               args.check, changed)
-        write(ROOT / "sitemap.xml",
-              replace_region(ROOT / "sitemap.xml", "URLS", build_sitemap_region(posts)),
-              args.check, changed)
+        write(ROOT / "sitemap.xml", build_sitemap(posts), args.check, changed)
         write(ROOT / "llms.txt",
               replace_section(ROOT / "llms.txt", "## Blog", build_llms_region(posts)),
               args.check, changed)

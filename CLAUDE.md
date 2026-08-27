@@ -5,6 +5,7 @@ Landing page + blog for the SnapDeck AI iOS app, deployed via GitHub Pages.
 ## Project Structure
 
 - `index.html` — Main landing page
+- `about/index.html` — About page: who makes the app, who writes the blog (E-E-A-T anchor)
 - `posts/<slug>.md` — **Blog source of truth**: frontmatter + markdown, one file per post
 - `prompt.md` — The brief the weekly automated blog job follows (see below)
 - `blog/index.html`, `blog/<slug>/index.html` — **Generated** from `posts/` by `tools/build.py`
@@ -14,12 +15,15 @@ Landing page + blog for the SnapDeck AI iOS app, deployed via GitHub Pages.
 - `js/main.js` — Scroll reveals, sticky-header state, mobile nav
 - `images/` — App icon, favicons, OG image, `screenshots/<locale>/`, `blog/<slug>.png|webp`
 - `tools/build.py` — Renders the blog and every file that lists posts
+- `tools/optimize-images.py` — Makes the WebP sibling every blog image needs
 - `tools/reddit-topics.py` — What students are actually asking, ranked (topic research)
 - `tools/make-og-image.py` — Optional local helper: branded title-card cover (needs Pillow; not used by the job)
 - `tools/templates/post.html` — The post page template
 - `feed.xml` — RSS feed for the blog (generated)
 - `CNAME` — GitHub Pages custom domain (snapdeck.12f.dk)
-- `robots.txt` / `sitemap.xml` / `llms.txt` / `llms-full.txt` — SEO + AI crawlers (blog parts generated)
+- `robots.txt` / `llms.txt` / `llms-full.txt` — SEO + AI crawlers (blog parts generated)
+- `sitemap.xml` — **fully generated** by `tools/build.py`; add new hand-written pages
+  to `STATIC_URLS` there, never to the XML
 
 ## Brand Colors
 
@@ -43,12 +47,13 @@ The blog is **generated**. Write markdown in `posts/<slug>.md` and run the build
 never hand-edit `blog/<slug>/index.html`, it will be overwritten.
 
 ```bash
-python3 tools/build.py --check   # validate only (schema, links, images, lengths)
-python3 tools/build.py           # write everything
+python3 tools/optimize-images.py   # WebP siblings for images/blog/*.png (run first)
+python3 tools/build.py --check     # validate only (schema, links, images, lengths)
+python3 tools/build.py             # write everything
 ```
 
 `tools/build.py` renders each post page and rewrites every derived file: the blog
-index grid, the homepage teaser, `feed.xml`, the blog URLs in `sitemap.xml`, and
+index grid, the homepage teaser, `feed.xml`, the whole of `sitemap.xml`, and
 the `## Blog` sections of `llms.txt` and `llms-full.txt`. Generated regions inside
 hand-written files are fenced with `BLOG:*:START` / `BLOG:*:END` markers — leave
 them in place. The frontmatter schema is documented in `prompt.md` §5 and enforced
@@ -58,6 +63,20 @@ Images: the cover for `<slug>` lives at `images/blog/<slug>.png`, inline photos 
 `images/blog/<slug>-N.png`. The weekly job generates them on the spark's ComfyUI
 with `comfy-gen` (a plain photograph — the title is rendered by the page, not
 burned in) and copies them into place. See `prompt.md` §6.
+
+**Every blog image needs a `.webp` sibling and the build fails without one.** The
+pages serve WebP through `<picture>`; the PNG stays as the fallback and as the
+`og:image`. A 1200px photo is ~800 KB as PNG and ~30 KB as WebP — `/blog/` was
+shipping 7.2 MB of covers before this was wired up. Run `tools/optimize-images.py`
+after copying images in. Image dimensions are read off the file by the build, so
+never hand-write `width`/`height`.
+
+Post frontmatter also carries `answer` (the 40–60 word extractable answer rendered
+under the H1 — featured snippets and voice results come from this), `sources` (2–3
+entries copied from the verified table in `prompt.md` §3, rendered as a Sources
+section and as `citation` in the Article schema), and optionally `howto`/`howtoName`
+for posts that really are a numbered procedure. The build enforces all three, plus a
+minimum of two question-phrased `##` headings per post.
 
 `tools/make-og-image.py` is an **optional local helper** that composites a branded
 title card (photo + scrim + title + tag chip, or a brand-gradient fallback) — it
@@ -71,6 +90,12 @@ python3 tools/make-og-image.py inline <slug> 1 photo.png
 ```
 
 Tags in use: `study-tips`, `memory-science`, `exam-prep`.
+
+Blog posts are bylined to **Robert Jensen, Founder, 12F ApS** (`AUTHOR` in
+`tools/build.py`), rendered as a visible byline and as a `Person` in the Article
+schema, and linked to `/about/`. `sameAs` (`SAME_AS` in the same file) is
+deliberately limited to URLs that genuinely resolve and genuinely belong to us —
+the App Store listing and 12f.dk. Add to it only after checking the URL.
 
 ## The weekly post writes itself
 

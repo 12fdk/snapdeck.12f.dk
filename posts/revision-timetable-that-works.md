@@ -2,9 +2,11 @@
 title: "How to make a revision timetable that actually gets used"
 description: "Your last revision timetable died within a week. Build one that survives: an afternoon to map it, honest buffers, built-in breaks, and a rule for bad weeks."
 lede: "The problem with a revision timetable is not making it — it is the week when it stops matching your life and you quietly abandon the whole sheet. Here is how to build one that survives."
+answer: "Map your subjects, topics and exam dates in a single afternoon, then build backwards from each exam and leave at least a third of the slots empty. The empty slots are what let the plan absorb a bad week. A rough timetable you keep using beats a perfect one you abandon in week two."
 excerpt: "A timetable that gets used is one built for the person you actually are: an afternoon to map it, honest buffers, a built-in recovery slot, and a rule for the week everything goes wrong."
 tag: study-tips
 date: 2026-08-25
+modified: 2026-08-27
 keywords: "revision timetable, how to make a revision timetable, exam planning, study schedule, catch up before finals, revision plan"
 summary: >
   A practical guide to building a revision timetable that survives real life, aimed at students who are behind and have weeks of material to get through before an exam. Covers the honest half-day mapping pass (subjects, topics, confidence, exam dates), building the plan backwards from the exam with buffers, the 80 percent rule for estimating difficulty, spacing out first passes, a worked example of a four-subject fortnight, and a recovery plan for when a week is lost. Ends with a two-question self-audit for when the timetable starts to fail.
@@ -24,6 +26,11 @@ faq:
     answer: "Less than you think. Two focused subject blocks a day is plenty for most students, and on a heavy week three. The quality of a block matters more than its length: a ninety-minute block with a defined topic and a finished target beats three hours of vague 'revision'. If a topic needs more than a block, split it into two slots with a day between — spaced passes stick better than one marathon, which is the whole idea of active recall."
   - question: "What if I lose a whole week — illness, work, life?"
     answer: "Then you run the recovery slot, not a hero week. Drop the lowest-priority topics (you already ranked them in the mapping pass), keep the highest-priority passes, and accept a thinner plan for the remaining weeks. Do not try to cram the lost week plus the new one into the remaining days — that is how timetables die in week two. The plan is rebuilt from what is left, not from what was lost."
+sources:
+  - title: "Cepeda et al. (2006), 'Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis', Psychological Bulletin"
+    url: "https://doi.org/10.1037/0033-2909.132.3.354"
+  - title: "Dunlosky et al. (2013), 'Improving Students' Learning With Effective Learning Techniques', Psychological Science in the Public Interest"
+    url: "https://doi.org/10.1177/1529100612453266"
 ---
 
 You have made a revision timetable before. You can see where the paper is.
@@ -34,9 +41,10 @@ The reason is not discipline. A plan that says 'study 4 hours every day, Mon–F
 
 So the goal is not a better sheet of paper. The goal is a plan that keeps working when your life does normal, messy things. That takes a different construction process, and it fits into an afternoon.
 
-## The mapping pass: half a day, honestly
+## How long should it take to make a revision timetable?
 
-Before you write a single date, you need a map. This is the part most timetables skip and skip badly. Sit down for a couple of hours and make five lists on one page:
+About half a day — and nearly all of it goes on mapping, not scheduling. Before you
+write a single date, you need a map. This is the part most timetables skip and skip badly. Sit down for a couple of hours and make five lists on one page:
 
 1. **Subjects and exam dates.** Everything you are sitting, with the date. If the exact date is unknown, use the week — you can sharpen it later.
 2. **Topics per subject.** Not pages of your notes — topics, at the level your lecture outlines or exam brief lists them. 'Chapter 3' is a topic. 'Every detail I have ever seen' is not.
@@ -76,7 +84,7 @@ Say the map looks like this: four subjects, exams spread across a fortnight, rou
 
 Notice what the example does not have: no 5 am start, no 4-hour blocks, no 'catch up on everything Sunday night'. It has normal slots, real rest, and a last week that is about the exams, not about pretending the rest never happened. That is what 'survives contact with real life' actually looks like. It looks boring. Boring is what survives.
 
-## When the week goes wrong (it will)
+## What do you do when the week goes wrong?
 
 Here is the part that separates the timetables that die from the ones that don't: **what happens when a slot is missed.**
 
@@ -89,7 +97,7 @@ Break the sequence with two rules:
 
 And if an entire week is lost — illness, an exam elsewhere, life — the recovery is not a hero week. Drop the lowest-priority topics (you ranked them in the mapping pass, that is what the ranking is for), keep the highest-priority passes, and rebuild the remaining weeks from what is left. Do not try to cram the lost week into the new one; that is the single most reliable way to lose both.
 
-## The two-question audit
+## Is your timetable actually working?
 
 A plan fails silently, which is why it needs a check. Twice a week — five minutes, coffee in hand — ask:
 

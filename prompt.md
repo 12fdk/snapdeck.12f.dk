@@ -171,8 +171,43 @@ local model with no reliable way to verify a number, so:
   not attach numbers, dates or percentages to the ones above beyond the years listed
   here. A fabricated citation is worse than no citation.
 - **NEVER write a URL you have not confirmed.** Only link to (a) pages inside this
-  site (`/blog/<slug>/`, confirmed to exist in `posts/`) and (b) the App Store link
-  in §0. Do not invent external links.
+  site (`/blog/<slug>/`, confirmed to exist in `posts/`), (b) the App Store link in
+  §0, and (c) **the approved source list below, copied character-for-character**.
+  Do not invent external links, and do not go looking for new ones.
+
+### Approved source list (the `sources:` block — copy exactly, never invent)
+
+Every post must carry a `sources:` block of **2–3 entries** naming the research it
+leans on. These render as a "Sources" section and as `citation` in the Article
+schema, and they are the single biggest reason an answer engine cites a page rather
+than quietly paraphrasing it.
+
+Pick only from this table, only where the source genuinely supports what the post
+argues, and copy the title and URL **exactly as written here**. Every URL was
+verified against Crossref on 2026-08-27. If none of them fits the post, the topic is
+probably not one this blog should be making claims about.
+
+| Use it for | `title:` | `url:` |
+| --- | --- | --- |
+| Testing effect, retrieval beating re-reading | `Roediger & Karpicke (2006), 'Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention', Psychological Science` | `https://doi.org/10.1111/j.1467-9280.2006.01693.x` |
+| Testing effect, broader overview | `Roediger & Karpicke (2006), 'The Power of Testing Memory', Perspectives on Psychological Science` | `https://doi.org/10.1111/j.1745-6916.2006.00012.x` |
+| Retrieval beating concept mapping / re-study | `Karpicke & Blunt (2011), 'Retrieval Practice Produces More Learning than Elaborative Studying with Concept Mapping', Science` | `https://doi.org/10.1126/science.1199327` |
+| Why retrieval matters more than review | `Karpicke & Roediger (2008), 'The Critical Importance of Retrieval for Learning', Science` | `https://doi.org/10.1126/science.1152408` |
+| Which study techniques actually work (the survey) | `Dunlosky et al. (2013), 'Improving Students' Learning With Effective Learning Techniques', Psychological Science in the Public Interest` | `https://doi.org/10.1177/1529100612453266` |
+| Spacing beating cramming | `Cepeda et al. (2006), 'Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis', Psychological Bulletin` | `https://doi.org/10.1037/0033-2909.132.3.354` |
+| Desirable difficulty — why harder feels worse and works | `Bjork & Bjork (2011), 'Making Things Hard on Yourself, But in a Good Way: Creating Desirable Difficulties to Enhance Learning'` | `https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/04/EBjork_RBjork_2011.pdf` |
+| Habit formation, how long it takes | `Lally et al. (2010), 'How are habits formed: Modelling habit formation in the real world', European Journal of Social Psychology` | `https://doi.org/10.1002/ejsp.674` |
+| Procrastination | `Steel (2007), 'The Nature of Procrastination: A Meta-Analytic and Theoretical Review', Psychological Bulletin` | `https://doi.org/10.1037/0033-2909.133.1.65` |
+| Interruptions, task switching, focus cost | `Mark, Gudith & Klocke (2008), 'The Cost of Interrupted Work: More Speed and Stress', Proceedings of CHI 2008` | `https://doi.org/10.1145/1357054.1357072` |
+| Sleep and memory consolidation | `Diekelmann & Born (2010), 'The Memory Function of Sleep', Nature Reviews Neuroscience` | `https://doi.org/10.1038/nrn2762` |
+| Cognitive load, slides, multimedia | `Mayer & Moreno (2003), 'Nine Ways to Reduce Cognitive Load in Multimedia Learning', Educational Psychologist` | `https://doi.org/10.1207/S15326985EP3801_6` |
+
+Note the apostrophes: the titles use `'single quotes'` because the whole value is a
+double-quoted YAML string. Do not change them to `"`. The build rejects it.
+
+To add a source to this table you must verify it first:
+`curl -s https://api.crossref.org/works/<DOI> | head -c 400` — and it must return the
+title and authors you expect. Never add a row you have not checked that way.
 - Don't state country-specific things (exam systems, grading, term dates) as
   universal. "Finals", "A-levels" and "semesters" are not the same everywhere —
   hedge, or write around it.
@@ -192,7 +227,14 @@ cut it — a purely qualitative post is always safer than a confidently wrong on
 
 - **1,300–1,900 words.** Complete and skimmable, not padded.
 - **No `# ` heading in the body** — the template renders the H1 from `title`.
-  Use `## ` for sections, `### ` where useful. Descriptive, not clever-only.
+  Use `## ` for sections, `### ` where useful.
+- **At least two `## ` headings must be phrased as a real question**, ending in a
+  `?` — the question a student would actually type. "How long should a study block
+  be if you cannot focus?" wins a featured snippet and a People Also Ask slot;
+  "The short version" cannot. Answer each one directly in the first sentence under
+  it, then elaborate. **The build fails below two question headings.** Do not
+  question-phrase headings that are not answering a question — a summary section is
+  allowed to be called a summary.
 - Open with the reader's real problem. Get to the first useful thing fast.
 - Short lists, the occasional bold lead-in, at least one concrete worked example
   (a scenario, a before/after, a specific way to phrase a question).
@@ -215,7 +257,8 @@ cut it — a purely qualitative post is always safer than a confidently wrong on
 
 **Markdown support is deliberately limited** to: `##`/`###`, paragraphs, `-` and
 `1.` lists, `> ` blockquote, `---`, `**bold**`, `*italic*`, `` `code` ``,
-`[text](url)`, and standalone `![alt](/images/blog/slug-1.webp "optional caption")`.
+`[text](url)`, and standalone `![alt](/images/blog/slug-1.png "optional caption")`
+(always the `.png` — the build serves the WebP through `<picture>` for you).
 Tables, raw HTML and footnotes are not supported and will fail the build.
 
 ---
@@ -232,10 +275,12 @@ metaTitle: "..."        # optional <title>; defaults to "<title> | SnapDeck AI"
 description: "..."      # meta description. ≤ 160 chars, includes the phrase
 ogDescription: "..."    # optional, for link previews; defaults to description
 lede: "..."             # 1–2 sentences under the H1. Concrete, no fluff
+answer: "..."           # 40–60 words. THE extractable answer — see below
 excerpt: "..."          # ≤ 220 chars, the blog-index card text
 teaserExcerpt: "..."    # optional shorter card text for the homepage; defaults to lede
 tag: study-tips         # exactly one of: study-tips | memory-science | exam-prep
 date: 2026-07-28        # today's date, YYYY-MM-DD
+modified: 2026-07-28    # optional; set it when you revise an existing post
 keywords: "a, b, c"     # 4–6 comma-separated terms for the Article schema
 summary: >
   2–3 sentences describing the post for llms.txt and llms-full.txt — what it
@@ -248,15 +293,44 @@ faq:
     answer: "..."
   - question: "..."
     answer: "..."
+sources:                # 2–3 entries, copied exactly from the §3 table
+  - title: "..."
+    url: "https://doi.org/..."
+  - title: "..."
+    url: "https://doi.org/..."
+howtoName: "..."        # optional; only if the post really is a procedure
+howto:                  # optional; renders HowTo schema. 3–6 steps
+  - name: "..."
+    text: "..."
 ---
 ```
+
+**`answer:` is the most important new field.** It renders as the "Short answer"
+block directly under the H1, and it is the only thing a featured snippet, a People
+Also Ask box or a voice assistant can lift off the page. Write it as one
+self-contained paragraph of **40–60 words** that answers the title outright, for a
+reader who will read nothing else. No scene-setting, no "in this post we will", no
+mention of SnapDeck. It must end in a full stop. The build rejects anything under 35
+or over 70 words — count them.
+
+The `lede` stays what it is: the narrative hook. `answer` is the blunt one. They sit
+next to each other on the page and they should not say the same thing twice.
+
+**`howto:` is optional** and only for posts that genuinely are a numbered procedure
+("Step 1 … Step 5"). When you use it, the steps must match the actual `##` sections
+of the post — do not invent a procedure the body does not contain. Most posts should
+not have this block.
 
 Rules the build enforces, so get them right the first time:
 - `title` ≤ 70 chars, `description` ≤ 160, `excerpt` ≤ 220. **Count the characters.**
 - `tag` must be one of the three. Do not invent a new tag.
 - `related` slugs must exist in `posts/`, and must not include this post.
 - Every internal `/blog/<slug>/` link in the body must exist.
-- The cover image `images/blog/<slug>.png` must exist before the build passes.
+- The cover image `images/blog/<slug>.png` must exist before the build passes, and
+  so must its `.webp` sibling — run `python3 tools/optimize-images.py` (§6).
+- `answer` must be 35–70 words and end in a full stop.
+- At least two `##` headings must end in `?`.
+- `sources` needs 2–3 entries, each copied exactly from the §3 table.
 - Minimum 700 words (you are aiming for far more than that).
 - Do not put the literal words `faq`, `related` or `frontmatter` in the body text.
 
@@ -291,7 +365,9 @@ cp /comfyui/output/snapdeck_00001_.png images/blog/<slug>.png
 ```
 
 (ComfyUI rounds dimensions to a multiple of 16, so you get ~1200×624 — that is
-fine, the 1200×630 declared in the template is only a hint.)
+fine. The build reads the real dimensions off the file and writes those into the
+markup, so the page reserves exactly the right space and nothing shifts as the
+image loads. Do not hand-write width/height anywhere.)
 
 **2. Inline photos (one or two).** Same pattern, into `<slug>-1.png`, `<slug>-2.png`:
 
@@ -308,10 +384,26 @@ reference, and every reference must point at a file that exists. Alt text descri
 the photograph for someone who cannot see it — not the article — so make it match
 what the image actually shows.
 
+**3. Compress them — this step is not optional.** A 1200px photograph as PNG is
+700–950 KB, and the blog index once shipped 7.2 MB of them. Every image needs a
+WebP sibling, which is what the pages actually serve (the PNG stays as the fallback
+and as the `og:image`):
+
+```
+python3 tools/optimize-images.py
+```
+
+It converts anything missing or stale, prints the saving, and is safe to re-run.
+**`tools/build.py` fails if a cover or inline image has no `.webp` beside it**, so
+run this after copying the images in and before building. Typical result is ~30 KB
+per image, a 96% saving.
+
 **If ComfyUI is unavailable:** retry once. If it still fails, ship the post with no
 cover photo — reuse the closest existing `/images/blog/*.png` as the cover so the
 build passes (`cp images/blog/why-cramming-feels-great.png images/blog/<slug>.png`),
 skip the inline images, and note it in your report. Never block the post on an image.
+(A reused cover already has its `.webp`, but run `tools/optimize-images.py` anyway —
+it is a no-op when everything is current.)
 
 (There is also `tools/make-og-image.py`, which composites a branded title card over
 a photo, but it needs Pillow and is **not** part of this job — it is an optional
@@ -324,9 +416,10 @@ local helper for a laptop. Do not call it here.)
 The model context is small. Never let long command output stream into the
 conversation; redirect it and read only a short tail, and only on failure.
 
-1. Validate first — this is the equivalent of a compile, and it catches every
-   schema mistake above:
+1. Compress the images, then validate. `--check` is the equivalent of a compile and
+   it catches every schema mistake above, including a missing `.webp`:
    ```
+   python3 tools/optimize-images.py
    python3 tools/build.py --check
    ```
 2. Fix anything it reports, then build for real:
@@ -335,7 +428,9 @@ conversation; redirect it and read only a short tail, and only on failure.
    ```
    It must print `BUILD OK`. The build regenerates the post page, the blog index,
    the homepage teaser, `feed.xml`, `sitemap.xml`, `llms.txt` and `llms-full.txt` —
-   **never hand-edit those files**, your edits will be overwritten.
+   **never hand-edit those files**, your edits will be overwritten. `sitemap.xml` is
+   generated in full now, not just the post block; add a new hand-written page to
+   `STATIC_URLS` in `tools/build.py` rather than to the XML.
 3. Commit only the post, its images and the regenerated files. Run `git status`
    first; delete any scratch files you created. Then stage deliberately:
    ```

@@ -2,9 +2,11 @@
 title: "How to study when you're too tired to focus properly"
 description: "You're exhausted and your brain won't absorb anything. Here's what is actually worth doing at forty percent capacity — and when it's time to stop."
 lede: "You open your notes and the words blur. You've been at it for twenty minutes and haven't absorbed anything. You're exhausted and wondering if you should push through or go to bed."
+answer: "When you are exhausted, drop anything that needs new understanding and do the low-effort, high-value work instead: reviewing cards you already made, testing yourself on familiar material, or setting up tomorrow's session. Learning genuinely new concepts on no sleep mostly wastes the evening, and sleep itself consolidates what you already studied."
 excerpt: "You're exhausted and your brain won't absorb anything. Here's what is actually worth doing at forty percent capacity — and when it's time to stop."
 tag: study-tips
 date: 2026-07-23
+modified: 2026-08-27
 keywords: "studying when tired, how to study when exhausted, energy crash, studying tired, study tips, low energy"
 summary: >
   When you're exhausted, not all studying is useless — but the methods that work at full energy don't work when you're running on fumes. This post explains how to triage your remaining capacity, which study methods actually work at forty percent, and when pushing through is genuinely counterproductive. Covers micro-sessions, low-cognitive-load tasks, and the science of why some studying at 40% beats none at 100%.
@@ -24,6 +26,11 @@ faq:
     answer: "If the exam is tomorrow morning and you had no sleep last night, your memory has already taken a hit. Do not pull another all-nighter. Instead, prioritise a single pass over your highest-yield material — anything you can review is still better than nothing. Sleep for at least an hour if you can; even a short nap helps more than you would expect."
   - question: "How do I know when I should just go to bed instead?"
     answer: "If you are re-reading the same paragraph three times without absorbing it, if your eyes are watering, or if you are making errors on material you previously knew, your brain has crossed the line from tired into counterproductive. Close the book, set an alarm, and sleep. A tired brain that sleeps will retain more tomorrow than an exhausted brain that pushes through."
+sources:
+  - title: "Diekelmann & Born (2010), 'The Memory Function of Sleep', Nature Reviews Neuroscience"
+    url: "https://doi.org/10.1038/nrn2762"
+  - title: "Dunlosky et al. (2013), 'Improving Students' Learning With Effective Learning Techniques', Psychological Science in the Public Interest"
+    url: "https://doi.org/10.1177/1529100612453266"
 ---
 
 You open your notes and the words blur. You have been at it for twenty minutes and have not absorbed anything. Your eyes feel like they are full of sand, your attention jumps between the page and your phone and back, and somewhere between the third time you re-read the same paragraph you decide that pushing through is the only way to make this evening count.
@@ -32,7 +39,7 @@ It might be the end of a long day. It might be 2 a.m. and you just cannot sleep.
 
 The honest answer is: **some studying at forty percent is worth doing. Some is not.** And knowing which is which is the difference between a wasted evening and a small but real win.
 
-## Why studying while tired feels so useless
+## Why does studying while tired feel so useless?
 
 When you are well-rested, studying works like a system. You read something, you test yourself on it, you mark what you know and what you do not, and your brain builds connections. When you are tired, the system breaks down at several points.
 
@@ -46,7 +53,7 @@ The good news is that not all studying relies on strong encoding or sharp attent
 
 ![A student at a desk in the afternoon, soft warm window light filtering through a window, a laptop open to notes, a notebook with handwritten flashcards, a mug of tea](/images/blog/how-to-study-when-tired-1.png)
 
-## What works at forty percent capacity
+## What kind of studying still works when you are exhausted?
 
 The key idea is to match the task to your energy level. At one hundred percent you can learn new material, wrestle with difficult concepts, and write summaries. At forty percent, your options narrow but they do not disappear.
 
@@ -81,7 +88,7 @@ Set an alarm. Close your eyes. When it goes off, get up, splash water on your fa
 
 This is where the methods from my post on [studying when you can't focus for more than ten minutes](/blog/focus-when-you-cant/) are useful — the five-minute pass and low-cognitive-load tasks work equally well when your attention span has shrunk because of fatigue, not just because of ADHD or distraction.
 
-## What to avoid when you're exhausted
+## What should you avoid when you are exhausted?
 
 Some studying when tired is worth it. Some is actively counterproductive because it reinforces bad habits and wastes time you could spend sleeping.
 
