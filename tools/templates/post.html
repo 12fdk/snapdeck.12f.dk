@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{META_TITLE}}</title>
   <meta name="description" content="{{DESCRIPTION}}">
-  <meta name="author" content="12F ApS">
+  <meta name="author" content="{{AUTHOR_NAME}}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0E0D16" media="(prefers-color-scheme: dark)">
@@ -23,6 +23,8 @@
   <meta property="og:locale" content="en_US">
   <meta property="article:published_time" content="{{DATE}}">
   <meta property="article:tag" content="{{TAG}}">
+  <meta property="article:modified_time" content="{{DATE_MODIFIED}}">
+  <meta property="article:author" content="{{AUTHOR_URL}}">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{OG_TITLE}}">
@@ -56,23 +58,17 @@
       "@type": "WebPage",
       "@id": "{{URL}}"
     },
-    "author": {
-      "@type": "Organization",
-      "name": "12F ApS",
-      "url": "https://12f.dk/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "12F ApS",
-      "url": "https://12f.dk/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://snapdeck.12f.dk/images/app-icon.png"
-      }
+    "author": {{AUTHOR_JSONLD}},
+    "publisher": {{PUBLISHER_JSONLD}},
+    "citation": {{CITATION_JSONLD}},
+    "abstract": {{JSON_ANSWER}},
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".answer", ".post-faq-item p"]
     }
   }
   </script>
-{{FAQ_JSONLD}}
+{{FAQ_JSONLD}}{{HOWTO_JSONLD}}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -105,6 +101,7 @@
           <li><a href="/#features">Features</a></li>
           <li><a href="/#how-it-works">How it works</a></li>
           <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a></li>
           <li><a href="/#faq">FAQ</a></li>
           <li class="nav-cta-mobile">
             <a class="btn btn--primary btn--sm" href="https://apps.apple.com/us/app/snapdeck-ai/id6759596002">Get the app</a>
@@ -125,13 +122,15 @@
           <p class="post-meta"><span class="tag">{{TAG}}</span><time datetime="{{DATE}}">{{DATE_LONG}}</time><span class="dot" aria-hidden="true"></span>{{READING_TIME}} min read</p>
           <h1>{{TITLE}}</h1>
           <p class="lede">{{LEDE}}</p>
+          <p class="byline">By <a href="{{AUTHOR_URL}}" rel="author">{{AUTHOR_NAME}}</a><span class="byline-role">{{AUTHOR_ROLE}}</span></p>
+          {{ANSWER}}
         </div>
 
 {{HERO}}
         <div class="prose">
 {{BODY}}
         </div>
-{{FAQ_HTML}}
+{{FAQ_HTML}}{{SOURCES_HTML}}
         <div class="article-foot">
           <a href="/blog/">← All posts</a>
           <span class="tag">{{TAG}}</span>
@@ -184,6 +183,7 @@
           <h3>More</h3>
           <ul>
             <li><a href="/blog/">Blog</a></li>
+            <li><a href="/about/">About</a></li>
             <li><a href="/feed.xml">RSS feed</a></li>
             <li><a href="/privacy-policy.html">Privacy policy</a></li>
             <li><a href="https://12f.dk/">Contact 12F ApS</a></li>

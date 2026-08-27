@@ -2,9 +2,11 @@
 title: "How to catch up on a semester of notes you never reopened"
 description: "A semester's worth of notes sitting untouched feels impossible. Here's the triage method that turns the mountain into a plan you can actually follow."
 lede: "You have three months of lecture notes, PDFs, and photographed whiteboards piling up in front of you. The first step is not to study — it is to sort, triage, and pick the twenty percent that will actually get asked."
+answer: "Start by sorting, not studying. Rank every topic by how heavily it is examined and how confident you are, cover the high-weight gaps first, and turn each one into questions you can test yourself on. Accept that some low-weight material will stay shallow — a deliberate gap beats an untouched pile."
 excerpt: "A semester's worth of notes you never opened feels impossible to tackle. Here's the triage method that turns the overwhelm into a focused plan — starting with what's actually examinable."
 tag: study-tips
 date: 2026-08-04
+modified: 2026-08-27
 keywords: "catch up on notes, semester of notes, how to study from a semester of notes, triage notes, exam catch-up, revision plan"
 summary: >
   Shows a practical triage method for students facing a semester's worth of notes they never touched. Covers how to identify what's actually examinable, how to convert dense material into questions and flashcards without manual entry, how to build a realistic timeline, and how to resist the urge to start at the beginning.
@@ -24,6 +26,11 @@ faq:
     answer: "No. Rewriting is a classic productivity illusion — it feels like progress, but you are just transcribing someone else's understanding. Turn the material into questions and test yourself on the original notes instead. If your handwriting is illegible or the notes are messy, photograph the page and use a photo-to-flashcard tool to generate clean cards. The goal is active recall, not pretty notes."
   - question: "How do I stop feeling overwhelmed once I start?"
     answer: "It usually fades once you begin. The fear of the mountain is always bigger than the mountain itself. Pick one lecture, turn it into five questions, answer those five questions, and stop for the day. Tomorrow you do another one. Momentum builds from action, not from planning. By the third or fourth day you will have a working deck of cards and a rhythm that feels manageable — and the overwhelm that made you freeze in the first place will have disappeared."
+sources:
+  - title: "Dunlosky et al. (2013), 'Improving Students' Learning With Effective Learning Techniques', Psychological Science in the Public Interest"
+    url: "https://doi.org/10.1177/1529100612453266"
+  - title: "Roediger & Karpicke (2006), 'Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention', Psychological Science"
+    url: "https://doi.org/10.1111/j.1467-9280.2006.01693.x"
 ---
 
 There is a specific kind of dread that comes from opening a drawer full of lecture notes and realising you have not looked at a single one since the first week of term. Three months of PDFs, photographed whiteboards, and handwritten pages sit on your desk and multiply every time you walk past. The bigger problem is not the material — it is the paralysis of not knowing where to begin.
@@ -38,7 +45,7 @@ Every hour spent studying early lecture material is an hour not spent on materia
 
 Think of it like this: if you have four weeks until an exam and three months of material, you cannot cover everything. The question is not whether you will cover everything — you will not — the question is whether the material you do cover is the material the exam actually tests. The answer to that depends entirely on where you start.
 
-## Triage: sort before you study
+## How do you triage a semester of notes?
 
 Before you study a single page, spend twenty minutes sorting your material into three piles:
 
@@ -50,7 +57,7 @@ Before you study a single page, spend twenty minutes sorting your material into 
 
 You can do this triage by skimming each lecture's title, learning outcomes, and final slide — usually the one that says "summary" or "this week in review." Ten minutes per lecture. Thirty lectures. Five hours total. That is the cost of triage. The alternative cost is weeks of studying material the exam does not test.
 
-## Turn material into questions, not summaries
+## Should you summarise your notes or turn them into questions?
 
 Once you have identified your essential lectures, the next step is to convert them into something you can actively test on. This is where most students stall — they stare at pages of dense text and think they need to rewrite it, summarise it, or understand it fully before they start studying. None of that is true.
 
@@ -86,7 +93,7 @@ The first lecture is always the hardest. You open it, feel the weight of everyth
 
 ![A student at a desk with a stack of lecture handouts, a smartphone nearby, and a laptop showing a flashcard app interface — warm desk lamp light](/images/blog/catch-up-semester-notes-1.png)
 
-## When to push through and when to walk away
+## When should you push through, and when should you stop?
 
 There is a difference between being behind and being in a hole you cannot climb out of. Most students are behind — they just did not start soon enough, and a focused triage approach will get them through. A smaller number are in a genuine hole: multiple failed components, severe time pressure (less than a week), or material that genuinely cannot be covered in the time available.
 

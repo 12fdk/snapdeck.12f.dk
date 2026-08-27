@@ -2,9 +2,11 @@
 title: "How to study from bullet-point lecture slides when they say nothing"
 description: "Your slides are thin on content and you're left with bullet points that help you remember nothing. Here's how to turn them into something that actually works."
 lede: "You open the slides, stare at a screen full of fragments — 'mitochondrial membrane transport', 'three phases of translation', 'key factors in X' — and you know, with growing dread, that this is your entire revision resource. Bullet points are the enemy of real understanding."
+answer: "Thin slides fail because a bullet point records a conclusion without the reasoning that made it make sense. Rebuild the missing half: turn each bullet into the question it answers, fill the gap from the lecture or the textbook, then test yourself on that question instead of re-reading the slide."
 excerpt: "Lecture slides full of bullet points are easy to skim and impossible to recall. Here's how to turn thin slides into study material that sticks, without adding more text to an already crowded screen."
 tag: study-tips
 date: 2026-07-28
+modified: 2026-08-27
 keywords: "lecture slides, bullet points, studying from slides, how to study from lecture slides, thin slides, active recall"
 summary: >
   Most lecture slides are thin on substance — fragments, keywords, bullet points that look like notes but aren't. This post explains why bullet-point slides are almost useless for revision and shows a concrete method for turning them into questions, self-tests, and working flashcards using photo-to-flashcard tools like SnapDeck AI.
@@ -24,6 +26,11 @@ faq:
     answer: "Apps that turn photos of slides into flashcards can save a lot of time, especially when you have hundreds of slides. But the tool does not replace the thinking step — you still need to know which bullet points are worth turning into questions and which are just filler. A photo-to-flashcard app is a speed multiplier for a method that already works on paper."
   - question: "How many slides is too many to study from?"
     answer: "When the number makes you shut the file, that is too many. In practice, most exams test a focused subset of slide content, so you do not need to treat every slide equally. Identify the core slides — the ones with mechanisms, definitions, comparisons, or processes — and build your study material from those first. The decorative slides can be skipped."
+sources:
+  - title: "Mayer & Moreno (2003), 'Nine Ways to Reduce Cognitive Load in Multimedia Learning', Educational Psychologist"
+    url: "https://doi.org/10.1207/S15326985EP3801_6"
+  - title: "Dunlosky et al. (2013), 'Improving Students' Learning With Effective Learning Techniques', Psychological Science in the Public Interest"
+    url: "https://doi.org/10.1177/1529100612453266"
 ---
 
 You open the slides for your upcoming exam. Three hundred and twelve pages. Most of them say things like:
@@ -38,7 +45,7 @@ You know the lecturer probably said a lot more in class. You may even have your 
 
 This is one of the most common problems students face, and it is also one of the most avoidable. The slides are not your fault. The fix is not to try harder or read more carefully. The fix is to treat the slides as a starting point, not a resource, and to convert them into something your brain can actually work with.
 
-## Why bullet points are worse than no slides at all
+## Why are bullet-point slides so hard to study from?
 
 There is a specific reason bullet-point slides are so dangerous, and it has nothing to do with the amount of text on the screen.
 
@@ -111,7 +118,7 @@ This is not heroic. It is structured, which is what makes it work. And it takes 
 
 ![A laptop displaying lecture slides with sparse bullet points, a pen and notebook on the desk, a smartphone face-down beside it](/images/blog/studying-from-bullet-point-slides-1.png)
 
-## What not to do (common traps)
+## What should you not do with a thin slide deck?
 
 **Re-reading the slides.** The fluency illusion again. You have seen the bullet point fifty times and your brain says "I know this." You do not. You recognise it. There is a difference, and exams test the second, not the first.
 
@@ -121,7 +128,7 @@ This is not heroic. It is structured, which is what makes it work. And it takes 
 
 **Studying every slide in order.** Slides are presented in a linear order, but revision does not need to follow that structure. Start with the hardest slides, the ones that give you the most trouble. This is the principle behind [studying when you can't focus for more than ten minutes](/blog/focus-when-you-cant/) — match the difficulty to your capacity. If you are tired and distracted, start with the slides you already know well. Build momentum before tackling the hard ones.
 
-## Why this works (and why it feels weird)
+## Why does turning slides into questions work?
 
 The whole process feels slower and harder than re-reading slides. That is a feature, not a bug. The testing effect — documented by Roediger and Karpicke in 2006 — shows that the effortful process of trying to recall information and then checking your answer is what actually builds lasting memory. The discomfort you feel when you cannot immediately answer your own question is the feeling of learning happening.
 
