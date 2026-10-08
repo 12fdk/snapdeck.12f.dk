@@ -80,34 +80,43 @@ hangs indefinitely — it has a hard time budget and gives up gracefully.
 ### How to choose (do this, in order)
 
 1. `ls posts/` to see what already exists — filenames only, do not read the posts.
-2. Run `python3 tools/reddit-topics.py`. Read the digest.
-3. Pick the **highest-demand theme that is NOT already covered**, and turn it into
-   one specific article. Use the verbatim titles in the digest to phrase it in the
-   reader's own words — that phrasing *is* the search query.
-4. If the tool exits non-zero (Reddit blocking, network down), that is expected and
-   fine: fall back to the **ranked topic bank** below and say so in your report.
+2. Run the tool with its output in a log file, then read the digest with `tail`/`head`:
+   `python3 tools/reddit-topics.py > /tmp/snapdeck-topics.log 2>&1; echo "exit $?"`
+3. **The digest is the brief.** Pick the **highest-demand theme that is NOT already
+   covered** (the digest marks covered themes; check them against `ls posts/` too),
+   and turn it into one specific article. Use the verbatim titles in the digest to
+   phrase it in the reader's own words — that phrasing *is* the search query.
+4. Only if the scrape failed — exit code `2` means every feed failed (Reddit
+   blocking, network down) — fall back to the **ranked topic bank** below and say so
+   in your report. That is expected and fine.
+5. **Mark the bank entry you used, in the same commit as the post.** If your topic
+   is (or substantially overlaps) a bank entry — whether you came from the digest
+   or from the fallback — strike it through and add the slug, exactly like the
+   entries already marked: `~~Title~~ *(covered: <slug>)*`. An unmarked entry
+   gets written twice.
 
 ### Ranked topic bank (fallback, and a map of angles that fit the app)
 
 Each entry names a real reader problem that a photo-to-flashcards app is a natural —
-not forced — part of the answer to. Pick the highest one not yet covered:
+not forced — part of the answer to. Pick the highest one not yet covered (struck
+through = already written; skip those):
 
-1. **How to actually memorise a lot of material fast** — the difference between reading it and knowing it · *"how to memorize a lot of information quickly"*
-2. **Studying when you cannot focus for more than ten minutes** — working with a short attention span instead of against it · *"how to focus while studying"*
-3. **What to do with a semester of notes you never reopened** — triage, not heroics · *"how to catch up on a semester of notes"*
-4. **Active recall, explained properly** — what it is, why it feels worse, how to start today · *"what is active recall"*
+1. ~~How to actually memorise a lot of material fast~~ *(covered: memorise-material-fast)*
+2. ~~Studying when you cannot focus for more than ten minutes~~ *(covered: focus-when-you-cant)*
+3. ~~What to do with a semester of notes you never reopened~~ *(covered: catch-up-semester-notes)*
+4. ~~Active recall, explained properly~~ *(covered: active-recall-explained)*
 5. **How long before an exam should you start revising** — an honest answer with a schedule · *"when to start revising for exams"*
-6. **Studying from lecture slides that are mostly bullet points** — turning thin slides into questions · *"how to study from lecture slides"*
+6. ~~Studying from lecture slides that are mostly bullet points~~ *(covered: studying-from-bullet-point-slides)*
 7. **Why you forget everything a week later** — and the specific fix · *"why do I forget what I study"*
 8. **Studying with ADHD without a two-hour focus block** — short sessions that actually work · *"how to study with adhd"*
 9. **Memorising terminology and vocabulary** — anatomy, law, languages, drug names · *"how to memorize medical terminology"*
-10. **The revision timetable that survives contact with real life** — planning for the person you actually are · *"how to make a revision timetable"*
+10. ~~The revision timetable that survives contact with real life~~ *(covered: revision-timetable-that-works)*
 11. **Group study that isn't a waste of an afternoon** — the format that works · *"is studying in groups effective"*
-12. **Studying when you are exhausted** — what is worth doing at 40% capacity · *"how to study when tired"*
+12. ~~Studying when you are exhausted~~ *(covered: how-to-study-when-tired)*
 13. **Re-reading vs. self-testing** — the single highest-leverage swap in studying · *"is rereading notes effective"*
 14. **How to revise a subject you hate** — starting when there is no motivation left · *"how to study a subject you hate"*
 15. **Studying from a textbook you cannot afford to read all of** — extracting the 20% that is examinable · *"how to study from a textbook"*
-16. **What to do the week after a bad exam** — diagnosing what went wrong · *"failed an exam what now"*
+16. ~~What to do the week after a bad exam~~ *(covered: failed-exam-what-now)*
 
 If everything here is covered, write a sharper, fresher take on the strongest
 theme in the Reddit digest from a new angle — and note in your report that the
@@ -138,9 +147,10 @@ bar: a skeptical student on Reddit should upvote it and never feel sold to.
 - **Banned:** hype words ("revolutionary", "game-changer", "must-have", "ultimate",
   "supercharge"), fake urgency, "download now!", exclamation-mark selling, review-
   style praise of the app, or implying the reader is failing without it.
-- The **gold-standard reference** is `posts/why-cramming-feels-great.md` — its tone
-  is exactly right (honest, specific, no pressure). To save context, skim only the
-  top: `head -40 posts/why-cramming-feels-great.md`.
+- The **gold-standard reference** is `posts/revision-timetable-that-works.md` — its
+  tone is exactly right (honest, specific, no pressure, and its one mention says
+  plainly that handwriting cards is fine and free). To save context, skim only the
+  top: `sed -n '/^---$/,/^---$/!p' posts/revision-timetable-that-works.md | head -30`.
 
 **Style:** concrete over abstract, real examples over platitudes, short paragraphs,
 plain language, occasional dry wit. Second person ("you"). No filler intro — open
@@ -166,7 +176,9 @@ local model with no reliable way to verify a number, so:
   Ebbinghaus's forgetting curve; the spacing effect (Cepeda et al., 2006); the
   testing effect / retrieval practice (Roediger & Karpicke, 2006); the Cornell
   note-taking method; interleaving; desirable difficulties (Bjork); the generation
-  effect. `posts/why-cramming-feels-great.md` shows the right level of detail.
+  effect. The right level of detail is the finding's name, plus at most the
+  researchers and year shown here — e.g. "the spacing effect, reviewed by Cepeda
+  and colleagues in 2006" — and never a claim about who *discovered* it first.
 - **Do NOT name any other study, researcher, university, journal or report**, and do
   not attach numbers, dates or percentages to the ones above beyond the years listed
   here. A fabricated citation is worse than no citation.
@@ -400,14 +412,18 @@ per image, a 96% saving.
 
 **If ComfyUI is unavailable:** retry once. If it still fails, ship the post with no
 cover photo — reuse the closest existing `/images/blog/*.png` as the cover so the
-build passes (`cp images/blog/why-cramming-feels-great.png images/blog/<slug>.png`),
-skip the inline images, and note it in your report. Never block the post on an image.
-(A reused cover already has its `.webp`, but run `tools/optimize-images.py` anyway —
-it is a no-op when everything is current.)
+build passes. Pick a cover, not an inline photo (`ls images/blog/ | grep -v -- '-[0-9]\.'`),
+then copy it — for example:
+`cp images/blog/active-recall-explained.png images/blog/<slug>.png`.
+Skip the inline images, and note it in your report. Never block the post on an image.
+Run `tools/optimize-images.py` afterwards as usual — it writes the new cover's
+`.webp`, which the build requires.
 
-(There is also `tools/make-og-image.py`, which composites a branded title card over
-a photo, but it needs Pillow and is **not** part of this job — it is an optional
-local helper for a laptop. Do not call it here.)
+**The cover is always a ComfyUI photo (or the reused cover above) — nothing else.**
+`tools/make-og-image.py` exists in the repo, but it is **not** part of this job, not
+even as the fallback: it is an optional local helper for a laptop (it composites a
+branded title card and needs Pillow). Do not call it. The title is rendered by the
+page, never burned into the image.
 
 ---
 
@@ -424,7 +440,7 @@ conversation; redirect it and read only a short tail, and only on failure.
    ```
 2. Fix anything it reports, then build for real:
    ```
-   python3 tools/build.py > /tmp/build.log 2>&1 && tail -3 /tmp/build.log || tail -30 /tmp/build.log
+   python3 tools/build.py > /tmp/snapdeck-build.log 2>&1 && tail -3 /tmp/snapdeck-build.log || tail -30 /tmp/snapdeck-build.log
    ```
    It must print `BUILD OK`. The build regenerates the post page, the blog index,
    the homepage teaser, `feed.xml`, `sitemap.xml`, `llms.txt` and `llms-full.txt` —
@@ -442,6 +458,30 @@ conversation; redirect it and read only a short tail, and only on failure.
 
 Same discipline everywhere: pipe anything potentially verbose through a file or
 `tail`. Read files with `head`/`grep`, never dump a whole large file into context.
+
+## Site-specific review checks
+
+Run these in the review pass before `git commit`, on top of the generic checks. Each
+one is a mistake this blog is specially prone to, and the build catches none of them.
+
+1. **Sources are copied, not recalled.** Every `sources:` `url:` appears verbatim in
+   the §3 table: `grep -c '<url>' prompt.md` must print at least `1` for each. A
+   title or URL "fixed" from memory is a fabricated citation.
+2. **No research numbers, no outside names.** No percentage, sample size or effect
+   size anywhere — body, FAQ, `answer`, `summary`. No study, researcher, university
+   or journal outside the §3 named-findings list, and no year other than the one
+   listed for it.
+3. **The app does not schedule reviews.** Nothing says or implies that SnapDeck AI
+   has spaced repetition, reminders or a review algorithm, and every feature you
+   mention is in the §0 fact sheet. Spacing is something the *reader* does.
+4. **No medical or mental-health advice.** Posts on ADHD, burnout, sleep or anxiety
+   acknowledge it honestly and point to a professional; they never diagnose,
+   prescribe, or promise an outcome.
+5. **Exam systems are not universal.** "Finals", "A-levels", "semesters", "midterms"
+   and grade scales are hedged or written around, never stated as everyone's system.
+6. **Images match what was referenced.** One `![alt](/images/blog/<slug>-N.png)` line
+   per inline file you generated (`grep -n '!\[' posts/<slug>.md`), and each alt text
+   describes what is actually in that photo, not the prompt you wrote.
 
 ## 8. Final report (your last message)
 
