@@ -39,7 +39,10 @@
   <link rel="alternate" type="application/rss+xml" title="SnapDeck AI Blog" href="/feed.xml">
   <link rel="stylesheet" href="/css/style.css">
 
-  <script defer src="https://umami.robert-jensen.dk/script.js" data-website-id="c00b28ce-d663-4166-8b80-6260f0f30d6f"></script>
+  <!-- Umami analytics: production-hostname guard — local dev (localhost/127.0.0.1/preview domains) never reports to the snapdeck.12f.dk production site. -->
+<script>
+(function(){var H="snapdeck.12f.dk",d=document;if(location.hostname===H||location.hostname==="www."+H){var s=d.createElement("script");s.src="https://umami.robert-jensen.dk/script.js";s.defer=true;s.dataset.websiteId="c00b28ce-d663-4166-8b80-6260f0f30d6f";d.head.appendChild(s);}})();
+</script>
 
   <script type="application/ld+json">
   {
