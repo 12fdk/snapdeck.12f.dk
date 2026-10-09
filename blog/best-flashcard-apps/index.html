@@ -41,7 +41,7 @@
 
   <!-- Umami analytics: production-hostname guard — local dev (localhost/127.0.0.1/preview domains) never reports to the snapdeck.12f.dk production site. -->
 <script>
-(function(){var H="snapdeck.12f.dk",d=document;if(location.hostname===H||location.hostname==="www."+H){var s=d.createElement("script");s.src="https://umami.robert-jensen.dk/script.js";s.defer=true;s.dataset.websiteId="c00b28ce-d663-4166-8b80-6260f0f30d6f";d.head.appendChild(s);}})();
+(function(){var H="snapdeck.12f.dk",d=document;if(location.hostname===H||location.hostname==="www."+H){var s=d.createElement("script");s.src="https://umami.robert-jensen.dk/script.js";s.defer=true;s.dataset.websiteId="c00b28ce-d663-4166-8b80-6260f0f30d6f";s.dataset.performance="true";d.head.appendChild(s);}})();
 </script>
 
   <script type="application/ld+json">
@@ -190,12 +190,12 @@
           <li><a href="/about/">About</a></li>
           <li><a href="/#faq">FAQ</a></li>
           <li class="nav-cta-mobile">
-            <a class="btn btn--primary btn--sm" href="https://apps.apple.com/us/app/snapdeck-ai/id6759596002">Get the app</a>
+            <a data-umami-event="appstore-click" data-umami-event-placement="nav" class="btn btn--primary btn--sm" href="https://apps.apple.com/us/app/snapdeck-ai/id6759596002">Get the app</a>
           </li>
         </ul>
       </nav>
 
-      <a class="btn btn--primary btn--sm nav-cta" href="https://apps.apple.com/us/app/snapdeck-ai/id6759596002">Get SnapDeck</a>
+      <a data-umami-event="appstore-click" data-umami-event-placement="nav" class="btn btn--primary btn--sm nav-cta" href="https://apps.apple.com/us/app/snapdeck-ai/id6759596002">Get SnapDeck</a>
     </div>
   </header>
 
@@ -330,7 +330,7 @@
         <div class="article-cta">
           <h2>Make the questions in seconds</h2>
           <p>Photograph a page of your notes and SnapDeck AI writes the flashcards. Free, offline, no account.</p>
-          <a href="https://apps.apple.com/us/app/snapdeck-ai/id6759596002" class="app-badge" aria-label="Download SnapDeck AI on the App Store">
+          <a data-umami-event="appstore-click" data-umami-event-placement="cta" href="https://apps.apple.com/us/app/snapdeck-ai/id6759596002" class="app-badge" aria-label="Download SnapDeck AI on the App Store">
             <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="54" width="162" loading="lazy">
           </a>
         </div>
@@ -392,7 +392,7 @@
             <li><a href="/#how-it-works">How it works</a></li>
             <li><a href="/#pricing">Pricing</a></li>
             <li><a href="/#faq">FAQ</a></li>
-            <li><a href="https://apps.apple.com/us/app/snapdeck-ai/id6759596002">App Store</a></li>
+            <li><a data-umami-event="appstore-click" data-umami-event-placement="footer" href="https://apps.apple.com/us/app/snapdeck-ai/id6759596002">App Store</a></li>
           </ul>
         </div>
 
