@@ -6,8 +6,16 @@
     <description>Study tips, memory science and exam prep for students — from the team behind SnapDeck AI.</description>
     <language>en</language>
     <atom:link href="https://snapdeck.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 25 Aug 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>Should you use AI to study? The honest answer</title>
+      <link>https://snapdeck.12f.dk/blog/using-ai-to-study/</link>
+      <guid isPermaLink="true">https://snapdeck.12f.dk/blog/using-ai-to-study/</guid>
+      <pubDate>Fri, 09 Oct 2026 08:00:00 +0000</pubDate>
+      <category>study-tips</category>
+      <description>Students keep asking whether AI should study for them or just help. The honest split, and the one test that tells you which one you are doing.</description>
+    </item>
     <item>
       <title>How to make a revision timetable that actually gets used</title>
       <link>https://snapdeck.12f.dk/blog/revision-timetable-that-works/</link>
