@@ -69,6 +69,10 @@ The SnapDeck AI blog publishes practical study advice for students at https://sn
 https://snapdeck.12f.dk/blog/using-ai-to-study/
 For a student asking whether AI should do their studying or just help, this post draws the line between the two: AI that does the work for you (writing the essay) and AI that makes the work harder (generating practice questions, quizzing you, explaining a stuck concept). It covers which uses build retrieval memory, the honest limits including hallucination and course rules, and how a photo-to-flashcards tool fits in as one way to get practice questions from dense material.
 
+### SnapDeck AI vs Quizlet, Anki & Brainscape (2026-10-09, memory-science)
+https://snapdeck.12f.dk/blog/best-flashcard-apps/
+Compares the four flashcard apps students actually compare — Quizlet, Cram, Anki and Brainscape — against the photo-to-cards path, by setup effort, the review scheduling, price, and the platform requirement. It is a buyer's guide, not a ranking.
+
 ### How to make a revision timetable that actually gets used (2026-08-25, study-tips)
 https://snapdeck.12f.dk/blog/revision-timetable-that-works/
 A practical guide to building a revision timetable that survives real life, aimed at students who are behind and have weeks of material to get through before an exam. Covers the honest half-day mapping pass (subjects, topics, confidence, exam dates), building the plan backwards from the exam with buffers, the 80 percent rule for estimating difficulty, spacing out first passes, a worked example of a four-subject fortnight, and a recovery plan for when a week is lost. Ends with a two-question self-audit for when the timetable starts to fail.
