@@ -1,5 +1,5 @@
 ---
-title: "How to study when you're too tired to focus properly"
+title: "Too tired to study? What actually works at 40% capacity"
 description: "You're exhausted and your brain won't absorb anything. Here's what is actually worth doing at forty percent capacity — and when it's time to stop."
 lede: "You open your notes and the words blur. You've been at it for twenty minutes and haven't absorbed anything. You're exhausted and wondering if you should push through or go to bed."
 answer: "When you are exhausted, drop anything that needs new understanding and do the low-effort, high-value work instead: reviewing cards you already made, testing yourself on familiar material, or setting up tomorrow's session. Learning genuinely new concepts on no sleep mostly wastes the evening, and sleep itself consolidates what you already studied."
