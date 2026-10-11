@@ -1,5 +1,5 @@
 ---
-title: "How to study when you can't focus for more than ten minutes"
+title: "Can't focus? Study in ten-minute bursts instead"
 description: "You can't force focus — it's not willpower. Here's how to study with a short attention span instead of against it."
 lede: "You sit down to study and within minutes your phone is in your hand, then you're scrolling, then you realise an hour has gone. It feels like a willpower problem. It isn't."
 answer: "A ten-minute attention span is a constraint to design around, not a flaw to fix. Work in short blocks that end before your focus does, start with the easiest task so getting moving is never the obstacle, and turn passive reading into something active. Change the environment instead of trying to out-will the phone."
