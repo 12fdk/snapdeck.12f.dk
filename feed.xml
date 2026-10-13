@@ -6,8 +6,16 @@
     <description>Study tips, memory science and exam prep for students — from the team behind SnapDeck AI.</description>
     <language>en</language>
     <atom:link href="https://snapdeck.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 09 Oct 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>Too much to study and no idea where to start? A first-hour plan</title>
+      <link>https://snapdeck.12f.dk/blog/too-much-to-study-where-to-start/</link>
+      <guid isPermaLink="true">https://snapdeck.12f.dk/blog/too-much-to-study-where-to-start/</guid>
+      <pubDate>Tue, 13 Oct 2026 08:00:00 +0000</pubDate>
+      <category>study-tips</category>
+      <description>Too much to study and no idea where to start? A first-hour plan: count the pile, pick one small slice, skim for questions, and test yourself.</description>
+    </item>
     <item>
       <title>Should you use AI to study? The honest answer</title>
       <link>https://snapdeck.12f.dk/blog/using-ai-to-study/</link>

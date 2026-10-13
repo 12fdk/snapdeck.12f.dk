@@ -65,6 +65,10 @@ SnapDeck AI is built with privacy as a core principle:
 
 The SnapDeck AI blog publishes practical study advice for students at https://snapdeck.12f.dk/blog/ (RSS feed: https://snapdeck.12f.dk/feed.xml). Posts are tagged `study-tips`, `memory-science` or `exam-prep`.
 
+### Too much to study and no idea where to start? A first-hour plan (2026-10-13, study-tips)
+https://snapdeck.12f.dk/blog/too-much-to-study-where-to-start/
+A first-hour plan for students facing a pile of material with no clear starting point. It turns an undefined stack into a countable list, sizes the first session so it can be finished on the worst day, and replaces highlighting with self-test questions. Includes a skim pass, a fixed stopping rule, and a note for readers starting late or returning after a gap.
+
 ### Should you use AI to study? The honest answer (2026-10-09, study-tips)
 https://snapdeck.12f.dk/blog/using-ai-to-study/
 For a student asking whether AI should do their studying or just help, this post draws the line between the two: AI that does the work for you (writing the essay) and AI that makes the work harder (generating practice questions, quizzing you, explaining a stuck concept). It covers which uses build retrieval memory, the honest limits including hallucination and course rules, and how a photo-to-flashcards tool fits in as one way to get practice questions from dense material.
