@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-15
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-15 (snapdeck-oct19-1 built)
 
 ## 1. What this is & how it's updated
 
@@ -310,7 +310,7 @@ weeks", never "finals on Dec 7".
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
-| Oct 19 | 1 | Reel | Snap it | PDF import → deck | "Midterm Friday. An 80-page PDF just landed. Now what?" | Highlighter · v3 e-min | dorm desk at dusk, printed pages fanned out, an uncapped yellow highlighter, violet sky in the window | queued |
+| Oct 19 | 1 | Reel | Snap it | PDF import → deck | "Midterm Friday. An 80-page PDF just landed. Now what?" | Highlighter · v3 e-min | dorm desk at dusk, printed pages fanned out, an uncapped yellow highlighter, violet sky in the window | built 2026-10-15 6ad0f5e90cad8c24dd40 |
 | Oct 19 | 2 | Carousel | Ranked | Study mode (Know it / Review) | "Midterm study methods, ranked: re-reading comes last." | — | library carrel in autumn, leaves against the glass, brass lamp, rust and gold | queued |
 | Oct 26 | 1 | Reel | 1 a.m. | Dark mode | "Clocks went back. Dark by 5. Three bio chapters left before Thursday." | Lamp · v4 d-major | window at blue hour, one desk-lamp pool, textbook out of focus, gold mug | queued |
 | Oct 26 | 2 | Carousel | By hand vs SnapDeck | Photo → deck (site comparison) | "One chapter of anatomy notes: 20–40 minutes of copying, or seconds?" | — | kitchen table, blank index cards in a rubber band, yellow sticky notes, overcast daylight | queued |
@@ -468,6 +468,14 @@ Append-only. Newest at bottom. Never edit or delete rows.
   skins and the SnapDeck music order. Baseline in §5 (101 feed posts Apr–Sep
   2026, median reach 0). §6: 71 rows, week of Oct 19, 2026 – week of Feb 15,
   2027, all `queued`.
+- 2026-10-15 — built `snapdeck-oct19-1` (post 6ad0f5e90cad8c24dd40), §6 Oct 19 #1
+  “Midterm Friday. An 80-page PDF just landed.” (reel, Snap it). First reel
+  ever; Highlighter skin, music v3 e-min, PDF import; scheduled 2026-10-22T18:00Z.
+  Audio: the v3 bed + frame-0 hit rendered to +0.7 dBTP (sibling reels -0.1 to
+  -1.8); delivered MP4 limited with a two-pass loudnorm to -13.9 LUFS / -1.3 dBTP.
+  Production note: Flux ignores negative prompts, so several stills had injected
+  laptops/phones/half-legible letters and were re-shot; compositions were anchored
+  to plain-wall / no-electronics scenes to keep §3 clean.
 
 ## 9. Open questions & watch items
 
