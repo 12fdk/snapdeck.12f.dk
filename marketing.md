@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-15 (snapdeck-oct19-1 built)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-16 (snapdeck-oct19-2 built)
 
 ## 1. What this is & how it's updated
 
@@ -310,8 +310,7 @@ weeks", never "finals on Dec 7".
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
-| Oct 19 | 1 | Reel | Snap it | PDF import → deck | "Midterm Friday. An 80-page PDF just landed. Now what?" | Highlighter · v3 e-min | dorm desk at dusk, printed pages fanned out, an uncapped yellow highlighter, violet sky in the window | built 2026-10-15 6ad0f5e90cad8c24dd40 |
-| Oct 19 | 2 | Carousel | Ranked | Study mode (Know it / Review) | "Midterm study methods, ranked: re-reading comes last." | — | library carrel in autumn, leaves against the glass, brass lamp, rust and gold | queued |
+| Oct 19 | 2 | Carousel | Ranked | Study mode (Know it / Review) | "Midterm study methods, ranked: re-reading comes last." | — | library carrel in autumn, leaves against the glass, brass lamp, rust and gold | built 2026-10-16 6ad2255a1c51d71b6804 |
 | Oct 26 | 1 | Reel | 1 a.m. | Dark mode | "Clocks went back. Dark by 5. Three bio chapters left before Thursday." | Lamp · v4 d-major | window at blue hour, one desk-lamp pool, textbook out of focus, gold mug | queued |
 | Oct 26 | 2 | Carousel | By hand vs SnapDeck | Photo → deck (site comparison) | "One chapter of anatomy notes: 20–40 minutes of copying, or seconds?" | — | kitchen table, blank index cards in a rubber band, yellow sticky notes, overcast daylight | queued |
 | Oct 26 | 3 | Reel | Snap it | Photos of whiteboards | "Scariest thing this Halloween: the whiteboard your TA is about to wipe." | Highlighter · v1 a-major | empty seminar room, smudged whiteboard, orange evening light, a small pumpkin on the sill | queued |
@@ -476,6 +475,15 @@ Append-only. Newest at bottom. Never edit or delete rows.
   Production note: Flux ignores negative prompts, so several stills had injected
   laptops/phones/half-legible letters and were re-shot; compositions were anchored
   to plain-wall / no-electronics scenes to keep §3 clean.
+
+- 2026-10-16 — built `snapdeck-oct19-2` (post 6ad2255a1c51d71b6804), §6 Oct 19 #2
+  "Midterm chapter re-read twice, still blank?" (carousel, Ranked). Study mode
+  (Know it / Review); 8 slides, 2 fresh photos (library carrel desk-level with
+  brass lamp, straight-overhead cards + yellow pencil), rust-and-gold autumn sun
+  with indigo shadows; scheduled 2026-10-22T18:00Z. Product-focused, per the
+  funnel (0 social-attributed visits, 0 App Store taps). Ranking runs 4 → 1,
+  re-reading worst; the Nov 9 #2 and Nov 30 #2 rows reuse these methods —
+  reword them when their turn comes.
 
 ## 9. Open questions & watch items
 
