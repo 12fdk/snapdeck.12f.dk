@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-16 (snapdeck-oct19-2 built)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-19 (snapdeck-oct26-1 built)
 
 ## 1. What this is & how it's updated
 
@@ -311,7 +311,7 @@ weeks", never "finals on Dec 7".
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
 | Oct 19 | 2 | Carousel | Ranked | Study mode (Know it / Review) | "Midterm study methods, ranked: re-reading comes last." | — | library carrel in autumn, leaves against the glass, brass lamp, rust and gold | built 2026-10-16 6ad2255a1c51d71b6804 |
-| Oct 26 | 1 | Reel | 1 a.m. | Dark mode | "Clocks went back. Dark by 5. Three bio chapters left before Thursday." | Lamp · v4 d-major | window at blue hour, one desk-lamp pool, textbook out of focus, gold mug | queued |
+| Oct 26 | 1 | Reel | 1 a.m. | Dark mode | "Clocks went back. Dark by 5. Three bio chapters left before Thursday." | Lamp · v4 d-major | window at blue hour, one desk-lamp pool, textbook out of focus, gold mug | built 2026-10-19 6ad627f9c0baa0c35667 |
 | Oct 26 | 2 | Carousel | By hand vs SnapDeck | Photo → deck (site comparison) | "One chapter of anatomy notes: 20–40 minutes of copying, or seconds?" | — | kitchen table, blank index cards in a rubber band, yellow sticky notes, overcast daylight | queued |
 | Oct 26 | 3 | Reel | Snap it | Photos of whiteboards | "Scariest thing this Halloween: the whiteboard your TA is about to wipe." | Highlighter · v1 a-major | empty seminar room, smudged whiteboard, orange evening light, a small pumpkin on the sill | queued |
 | Nov 2 | 1 | Reel | No signal | Works offline | "Basement seminar room, zero bars, quiz in 20 minutes." | Lamp · v5 c-min | concrete basement corridor, cool fluorescent, gold stair-rail light, phone in a backpack pocket | queued |
@@ -484,6 +484,28 @@ Append-only. Newest at bottom. Never edit or delete rows.
   funnel (0 social-attributed visits, 0 App Store taps). Ranking runs 4 → 1,
   re-reading worst; the Nov 9 #2 and Nov 30 #2 rows reuse these methods —
   reword them when their turn comes.
+
+- 2026-10-19 — built `snapdeck-oct26-1` (post 6ad627f9c0baa0c35667), §6 Oct 26 #1
+  "Clocks went back. Dark by 5. Three bio chapters left before Thursday." (reel,
+  1 a.m.). Dark mode + study mode support copy (Know it / Review, cards you miss
+  come back, keeps score); Lamp skin (clean — alternating the 10-15 reel's
+  Highlighter), music v4 d-major (next after v3 in the SnapDeck order); CTA
+  "Try SnapDeck AI free"; scheduled 2026-11-01T18:00Z (Sun) — the Thursday slot
+  is kept for the Halloween row (Oct 26 #3, "post by Oct 29"); the clock-change
+  hook is fresh for the US (Nov 1) and already true for the UK/EU (Oct 25).
+  Fresh window-seat shoot (prefix sd-social-20261019): blue hour, white-enamel
+  lamp pool, gold mug as the single gold, indigo shadows; still retakes s2 t2,
+  s3 t2, s5 t3 (first takes rendered brass/banker's lamps), each still
+  vision-checked (no legible text, no electronics, no faces, one gold object).
+  LTX: only 1 of the designed 3 clips survived — c3 (first + last frame
+  checked clean); the c1/c5 window-seat clips drifted on both takes (melting
+  lamp, vanishing book/mug, hard camera zoom) and failed frame QA twice each,
+  so shots 1 and 5 run as stills with the template's slow push-in. Render WARN:
+  the 15.5 s end-card hit was hard-clipped at full scale (template true-peak
+  limiter missed it; render check 0.2 dBTP / 4.0 dB). Delivered MP4 (video
+  untouched, audio AAC 192k) applies a targeted 4 dB dip on 15.40–15.95 s →
+  −1.2 dBTP, ≈ −14 LUFS (evidence: out/snapdeck-oct26-1/delivered-ebur128-check.txt).
+  Motion repo commit db0c0bd; NAS /nas/spark/videos/snapdeck-oct26-1/.
 
 ## 9. Open questions & watch items
 
