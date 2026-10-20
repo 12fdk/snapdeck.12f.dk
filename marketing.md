@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-19 (snapdeck-oct26-1 built)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-20 (snapdeck-oct26-2 built)
 
 ## 1. What this is & how it's updated
 
@@ -310,9 +310,7 @@ weeks", never "finals on Dec 7".
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
-| Oct 19 | 2 | Carousel | Ranked | Study mode (Know it / Review) | "Midterm study methods, ranked: re-reading comes last." | — | library carrel in autumn, leaves against the glass, brass lamp, rust and gold | built 2026-10-16 6ad2255a1c51d71b6804 |
-| Oct 26 | 1 | Reel | 1 a.m. | Dark mode | "Clocks went back. Dark by 5. Three bio chapters left before Thursday." | Lamp · v4 d-major | window at blue hour, one desk-lamp pool, textbook out of focus, gold mug | built 2026-10-19 6ad627f9c0baa0c35667 |
-| Oct 26 | 2 | Carousel | By hand vs SnapDeck | Photo → deck (site comparison) | "One chapter of anatomy notes: 20–40 minutes of copying, or seconds?" | — | kitchen table, blank index cards in a rubber band, yellow sticky notes, overcast daylight | queued |
+| Oct 26 | 2 | Carousel | By hand vs SnapDeck | Photo → deck (site comparison) | "One chapter of anatomy notes: 20–40 minutes of copying, or seconds?" | — | kitchen table, blank index cards in a rubber band, yellow sticky notes, overcast daylight | built 2026-10-20 6ad779edecf862f50594 |
 | Oct 26 | 3 | Reel | Snap it | Photos of whiteboards | "Scariest thing this Halloween: the whiteboard your TA is about to wipe." | Highlighter · v1 a-major | empty seminar room, smudged whiteboard, orange evening light, a small pumpkin on the sill | queued |
 | Nov 2 | 1 | Reel | No signal | Works offline | "Basement seminar room, zero bars, quiz in 20 minutes." | Lamp · v5 c-min | concrete basement corridor, cool fluorescent, gold stair-rail light, phone in a backpack pocket | queued |
 | Nov 2 | 2 | Carousel | Science, no numbers | Testing effect → self-testing | "Read your notes three times and still blanked? That's the testing effect." | — | grey morning desk, closed exam booklet face-down, one gold pencil, steam from tea | queued |
@@ -506,6 +504,28 @@ Append-only. Newest at bottom. Never edit or delete rows.
   untouched, audio AAC 192k) applies a targeted 4 dB dip on 15.40–15.95 s →
   −1.2 dBTP, ≈ −14 LUFS (evidence: out/snapdeck-oct26-1/delivered-ebur128-check.txt).
   Motion repo commit db0c0bd; NAS /nas/spark/videos/snapdeck-oct26-1/.
+
+- 2026-10-20 — built `snapdeck-oct26-2` (post 6ad779edecf862f50594), §6 Oct 26 #2
+  "One chapter of anatomy notes. 20–40 minutes of copying. Or seconds?" (carousel,
+  By hand vs SnapDeck). Makes the site comparison row "building a deck from one
+  chapter: 20–40 minutes of copying" vs "Seconds" concrete with one anatomy chapter.
+  8 slides, photo-led (4 fresh photos + 4 short text slides), order T P T P T P P T;
+  kitchen table in flat grey overcast daylight, cool blue-grey light with deep indigo
+  shadows, one pad of yellow sticky notes as the only gold (index cards in a rubber
+  band, an overhead card fan, a face-down phone over the page, a cleared table).
+  Product-focused per the flat funnel (0 attributed visits, 0 App Store taps). CTA
+  "Download free on the App Store" + "Save this for exam season"; 5 hashtags
+  (#SnapDeckAI #AIFlashcards #Flashcards #StudyNotes #StudyTips); scheduled
+  2026-10-28T18:00:00Z (Wed) — Thursday kept for the Halloween row (Oct 26 #3).
+  Fresh shoot (prefix sd-social-20261020); all 4 photos vision-QA'd and re-shot:
+  s2 hero fixed to index cards in a rubber band + indigo; s4 injected laptop removed
+  + indigo; s6 (3rd take) two mid-frame hands and a COBRA logo/text on the phone back
+  removed (plain featureless back, screen hidden); s7 fixed to exactly one gold
+  (yellow pad) with a clear rubber band + indigo. Slide 1 hook restructured to a
+  3-line material headline (number moved to the body) after the 5-line wrap split
+  "20–40 / minutes". Claude review: items 1–12 PASS; slide 1 wrap fixed, P4
+  top-left confirmed zero-legibility (blurred diagram), P6 anatomy labels accepted as
+  unreadable.
 
 ## 9. Open questions & watch items
 
