@@ -6,8 +6,16 @@
     <description>Study tips, memory science and exam prep for students — from the team behind SnapDeck AI.</description>
     <language>en</language>
     <atom:link href="https://snapdeck.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 13 Oct 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>How to practice maths and physics when re-reading feels like studying</title>
+      <link>https://snapdeck.12f.dk/blog/practice-maths-physics-effectively/</link>
+      <guid isPermaLink="true">https://snapdeck.12f.dk/blog/practice-maths-physics-effectively/</guid>
+      <pubDate>Tue, 20 Oct 2026 08:00:00 +0000</pubDate>
+      <category>study-tips</category>
+      <description>You can follow every step of a worked example, then freeze on a question that looks slightly different. Here is the practice loop that changes that.</description>
+    </item>
     <item>
       <title>Too much to study and no idea where to start? A first-hour plan</title>
       <link>https://snapdeck.12f.dk/blog/too-much-to-study-where-to-start/</link>
