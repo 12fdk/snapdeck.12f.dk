@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-20 (snapdeck-oct26-2 built)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-21 (snapdeck-oct26-3 built)
 
 ## 1. What this is & how it's updated
 
@@ -310,8 +310,7 @@ weeks", never "finals on Dec 7".
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
-| Oct 26 | 2 | Carousel | By hand vs SnapDeck | Photo → deck (site comparison) | "One chapter of anatomy notes: 20–40 minutes of copying, or seconds?" | — | kitchen table, blank index cards in a rubber band, yellow sticky notes, overcast daylight | built 2026-10-20 6ad779edecf862f50594 |
-| Oct 26 | 3 | Reel | Snap it | Photos of whiteboards | "Scariest thing this Halloween: the whiteboard your TA is about to wipe." | Highlighter · v1 a-major | empty seminar room, smudged whiteboard, orange evening light, a small pumpkin on the sill | queued |
+| Oct 26 | 3 | Reel | Snap it | Photos of whiteboards | "Scariest thing this Halloween: the whiteboard your TA is about to wipe." | Highlighter · v1 a-major | empty seminar room, smudged whiteboard, orange evening light, a small pumpkin on the sill | built 2026-10-21 6ad8c4ef09aef52c3f91 |
 | Nov 2 | 1 | Reel | No signal | Works offline | "Basement seminar room, zero bars, quiz in 20 minutes." | Lamp · v5 c-min | concrete basement corridor, cool fluorescent, gold stair-rail light, phone in a backpack pocket | queued |
 | Nov 2 | 2 | Carousel | Science, no numbers | Testing effect → self-testing | "Read your notes three times and still blanked? That's the testing effect." | — | grey morning desk, closed exam booklet face-down, one gold pencil, steam from tea | queued |
 | Nov 2 | 3 | Carousel | One deck per subject | A deck per subject | "Reading week: five modules, five piles of notes. Start here." | — | five coloured folders stacked on a student-flat floor, low autumn sun across floorboards | queued |
@@ -526,6 +525,31 @@ Append-only. Newest at bottom. Never edit or delete rows.
   "20–40 / minutes". Claude review: items 1–12 PASS; slide 1 wrap fixed, P4
   top-left confirmed zero-legibility (blurred diagram), P6 anatomy labels accepted as
   unreadable.
+
+- 2026-10-21 — built `snapdeck-oct26-3` (post 6ad8c4ef09aef52c3f91), §6 Oct 26 #3
+  "Scariest thing this Halloween: the whiteboard your TA is about to wipe." (reel,
+  Snap it). Photos of whiteboards: whiteboard → deck, Halloween humour frame;
+  product-focused per the flat funnel (0 attributed visits, 0 App Store taps).
+  Highlighter skin (alternating the 10-19 reel's Lamp), music v1 a-major (next
+  after v3, v4 in the SnapDeck order); CTA "Download free on the App Store" (end
+  card + sub "Free on the App Store" + real icon, hash-verified 2026-10-21);
+  scheduled 2026-10-29T17:00:00Z (Thu) — Thursday per §4 and the Halloween row's
+  "post by Oct 29"; 20 h gap checked against the schedule (no upcoming posts;
+  latest published 2026-10-20T14:31Z). Fresh shoot (prefix sd-social-20261021):
+  5 stills + 2 LTX clips. Retakes: s2 t1 (Flux injected a piece of black chalk,
+  no gold object → t2 yellow marker in the tray); c1 t1 and c4 t1 (push-in too
+  deep — window/pumpkin and marker out of the last frame, c4 grew a scratch →
+  t2 with a "stay fully in frame" anchor; the thin line on c4 is the source
+  still's faint smudge, consistent across the clip — not drift). All stills and
+  both clips' first/last frames vision-QA'd (no legible text, no electronics,
+  no faces, exactly one gold object — pumpkin s1/s5, yellow marker s2/s4,
+  highlighter s3 — indigo shadows, white whiteboard). Render: all checks PASS;
+  true peak +0.1 dBTP at the end-card hit (same as 10-19) → targeted 4 dB dip on
+  15.35–16.35 s of the delivered MP4 (video untouched, AAC 192k) → −1.4 dBTP,
+  −14.1 LUFS (evidence: out/snapdeck-oct26-3/delivered-ebur128-check.txt).
+  Claude review round 1 FAIL (FB emoji on the hook line — moved to the body;
+  repo edits in progress) → round 2 after the §8/§6 updates. Motion repo commit
+  d1de557; NAS /nas/spark/videos/snapdeck-oct26-3/.
 
 ## 9. Open questions & watch items
 
