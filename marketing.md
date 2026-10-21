@@ -547,8 +547,9 @@ Append-only. Newest at bottom. Never edit or delete rows.
   true peak +0.1 dBTP at the end-card hit (same as 10-19) → targeted 4 dB dip on
   15.35–16.35 s of the delivered MP4 (video untouched, AAC 192k) → −1.4 dBTP,
   −14.1 LUFS (evidence: out/snapdeck-oct26-3/delivered-ebur128-check.txt).
-  Claude review round 1 FAIL (FB emoji on the hook line — moved to the body;
-  repo edits in progress) → round 2 after the §8/§6 updates. Motion repo commit
+  Claude review: round 1 FAIL (FB emoji on the hook line — moved to the
+  body; repo edits pending) → round 2 PASS after the §8/§6 updates; the
+  reviewer withdrew the round-1 complaint about the pruned Oct 26 #2 row. Motion repo commit
   d1de557; NAS /nas/spark/videos/snapdeck-oct26-3/.
 
 ## 9. Open questions & watch items
