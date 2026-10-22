@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-21 (snapdeck-oct26-3 built)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-22 (no row due; pruned published Oct 26 #3; metrics issue #27 opened)
 
 ## 1. What this is & how it's updated
 
@@ -310,7 +310,6 @@ weeks", never "finals on Dec 7".
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
-| Oct 26 | 3 | Reel | Snap it | Photos of whiteboards | "Scariest thing this Halloween: the whiteboard your TA is about to wipe." | Highlighter · v1 a-major | empty seminar room, smudged whiteboard, orange evening light, a small pumpkin on the sill | built 2026-10-21 6ad8c4ef09aef52c3f91 |
 | Nov 2 | 1 | Reel | No signal | Works offline | "Basement seminar room, zero bars, quiz in 20 minutes." | Lamp · v5 c-min | concrete basement corridor, cool fluorescent, gold stair-rail light, phone in a backpack pocket | queued |
 | Nov 2 | 2 | Carousel | Science, no numbers | Testing effect → self-testing | "Read your notes three times and still blanked? That's the testing effect." | — | grey morning desk, closed exam booklet face-down, one gold pencil, steam from tea | queued |
 | Nov 2 | 3 | Carousel | One deck per subject | A deck per subject | "Reading week: five modules, five piles of notes. Start here." | — | five coloured folders stacked on a student-flat floor, low autumn sun across floorboards | queued |
@@ -551,6 +550,24 @@ Append-only. Newest at bottom. Never edit or delete rows.
   body; repo edits pending) → round 2 PASS after the §8/§6 updates; the
   reviewer withdrew the round-1 complaint about the pruned Oct 26 #2 row. Motion repo commit
   d1de557; NAS /nas/spark/videos/snapdeck-oct26-3/.
+
+- 2026-10-22 — no row due tonight: the first `queued` §6 row is Nov 2 #1 and its
+  week starts Nov 2 (11 days out); §7 review not due (not Monday; the oldest
+  published post, 6ad0f5e90cad8c24dd40, went out 2026-10-15T19:31Z — outside the
+  7–13 day window). Pruned the §6 Oct 26 #3 row (6ad8c4ef09aef52c3f91, published
+  2026-10-21T14:30Z). Observations from the platform read: (a) all five built
+  posts (Oct 19 #1–#2, Oct 26 #1–#3) published earlier than the slots the §8
+  build rows record (e.g. Oct 26 #1: published 2026-10-19T17:00Z against the
+  recorded 2026-11-01T18:00Z slot); in four docs `publishedAt` is days before
+  `scheduledAt` and the `scheduledAt` is still future, and two carry
+  `errorMessage: Failed on: instagram` despite `status: published` — whatever the
+  publish path was, it did not follow the recorded slots; next builds should
+  record the actual publish path, not only the intended slot. (b) All five have
+  every metrics field and `metricsUpdatedAt` null 3–7 days after publish —
+  collect-metrics (every 2 h) has written nothing; the §9 check (first new
+  carousel 6ad2255a1c51d71b6804, 3 days old) fails; opened
+  12fdk/snapdeck.12f.dk#27. The stuck `publishing` post 6a0ab5e70017d53c950c
+  (since 2026-05-30) still sits in the schedule (§9, owner Robert).
 
 ## 9. Open questions & watch items
 
