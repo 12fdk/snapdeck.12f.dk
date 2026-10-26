@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-22 (no row due; pruned published Oct 26 #3; metrics issue #27 opened)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-26 (built Nov 2 #1 reel snapdeck-nov2-1, post 6adf67ec442d20ba79bc, scheduled 2026-11-05T17:00Z; §7 review: 3 NO-DATA rows — collect-metrics still null, #27)
 
 ## 1. What this is & how it's updated
 
@@ -310,7 +310,7 @@ weeks", never "finals on Dec 7".
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
-| Nov 2 | 1 | Reel | No signal | Works offline | "Basement seminar room, zero bars, quiz in 20 minutes." | Lamp · v5 c-min | concrete basement corridor, cool fluorescent, gold stair-rail light, phone in a backpack pocket | queued |
+| Nov 2 | 1 | Reel | No signal | Works offline | "Basement seminar room, zero bars, quiz in 20 minutes." | Lamp · v5 c-min | concrete basement corridor, cool fluorescent, gold stair-rail light, phone in a backpack pocket | built 2026-10-26 6adf67ec442d20ba79bc |
 | Nov 2 | 2 | Carousel | Science, no numbers | Testing effect → self-testing | "Read your notes three times and still blanked? That's the testing effect." | — | grey morning desk, closed exam booklet face-down, one gold pencil, steam from tea | queued |
 | Nov 2 | 3 | Carousel | One deck per subject | A deck per subject | "Reading week: five modules, five piles of notes. Start here." | — | five coloured folders stacked on a student-flat floor, low autumn sun across floorboards | queued |
 | Nov 2 | 4 | Reel | Snap it | Projector slides | "Lecturer flew through 40 slides in 50 minutes. You got photos of 12." | Highlighter · v0 c-major | empty lecture hall from the back row, projector beam with dust, blank screen glow | queued |
@@ -456,6 +456,9 @@ Append-only. Newest at bottom. Never edit or delete rows.
 
 | Date | Post | Numbers | Verdict | Change |
 |---|---|---|---|---|
+| 2026-10-26 | 6ad0f5e90cad8c24dd40 "Midterm Friday. An 80-page PDF just landed." (reel, Snap it) | IG r/l/c/s/sh n/a · FB r/l/c/s/sh n/a (collect-metrics wrote nothing; metricsUpdatedAt null, issue #27) · Umami 7d (10-15→10-22): IG/FB referrer visits 0, appstore-click 0 | NO-DATA | none — re-judge once collect-metrics fills metrics |
+| 2026-10-26 | 6ad2255a1c51d71b6804 "Midterm chapter re-read twice and still blank on the practice questions?" (carousel, Ranked) | IG r/l/c/s/sh n/a · FB r/l/c/s/sh n/a (collect-metrics wrote nothing; metricsUpdatedAt null, issue #27) · Umami 7d (10-19→10-26): IG/FB referrer visits 0, appstore-click 0 | NO-DATA | none — re-judge once collect-metrics fills metrics; also the §9 first-new-carousel check (still no metrics, #27) |
+| 2026-10-26 | 6ad627f9c0baa0c35667 "Clocks went back. Dark by 5. Three bio chapters left before Thursday." (reel, 1 a.m.) | IG r/l/c/s/sh n/a · FB r/l/c/s/sh n/a (collect-metrics wrote nothing; metricsUpdatedAt null, issue #27) · Umami 7d (10-19→10-26): IG/FB referrer visits 0, appstore-click 0 | NO-DATA | none — re-judge once collect-metrics fills metrics; doc still carries errorMessage "Failed on: instagram" despite status published |
 
 - 2026-10-15 — file created (spark#140): the SnapDeck nightly social job reads
   this file. Own look set in §3: indigo/white/gold text slides from the site
@@ -623,3 +626,24 @@ Append-only. Newest at bottom. Never edit or delete rows.
   bio" are in ctaOptions but not used (§3). Decide whether to add them.
 - **`optimize-guidelines` is dormant** (owner: Robert): decide whether to
   enable it once §8 has ≥ 4 weeks of logs.
+
+- 2026-10-26 — built `snapdeck-nov2-1` (post 6adf67ec442d20ba79bc), §6 Nov 2 #1
+  "Basement seminar room, zero bars, quiz in 20 minutes." (reel, No signal).
+  Works offline; product-focused per the flat funnel (0 social-attributed
+  visits, 0 App Store taps 7d). Lamp skin (alternating the 10-21 reel's
+  Highlighter), music v5 c-min (next after v3, v4, v1 in the SnapDeck order);
+  CTA "Download free on the App Store" (end card + sub "Free on the App Store"
+  + real icon, hash-verified 2026-10-26); scheduled 2026-11-05T17:00:00Z (Thu)
+  — inside the row's week (Nov 2–8), 20 h gap checked (latest published
+  2026-10-21T14:30Z; only the stuck 2026-05-30 `publishing` post in the
+  schedule, §9 owner Robert). Fresh shoot (prefix sd-social-20261026): 5 stills
+  + 2 LTX clips (c1 slow dolly down the corridor, c4 near-static gold rail);
+  all first takes passed vision QA (every still + first/last/mid clip frame:
+  no legible text, no screens, no faces, one gold element); no retakes.
+  Render: all machine checks PASS (19.0 s, hook at 0 s, −13.9 LUFS,
+  −1.4 dBTP — no targeted dip needed). Frame-0 headline uses the design's
+  trimmed "Zero bars. Quiz in 20 minutes." (≤ 6 words); the full row hook
+  opens the IG caption. Watch: the platform published the five earlier posts
+  before their recorded slots (§8 2026-10-22); record this post's actual
+  publish path when it goes out. Motion repo commit 9dcd224; NAS
+  /nas/spark/videos/snapdeck-nov2-1/.
