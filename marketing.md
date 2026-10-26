@@ -572,6 +572,28 @@ Append-only. Newest at bottom. Never edit or delete rows.
   12fdk/snapdeck.12f.dk#27. The stuck `publishing` post 6a0ab5e70017d53c950c
   (since 2026-05-30) still sits in the schedule (§9, owner Robert).
 
+- 2026-10-26 — built `snapdeck-nov2-1` (post 6adf67ec442d20ba79bc), §6 Nov 2 #1
+  "Basement seminar room, zero bars, quiz in 20 minutes." (reel, No signal).
+  Works offline; product-focused per the flat funnel (0 social-attributed
+  visits, 0 App Store taps 7d). Lamp skin (alternating the 10-21 reel's
+  Highlighter), music v5 c-min (next after v3, v4, v1 in the SnapDeck order);
+  CTA "Download free on the App Store" (end card + sub "Free on the App Store"
+  + real icon, hash-verified 2026-10-26); scheduled 2026-11-05T17:00:00Z (Thu)
+  — inside the row's week (Nov 2–8), 20 h gap checked (latest published
+  2026-10-21T14:30Z; only the stuck 2026-05-30 `publishing` post in the
+  schedule, §9 owner Robert). Fresh shoot (prefix sd-social-20261026): 5 stills
+  + 2 LTX clips (c1 slow dolly down the corridor, c4 near-static gold rail);
+  all first takes passed vision QA (every still + first/last/mid clip frame:
+  no legible text, no screens, no faces, one gold element); no retakes.
+  Render: all machine checks PASS (19.0 s, hook at 0 s, −13.9 LUFS,
+  −1.4 dBTP — no targeted dip needed). Frame-0 headline uses the design's
+  trimmed "Zero bars. Quiz in 20 minutes." (≤ 6 words); the full row hook
+  opens the IG caption. Watch: the platform published the five earlier posts
+  before their recorded slots (§8 2026-10-22); record this post's actual
+  publish path when it goes out. Motion repo commit 9dcd224; NAS
+  /nas/spark/videos/snapdeck-nov2-1/.
+
+
 ## 9. Open questions & watch items
 
 - **iOS requirement mismatch** (owner: Robert) — the site, `llms-full.txt`
@@ -627,23 +649,4 @@ Append-only. Newest at bottom. Never edit or delete rows.
 - **`optimize-guidelines` is dormant** (owner: Robert): decide whether to
   enable it once §8 has ≥ 4 weeks of logs.
 
-- 2026-10-26 — built `snapdeck-nov2-1` (post 6adf67ec442d20ba79bc), §6 Nov 2 #1
-  "Basement seminar room, zero bars, quiz in 20 minutes." (reel, No signal).
-  Works offline; product-focused per the flat funnel (0 social-attributed
-  visits, 0 App Store taps 7d). Lamp skin (alternating the 10-21 reel's
-  Highlighter), music v5 c-min (next after v3, v4, v1 in the SnapDeck order);
-  CTA "Download free on the App Store" (end card + sub "Free on the App Store"
-  + real icon, hash-verified 2026-10-26); scheduled 2026-11-05T17:00:00Z (Thu)
-  — inside the row's week (Nov 2–8), 20 h gap checked (latest published
-  2026-10-21T14:30Z; only the stuck 2026-05-30 `publishing` post in the
-  schedule, §9 owner Robert). Fresh shoot (prefix sd-social-20261026): 5 stills
-  + 2 LTX clips (c1 slow dolly down the corridor, c4 near-static gold rail);
-  all first takes passed vision QA (every still + first/last/mid clip frame:
-  no legible text, no screens, no faces, one gold element); no retakes.
-  Render: all machine checks PASS (19.0 s, hook at 0 s, −13.9 LUFS,
-  −1.4 dBTP — no targeted dip needed). Frame-0 headline uses the design's
-  trimmed "Zero bars. Quiz in 20 minutes." (≤ 6 words); the full row hook
-  opens the IG caption. Watch: the platform published the five earlier posts
-  before their recorded slots (§8 2026-10-22); record this post's actual
-  publish path when it goes out. Motion repo commit 9dcd224; NAS
-  /nas/spark/videos/snapdeck-nov2-1/.
+
