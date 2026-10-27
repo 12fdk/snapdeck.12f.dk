@@ -132,7 +132,7 @@ through = already written; skip those):
 8. **Studying with ADHD without a two-hour focus block** — short sessions that actually work · *"how to study with adhd"*
 9. **Memorising terminology and vocabulary** — anatomy, law, languages, drug names · *"how to memorize medical terminology"*
 10. ~~The revision timetable that survives contact with real life~~ *(covered: revision-timetable-that-works)*
-11. **Group study that isn't a waste of an afternoon** — the format that works · *"is studying in groups effective"*
+11. ~~Group study that isn't a waste of an afternoon~~ *(covered: group-study-that-works)*
 12. ~~Studying when you are exhausted~~ *(covered: how-to-study-when-tired)*
 13. **Re-reading vs. self-testing** — the single highest-leverage swap in studying · *"is rereading notes effective"*
 14. **How to revise a subject you hate** — starting when there is no motivation left · *"how to study a subject you hate"*
