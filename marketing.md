@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-26 (built Nov 2 #1 reel snapdeck-nov2-1, post 6adf67ec442d20ba79bc, scheduled 2026-11-05T17:00Z; §7 review: 3 NO-DATA rows — collect-metrics still null, #27)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-27 (built Nov 2 #2 carousel snapdeck-nov2-2, post 6ae0b2e04070d4eed057, scheduled 2026-11-08T17:00Z; §7 review not due — no published post in the 7–13 day window)
 
 ## 1. What this is & how it's updated
 
@@ -310,8 +310,7 @@ weeks", never "finals on Dec 7".
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
-| Nov 2 | 1 | Reel | No signal | Works offline | "Basement seminar room, zero bars, quiz in 20 minutes." | Lamp · v5 c-min | concrete basement corridor, cool fluorescent, gold stair-rail light, phone in a backpack pocket | built 2026-10-26 6adf67ec442d20ba79bc |
-| Nov 2 | 2 | Carousel | Science, no numbers | Testing effect → self-testing | "Read your notes three times and still blanked? That's the testing effect." | — | grey morning desk, closed exam booklet face-down, one gold pencil, steam from tea | queued |
+| Nov 2 | 2 | Carousel | Science, no numbers | Testing effect → self-testing | "Read your notes three times and still blanked? That's the testing effect." | — | grey morning desk, closed exam booklet face-down, one gold pencil, steam from tea | built 2026-10-27 6ae0b2e04070d4eed057 |
 | Nov 2 | 3 | Carousel | One deck per subject | A deck per subject | "Reading week: five modules, five piles of notes. Start here." | — | five coloured folders stacked on a student-flat floor, low autumn sun across floorboards | queued |
 | Nov 2 | 4 | Reel | Snap it | Projector slides | "Lecturer flew through 40 slides in 50 minutes. You got photos of 12." | Highlighter · v0 c-major | empty lecture hall from the back row, projector beam with dust, blank screen glow | queued |
 | Nov 9 | 1 | Reel | Snap it | Vocab decks (39 languages) | "Spanish quiz Monday. One page of new vocab and a bus ride home." | Lamp · v2 g-min | night bus window, city-light bokeh, notebook on a knee, yellow grab pole | queued |
@@ -592,6 +591,37 @@ Append-only. Newest at bottom. Never edit or delete rows.
   before their recorded slots (§8 2026-10-22); record this post's actual
   publish path when it goes out. Motion repo commit 9dcd224; NAS
   /nas/spark/videos/snapdeck-nov2-1/.
+
+- 2026-10-27 — built `snapdeck-nov2-2` (post 6ae0b2e04070d4eed057), §6 Nov 2 #2
+  "Read your notes three times and still blanked? That's the testing effect."
+  (carousel, Science, no numbers). Testing effect named qualitatively
+  (Roediger & Karpicke, 2006 — the only citation, no numbers, no other
+  studies); product-focused per the flat funnel (0 attributed social visits,
+  0 App Store taps 7d): photo → deck → study mode (Know it / Review, cards you
+  miss come back). 7 slides T P T P T T T: slide 1 the hook, 2 fresh photos,
+  5 text, 7 the CTA. CTA "Download free on the App Store" + allowed carousel
+  addition "Save this for exam season"; 5 hashtags (#SnapDeckAI #AIFlashcards
+  #ExamPrep #StudyTips #Midterms); requirement line before the hashtags; both
+  captions end on the A/B question (re-reading vs quizzing first); FB caption
+  rewritten story-driven with the inline App Store link and 3 hashtags.
+  Scheduled 2026-11-08T17:00:00Z (Sun) — inside the row's week (Nov 2–8), 20 h
+  gap checked (latest published 2026-10-26T15:01Z; only the stuck 2026-05-30
+  `publishing` post in the schedule, §9 owner Robert). Watch: the platform
+  published the earlier posts before their recorded slots (§8 2026-10-22);
+  record the actual publish path when this one goes out (deployed
+  publish-social posts in the first 15-min cycle once the 20 h gap is met,
+  ≈ 2026-10-28T11:00Z). Fresh shoot (prefix sd-social-20261027): 2 stills,
+  desk-level side-on under a sloping roof window (closed face-down booklet,
+  gold pencil, white tea mug, steam) and a tight macro (pencil tip at the
+  paper edge, smudged marks); both first takes passed vision QA (no legible
+  text, no screens, no faces, exactly one gold object, indigo shadows); no
+  retakes. Look: top-floor student room desk under a sloping roof window,
+  pre-dawn steel-blue grey with first pale light and deep indigo shadows, one
+  gold pencil on a closed face-down exam booklet, tea steam backlit by the
+  window — distinct from all six recent looks (not the 10-20 overcast
+  kitchen: no sticky pad, no index cards, no overhead fan). Claude review:
+  round 1 FAIL (expected — post not yet created and marketing.md not yet
+  edited) → round 2 after creation and the §6/§8 edits above.
 
 
 ## 9. Open questions & watch items
