@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-27 (built Nov 2 #2 carousel snapdeck-nov2-2, post 6ae0b2e04070d4eed057, scheduled 2026-11-08T17:00Z; §7 review not due — no published post in the 7–13 day window)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-28 (built Nov 2 #3 carousel snapdeck-nov2-3, post 6ae204c5a80dd396a885, scheduled 2026-11-05T17:00Z; §7 review not due — no published post in the 7–13 day window)
 
 ## 1. What this is & how it's updated
 
@@ -310,8 +310,7 @@ weeks", never "finals on Dec 7".
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
-| Nov 2 | 2 | Carousel | Science, no numbers | Testing effect → self-testing | "Read your notes three times and still blanked? That's the testing effect." | — | grey morning desk, closed exam booklet face-down, one gold pencil, steam from tea | built 2026-10-27 6ae0b2e04070d4eed057 |
-| Nov 2 | 3 | Carousel | One deck per subject | A deck per subject | "Reading week: five modules, five piles of notes. Start here." | — | five coloured folders stacked on a student-flat floor, low autumn sun across floorboards | queued |
+| Nov 2 | 3 | Carousel | One deck per subject | A deck per subject | "Reading week: five modules, five piles of notes. Start here." | — | five coloured folders stacked on a student-flat floor, low autumn sun across floorboards | built 2026-10-28 6ae204c5a80dd396a885 |
 | Nov 2 | 4 | Reel | Snap it | Projector slides | "Lecturer flew through 40 slides in 50 minutes. You got photos of 12." | Highlighter · v0 c-major | empty lecture hall from the back row, projector beam with dust, blank screen glow | queued |
 | Nov 9 | 1 | Reel | Snap it | Vocab decks (39 languages) | "Spanish quiz Monday. One page of new vocab and a bus ride home." | Lamp · v2 g-min | night bus window, city-light bokeh, notebook on a knee, yellow grab pole | queued |
 | Nov 9 | 2 | Carousel | Ranked | Study mode | "Highlighting vs re-writing notes vs flashcards: ranked for exam day." | — | overhead white desk, three gold highlighters, a blurred textbook page, hard noon light | queued |
@@ -591,6 +590,39 @@ Append-only. Newest at bottom. Never edit or delete rows.
   before their recorded slots (§8 2026-10-22); record this post's actual
   publish path when it goes out. Motion repo commit 9dcd224; NAS
   /nas/spark/videos/snapdeck-nov2-1/.
+
+- 2026-10-28 — built `snapdeck-nov2-3` (post 6ae204c5a80dd396a885), §6 Nov 2 #3
+  "Reading week: five modules, five piles of notes. Start here." (carousel, One deck
+  per subject). A deck per subject + photo → deck + study mode (Know it / Review,
+  cards you miss come back); product-focused per the flat funnel (0 profile taps,
+  0 site landings, 1 site visit, 0 App Store taps 7d). 7 slides T P T P T T T:
+  slide 1 the hook, 2 fresh photos, 5 text, 7 the CTA. CTA "Download free on the
+  App Store" + allowed carousel addition "Save this for exam season"; 5 hashtags
+  (#SnapDeckAI #AIFlashcards #StudyNotes #StudyTips #ReadingWeek); requirement
+  line before the hashtags; FB caption rewritten story-driven with the inline App
+  Store link and 3 hashtags. Honest framing: the hook says "five modules" but the
+  free tier is "3 new decks every month" — captions and slides say "a deck per
+  pile" / "a deck per subject", never "five decks". Scheduled
+  2026-11-05T17:00:00Z (Thu) — inside the row's week (Nov 2–8), §4 preferred day,
+  20 h gap checked (latest published 2026-10-27T14:31Z; the next scheduled post
+  sits at 2026-11-08T17:00Z, 72 h away; only the stuck 2026-05-30 `publishing`
+  post in the schedule, §9 owner Robert). Watch: the platform published the
+  earlier posts before their recorded slots (§8 2026-10-22); record this post's
+  actual publish path when it goes out. Fresh shoot (prefix
+  sd-social-20261028 / sd-social-20261028b): photo A five muted hardcover
+  binders (teal, grey, cream, plum) with one gold-yellow stacked loose on oak
+  floorboards, floor-level 35 mm, low late-afternoon amber autumn sun, long deep
+  indigo shadows (t4 after t1/t2 rendered books and t3 notebook pads — vision-QA
+  retakes); photo B close floor-level 50 mm, the gold binder's corner in sharp
+  focus with muted indigo/slate binders blurred behind, amber sun streak, deep
+  indigo shadows (t2 after t1 rendered legible cursive names). Both finals
+  vision-QA'd: no legible text, no screens, no faces, exactly one gold object,
+  indigo shadows, real floorboards. Look: student-flat floor at floor level,
+  muted binder stack with one gold-yellow under low amber autumn sun, deep indigo
+  shadows — distinct from all recent looks (not the 10-27 pre-dawn grey desk,
+  not the 10-20 overcast kitchen, no carrel, no window seat, no corridor, no
+  seminar room). Claude review: round 1 FAIL (expected — post not yet created and
+  marketing.md not yet edited) → round 2 after creation and the §6/§8 edits.
 
 - 2026-10-27 — built `snapdeck-nov2-2` (post 6ae0b2e04070d4eed057), §6 Nov 2 #2
   "Read your notes three times and still blanked? That's the testing effect."
