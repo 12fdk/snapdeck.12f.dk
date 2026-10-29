@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-28 (built Nov 2 #3 carousel snapdeck-nov2-3, post 6ae204c5a80dd396a885, scheduled 2026-11-05T17:00Z; §7 review not due — no published post in the 7–13 day window)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-29 (built Nov 2 #4 reel snapdeck-nov2-4, post 6ae35c26b2627843b215, scheduled 2026-11-03T17:00Z; §7 review not due — runs Mondays, today is Thursday)
 
 ## 1. What this is & how it's updated
 
@@ -310,8 +310,7 @@ weeks", never "finals on Dec 7".
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
-| Nov 2 | 3 | Carousel | One deck per subject | A deck per subject | "Reading week: five modules, five piles of notes. Start here." | — | five coloured folders stacked on a student-flat floor, low autumn sun across floorboards | built 2026-10-28 6ae204c5a80dd396a885 |
-| Nov 2 | 4 | Reel | Snap it | Projector slides | "Lecturer flew through 40 slides in 50 minutes. You got photos of 12." | Highlighter · v0 c-major | empty lecture hall from the back row, projector beam with dust, blank screen glow | queued |
+| Nov 2 | 4 | Reel | Snap it | Projector slides | "Lecturer flew through 40 slides in 50 minutes. You got photos of 12." | Highlighter · v0 c-major | empty lecture hall from the back row, projector beam with dust, blank screen glow | built 2026-10-29 6ae35c26b2627843b215 |
 | Nov 9 | 1 | Reel | Snap it | Vocab decks (39 languages) | "Spanish quiz Monday. One page of new vocab and a bus ride home." | Lamp · v2 g-min | night bus window, city-light bokeh, notebook on a knee, yellow grab pole | queued |
 | Nov 9 | 2 | Carousel | Ranked | Study mode | "Highlighting vs re-writing notes vs flashcards: ranked for exam day." | — | overhead white desk, three gold highlighters, a blurred textbook page, hard noon light | queued |
 | Nov 9 | 3 | Reel | Yours only | Nothing leaves your phone | "Photographing your lecture notes shouldn't mean uploading them." | Highlighter · v3 e-min | notebook held shut by an elastic band, rain on a café window, warm gold interior | queued |
@@ -655,6 +654,37 @@ Append-only. Newest at bottom. Never edit or delete rows.
   round 1 FAIL (expected — post not yet created and marketing.md not yet
   edited) → round 2 after creation and the §6/§8 edits above.
 
+- 2026-10-29 — built `snapdeck-nov2-4` (post 6ae35c26b2627843b215), §6 Nov 2 #4 "Lecturer flew
+  through 40 slides in 50 minutes. You got photos of 12." (reel, Snap it). Projector slides →
+  deck → study mode; product-focused per the flat funnel (0 profile taps, 0 landings, 1 site
+  visit, 0 App Store taps 22→29 Oct). Look: empty tiered lecture hall from the back row, lit only
+  by a cold blue-violet projector beam with drifting dust and a soft blank-screen glow, deep
+  indigo shadows between the seat rows, one yellow whiteboard marker on the lectern ledge as the
+  only gold — new vs all recent looks (no sun/amber; no desk/floor/carrel/kitchen/window-
+  seat/corridor/seminar room; the gold is a whiteboard marker, not a highlighter, pencil, sticky,
+  mug, rail or pumpkin). Highlighter skin (alternating the 10-26 Lamp reel); music v0 c-major
+  (next after v3, v4, v1, v5 in the SnapDeck order). CTA "Download free on the App Store" (end
+  card + sub "Free on the App Store" + real icon, hash-verified 2026-10-29). Scheduled
+  2026-11-03T17:00:00Z (Tue) — inside the row's week (Nov 2–8), 17:00–20:00Z window; the
+  preferred Thu Nov 5 and Sun Nov 8 17:00Z slots were recorded for nov2-1/nov2-3/nov2-2 but those
+  posts already published early (latest published 2026-10-28T14:31:47Z), so the live schedule had
+  no taken slot inside the week (checked 2026-10-29; only the stuck 2026-05-30 `publishing` post,
+  §9 owner Robert). Fresh shoot (prefix sd-social-20261029): 5 stills + 3 LTX clips (c1 push
+  toward the screen, c3 hand raises the phone seen from behind, c5 lift down the aisle; stills B
+  dust-in-beam, D back-row desk); retakes s1 t1 (a figure on stage + a second gold object), s3 t1
+  (multiple attendees in the midground), s4 t1 (blurred background silhouettes) → finals s1 t2 /
+  s3 t2 / s4 t2; every still and first/middle/last clip frame vision-QA'd (no legible text, no
+  screens, no faces, exactly one gold element, indigo shadows). Render: all machine checks PASS
+  (19.0 s, hook at 0 s, −13.9 LUFS, −1.4 dBTP — no dip needed). Frame-0 headline trimmed to "40
+  slides. 12 photos." (4 words); the full hook opens the IG caption. Gate 1: dropped the design's
+  FB "The other 28 are gone" scenario sentence (the design's own risk note); the FB "Tuesday's
+  bio slides / Friday's law reading" line is scenario framing, not a claim. Claude design
+  20261029-1507 → review round 1 PASS with 2 minor fixes (IG claim line now verbatim "Photos &
+  slides — pages, whiteboards, projector shots."; the spec's post field re-rendered to match).
+  Motion repo commit (docs/snapdeck-nov2-4.md, reels/snapdeck-nov2-4.json, assets/snapdeck-
+  nov2-4/); NAS /nas/spark/videos/snapdeck-nov2-4/. Watch: the platform published the earlier
+  posts before their recorded slots (§8 2026-10-22); record this post's actual publish path when
+  it goes out.
 
 ## 9. Open questions & watch items
 
