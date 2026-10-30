@@ -310,7 +310,6 @@ weeks", never "finals on Dec 7".
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
-| Nov 2 | 4 | Reel | Snap it | Projector slides | "Lecturer flew through 40 slides in 50 minutes. You got photos of 12." | Highlighter · v0 c-major | empty lecture hall from the back row, projector beam with dust, blank screen glow | built 2026-10-29 6ae35c26b2627843b215 |
 | Nov 9 | 1 | Reel | Snap it | Vocab decks (39 languages) | "Spanish quiz Monday. One page of new vocab and a bus ride home." | Lamp · v2 g-min | night bus window, city-light bokeh, notebook on a knee, yellow grab pole | queued |
 | Nov 9 | 2 | Carousel | Ranked | Study mode | "Highlighting vs re-writing notes vs flashcards: ranked for exam day." | — | overhead white desk, three gold highlighters, a blurred textbook page, hard noon light | queued |
 | Nov 9 | 3 | Reel | Yours only | Nothing leaves your phone | "Photographing your lecture notes shouldn't mean uploading them." | Highlighter · v3 e-min | notebook held shut by an elastic band, rain on a café window, warm gold interior | queued |
