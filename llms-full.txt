@@ -65,6 +65,10 @@ SnapDeck AI is built with privacy as a core principle:
 
 The SnapDeck AI blog publishes practical study advice for students at https://snapdeck.12f.dk/blog/ (RSS feed: https://snapdeck.12f.dk/feed.xml). Posts are tagged `study-tips`, `memory-science` or `exam-prep`.
 
+### When to start revising for exams (and how to space it) (2026-11-03, exam-prep)
+https://snapdeck.12f.dk/blog/when-to-start-revising-for-exams/
+Answers when to start revising for exams by treating lead time as passes over the material, not hours accumulated. Covers the spacing effect, a three-scenario schedule (plenty of time, a few weeks, days), unclear syllabi, and the honest case of starting with only days left.
+
 ### Is group study effective? The format that actually works (2026-10-27, study-tips)
 https://snapdeck.12f.dk/blog/group-study-that-works/
 Answers 'is group study effective' with a concrete session format instead of a verdict: a solo first pass, a 90-minute group built on retrieval — phones in a pile, self-written questions, an unanswerables list — and an honest list of when studying alone is the better choice.

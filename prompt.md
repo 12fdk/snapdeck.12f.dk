@@ -126,7 +126,7 @@ through = already written; skip those):
 2. ~~Studying when you cannot focus for more than ten minutes~~ *(covered: focus-when-you-cant)*
 3. ~~What to do with a semester of notes you never reopened~~ *(covered: catch-up-semester-notes)*
 4. ~~Active recall, explained properly~~ *(covered: active-recall-explained)*
-5. **How long before an exam should you start revising** — an honest answer with a schedule · *"when to start revising for exams"*
+5. ~~**How long before an exam should you start revising** — an honest answer with a schedule · *"when to start revising for exams"*~~ *(covered: when-to-start-revising-for-exams)*
 6. ~~Studying from lecture slides that are mostly bullet points~~ *(covered: studying-from-bullet-point-slides)*
 7. **Why you forget everything a week later** — and the specific fix · *"why do I forget what I study"*
 8. **Studying with ADHD without a two-hour focus block** — short sessions that actually work · *"how to study with adhd"*
