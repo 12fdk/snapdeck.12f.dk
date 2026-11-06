@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-05 (built Nov 9 #4 carousel snapdeck-nov9-4, post 6aec905740c330d1cc2a, scheduled 2026-11-12T17:00Z)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-06 (no row due; pruned §6 Nov 9 #4 — post 6aec905740c330d1cc2a, published 2026-11-05T14:31Z)
 
 ## 1. What this is & how it's updated
 
@@ -310,7 +310,6 @@ weeks", never "finals on Dec 7".
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Reel look · music | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|---|
-| Nov 9 | 4 | Carousel | One deck per subject | Volume problem (med/nursing) | "Pharmacology block exam: 200 drug names and no evenings left." | — | hospital break-room table, folded scrubs, clipboard, cool fluorescent with a gold tea tin | built 2026-11-05 6aec905740c330d1cc2a |
 | Nov 16 | 1 | Reel | Countdown | Know it / Review + progress | "Finals in 3 weeks. Which chapters do you actually know?" | Lamp · v4 d-major | three stacked textbooks with gold page tabs, evening desk, indigo window | queued |
 | Nov 16 | 2 | Carousel | Science, no numbers | Spacing effect | "Cram the night before, or 15 minutes a day for 3 weeks?" | — | frosty campus quad at sunrise, empty bench, takeaway cup with a gold lid | queued |
 | Nov 16 | 3 | Carousel | By hand vs SnapDeck | PDF import | "Law reading list: 6 PDFs, 1 week. Print and copy — or import?" | — | law library long tables, green-shaded lamps, stacked casebooks, deep wood | queued |
@@ -687,6 +686,19 @@ Append-only. Newest at bottom. Never edit or delete rows.
   nov2-4/); NAS /nas/spark/videos/snapdeck-nov2-4/. Watch: the platform published the earlier
   posts before their recorded slots (§8 2026-10-22); record this post's actual publish path when
   it goes out.
+
+- 2026-11-06 — no row due tonight: the first `queued` §6 row is Nov 16 #1 and its
+  week starts Mon Nov 16 (10 days out; first due night is Nov 9); §7 review not
+  due (not Monday — the §7 procedure runs Mondays). Pruned the published §6
+  Nov 9 #4 row (6aec905740c330d1cc2a, published 2026-11-05T14:31:11Z — 7 days
+  before its recorded 2026-11-12T17:00Z slot, consistent with the platform
+  publishing ready posts in the first 15-min cycle once the 20 h gap is met,
+  §8 2026-10-22; next builds record the actual publish path when it goes out).
+  Funnel 7d (10-30→11-06): profile taps 0, site landings 0, App Store taps 0
+  (3 pageviews, 2 visits) — still no attributed social traffic. Schedule checked:
+  no `failed` posts to reschedule; only the stuck 2026-05-30 `publishing` post
+  (6a0ab5e70017d53c950c, §9 owner Robert). Next build: Nov 16 #1 (reel,
+  Countdown, Lamp · v4 d-major, due from the night of Nov 9).
 
 ## 9. Open questions & watch items
 
