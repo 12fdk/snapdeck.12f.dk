@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-06 (no row due; pruned §6 Nov 9 #4 — post 6aec905740c330d1cc2a, published 2026-11-05T14:31Z)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-07 (no row due; first `queued` row Nov 16 #1, due from the night of Nov 9)
 
 ## 1. What this is & how it's updated
 
@@ -686,6 +686,16 @@ Append-only. Newest at bottom. Never edit or delete rows.
   nov2-4/); NAS /nas/spark/videos/snapdeck-nov2-4/. Watch: the platform published the earlier
   posts before their recorded slots (§8 2026-10-22); record this post's actual publish path when
   it goes out.
+
+- 2026-11-07 — no row due tonight: the first `queued` §6 row is Nov 16 #1 and its
+  week starts Mon Nov 16 (9 days out; first due night is Nov 9); §7 review not
+  due (not Monday — the §7 procedure runs Mondays). `plan_prune` removed nothing
+  (no `posted`/published `built` rows). Funnel 7d (10-31→11-07): profile taps 0,
+  site landings 0, App Store taps 0 (3 pageviews, 2 visits, 2 visitors) — still
+  no attributed social traffic. Schedule checked: no `failed` posts to
+  reschedule; only the stuck 2026-05-30 `publishing` post (6a0ab5e70017d53c950c,
+  §9 owner Robert). Next build: Nov 16 #1 (reel, Countdown, Lamp · v4 d-major),
+  due from the night of Nov 9.
 
 - 2026-11-06 — no row due tonight: the first `queued` §6 row is Nov 16 #1 and its
   week starts Mon Nov 16 (10 days out; first due night is Nov 9); §7 review not
