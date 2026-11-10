@@ -65,6 +65,10 @@ SnapDeck AI is built with privacy as a core principle:
 
 The SnapDeck AI blog publishes practical study advice for students at https://snapdeck.12f.dk/blog/ (RSS feed: https://snapdeck.12f.dk/feed.xml). Posts are tagged `study-tips`, `memory-science` or `exam-prep`.
 
+### Why you forget everything a week later, and the specific fix (2026-11-10, memory-science)
+https://snapdeck.12f.dk/blog/why-you-forget-what-you-study/
+Explains, without invented statistics, why learned material decays fast and then plateaus: most forgetting happens in the first days, and re-reading restores familiarity rather than recall. Then gives the specific fix as a practical routine: turn material into questions, test yourself, and repeat on spaced days. Includes a worked one-week example for a list of terms and honest limits (it takes more effort than re-reading, and spacing only works if the sessions happen).
+
 ### When to start revising for exams (and how to space it) (2026-11-03, exam-prep)
 https://snapdeck.12f.dk/blog/when-to-start-revising-for-exams/
 Answers when to start revising for exams by treating lead time as passes over the material, not hours accumulated. Covers the spacing effect, a three-scenario schedule (plenty of time, a few weeks, days), unclear syllabi, and the honest case of starting with only days left.

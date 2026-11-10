@@ -6,8 +6,16 @@
     <description>Study tips, memory science and exam prep for students — from the team behind SnapDeck AI.</description>
     <language>en</language>
     <atom:link href="https://snapdeck.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 03 Nov 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>Why you forget everything a week later, and the specific fix</title>
+      <link>https://snapdeck.12f.dk/blog/why-you-forget-what-you-study/</link>
+      <guid isPermaLink="true">https://snapdeck.12f.dk/blog/why-you-forget-what-you-study/</guid>
+      <pubDate>Tue, 10 Nov 2026 08:00:00 +0000</pubDate>
+      <category>memory-science</category>
+      <description>You studied it, then it vanished. Forgetting is the default, and most of it happens in the first days. Here is why, plus the fix that actually stops it.</description>
+    </item>
     <item>
       <title>When to start revising for exams (and how to space it)</title>
       <link>https://snapdeck.12f.dk/blog/when-to-start-revising-for-exams/</link>
