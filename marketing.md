@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-14 (no row due; next due row Nov 23 #1, first due night Nov 16)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-15 (no row due; next due row Nov 23 #1, first due night tomorrow Nov 16)
 
 ## 1. What this is & how it's updated
 
@@ -751,6 +751,20 @@ Append-only. Newest at bottom. Never edit or delete rows.
   (6a0ab5e70017d53c950c, §9 owner Robert) and the Nov 16 #3 post at
   2026-11-19T17:00Z. Next build: Nov 23 #1 (reel, No signal, Airplane mode,
   Lamp · v5 c-min), due from the night of Nov 16.
+- 2026-11-15 — no row due tonight: the first `queued` §6 row is Nov 23 #1 and its
+  week starts Mon Nov 23 (8 days out; its first due night is tomorrow, Nov 16).
+  §7 review not due (Sunday — the §7 procedure runs Mondays). `plan_prune`
+  removed nothing (no `posted`/published `built` rows — Nov 16 #3 still
+  `built`/publishing at 2026-11-19T17:00Z). Funnel 7d (11-08→11-15): profile
+  taps 0, site landings 0, App Store taps 0 (pageviews 1 / prev 3, visitors 1 /
+  prev 2) — still no attributed social traffic. Schedule checked: no `failed`
+  posts to reschedule; only the stuck 2026-05-30 `publishing` post
+  (6a0ab5e70017d53c950c, §9 owner Robert) and the Nov 16 #3 post at
+  2026-11-19T17:00Z. Next build: tomorrow, Nov 23 #1 (reel, No signal,
+  Airplane mode, Lamp · v5 c-min) — first due row; fresh shoot required, scene
+  per the row (tray table at a window seat, wing at sunset, notebook and
+  pencil, phone face-down).
+
 
 ## 9. Open questions & watch items
 
