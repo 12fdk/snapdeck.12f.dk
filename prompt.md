@@ -130,7 +130,7 @@ through = already written; skip those):
 6. ~~Studying from lecture slides that are mostly bullet points~~ *(covered: studying-from-bullet-point-slides)*
 7. ~~**Why you forget everything a week later** — and the specific fix · *"why do I forget what I study"*~~ *(covered: why-you-forget-what-you-study)*
 8. **Studying with ADHD without a two-hour focus block** — short sessions that actually work · *"how to study with adhd"*
-9. **Memorising terminology and vocabulary** — anatomy, law, languages, drug names · *"how to memorize medical terminology"*
+9. ~~**Memorising terminology and vocabulary** — anatomy, law, languages, drug names · *"how to memorize medical terminology"*~~ *(covered: best-flashcard-apps-medical-terminology)*
 10. ~~The revision timetable that survives contact with real life~~ *(covered: revision-timetable-that-works)*
 11. ~~Group study that isn't a waste of an afternoon~~ *(covered: group-study-that-works)*
 12. ~~Studying when you are exhausted~~ *(covered: how-to-study-when-tired)*
