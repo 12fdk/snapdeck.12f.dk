@@ -1,6 +1,6 @@
 # SnapDeck AI — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-20 (no row due; plan_prune removed the published Nov 23 #4 row)
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-21 (no row due; first due night for Nov 30 #1 is tomorrow, Nov 23)
 
 ## 1. What this is & how it's updated
 
@@ -786,6 +786,20 @@ Append-only. Newest at bottom. Never edit or delete rows.
   (6a0ab5e70017d53c950c, §9 owner Robert) and the Nov 16 #3 carousel at
   2026-11-19T17:00Z (publishing). Next build: Nov 30 #1 (reel, Countdown,
   Lamp · v2 g-min), due from the night of Nov 23.
+
+- 2026-11-21 — no row due tonight: the first `queued` §6 row is Nov 30 #1 and
+  its week starts Mon Nov 30 (9 days out; first due night is tomorrow,
+  Nov 23). §7 review not due (Saturday — the §7 procedure runs Mondays).
+  `plan_prune` removed nothing (no `posted`/published `built` rows). Funnel 7d
+  (11-14→11-21): profile taps 0, site landings 0, App Store taps 0 (6
+  pageviews, 5 visitors, 6 visits, only referrer robert-jensen.dk=1) — still
+  no attributed social traffic. Schedule checked: no `failed` posts to
+  reschedule; only the stuck 2026-05-30 `publishing` post
+  (6a0ab5e70017d53c950c, §9 owner Robert) and the Nov 16 #3 carousel
+  (6af328a22584cc1de91f), now 2 days past its 2026-11-19T17:00Z slot still in
+  `publishing` — earlier posts published early, not late, so this one is worth
+  watching. Next build: Nov 30 #1 (reel, Countdown, Lamp · v2 g-min, "Finals
+  week: 4 exams in 5 days. Study what you don't know yet."), due tomorrow.
 
 ## 9. Open questions & watch items
 
