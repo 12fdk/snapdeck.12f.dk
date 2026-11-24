@@ -6,8 +6,16 @@
     <description>Study tips, memory science and exam prep for students — from the team behind SnapDeck AI.</description>
     <language>en</language>
     <atom:link href="https://snapdeck.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 17 Nov 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>How to study with ADHD without a two-hour focus block</title>
+      <link>https://snapdeck.12f.dk/blog/study-without-a-two-hour-focus-block/</link>
+      <guid isPermaLink="true">https://snapdeck.12f.dk/blog/study-without-a-two-hour-focus-block/</guid>
+      <pubDate>Tue, 24 Nov 2026 08:00:00 +0000</pubDate>
+      <category>study-tips</category>
+      <description>Standard advice assumes a two-hour focus block you do not have. Short sessions, visible timers, and a start so small it feels ridiculous.</description>
+    </item>
     <item>
       <title>Best Flashcard Apps for Memorising Medical Terminology (2026)</title>
       <link>https://snapdeck.12f.dk/blog/best-flashcard-apps-medical-terminology/</link>

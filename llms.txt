@@ -28,6 +28,7 @@ SnapDeck AI is an iOS app that uses Apple Intelligence to generate flashcards fr
 
 Study advice for students, published at https://snapdeck.12f.dk/blog/ (RSS: https://snapdeck.12f.dk/feed.xml).
 
+- [How to study with ADHD without a two-hour focus block](https://snapdeck.12f.dk/blog/study-without-a-two-hour-focus-block/) — study-tips, 2026-11-24. A study plan for readers who cannot produce long focus blocks, written for ADHD and for anyone with a short attention span.
 - [Best Flashcard Apps for Memorising Medical Terminology (2026)](https://snapdeck.12f.dk/blog/best-flashcard-apps-medical-terminology/) — memory-science, 2026-11-17. A buyer's guide for nursing and medical students drowning in terminology.
 - [Why you forget everything a week later, and the specific fix](https://snapdeck.12f.dk/blog/why-you-forget-what-you-study/) — memory-science, 2026-11-10. Explains, without invented statistics, why learned material decays fast and then plateaus: most forgetting happens in the first days, and re-reading restores familiarity rather than recall.
 - [When to start revising for exams (and how to space it)](https://snapdeck.12f.dk/blog/when-to-start-revising-for-exams/) — exam-prep, 2026-11-03. Answers when to start revising for exams by treating lead time as passes over the material, not hours accumulated.
